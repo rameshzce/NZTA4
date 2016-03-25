@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.Gravity;
+import android.view.View;
 import android.widget.AbsListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -19,6 +20,8 @@ public class GoGreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_go_green);
+
+        getSupportActionBar().hide();
 
         ActionBar ab = getSupportActionBar();
 
@@ -46,6 +49,19 @@ public class GoGreenActivity extends AppCompatActivity {
         ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
 
         ab.setCustomView(tv);
+
+        ab.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#b59206")));
+
+        TextView gg = (TextView) findViewById(R.id.goGreen);
+        gg.setTypeface(font);
+
+        TextView nb = (TextView) findViewById(R.id.nzBlood);
+        nb.setTypeface(font);
+
+        gg.setBackgroundColor(Color.parseColor("#009668"));
+        nb.setBackgroundColor(Color.parseColor("#ff0000"));
+
+
 
     }
 

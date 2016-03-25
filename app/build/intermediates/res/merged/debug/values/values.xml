@@ -492,6 +492,7 @@
     <string name="existingEventsTitle">Existing events</string>
     <string name="facebook_app_id">1007703549267674</string>
     <string name="fonthandlee">fonts/handlee-regular.ttf</string>
+    <string name="goGreen">Go Green</string>
     <string name="home_title">New Zealand Telugu Association</string>
     <string name="login">Register Me</string>
     <string name="messenger_send_button_text">Send</string>
@@ -507,6 +508,7 @@
     <string name="mr_system_route_name">System</string>
     <string name="mr_user_route_category_name">Devices</string>
     <string name="msg_title">Message</string>
+    <string name="nzBlood">NZ Blood</string>
     <string name="photoGallery">Photo Gallery</string>
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>

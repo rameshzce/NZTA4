@@ -1766,7 +1766,7 @@
         <item>Kolamala</item>
         <item>Rams</item>
 
-    </string-array><string name="defaultmsg">Message sent by server will appear here.</string><string name="upcomingEventsTitle">Upcoming events 2016</string><string name="welcome_txt">GCM App</string><string name="fonthandlee">fonts/handlee-regular.ttf</string><string name="msg_title">Message</string><string name="login">Register Me</string><string name="confirmationMsg2">Please enter 1234 to confirm your mobile number.</string><string name="ranklabel">"Rank : "</string><string name="confirmationMsg1">Thanks for joining NZTA!</string></file><file path="/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/values/styles.xml" qualifiers=""><style name="TextLabel" parent="TextAppearance.AppCompat">
+    </string-array><string name="defaultmsg">Message sent by server will appear here.</string><string name="upcomingEventsTitle">Upcoming events 2016</string><string name="welcome_txt">GCM App</string><string name="fonthandlee">fonts/handlee-regular.ttf</string><string name="msg_title">Message</string><string name="nzBlood">NZ Blood</string><string name="login">Register Me</string><string name="confirmationMsg2">Please enter 1234 to confirm your mobile number.</string><string name="goGreen">Go Green</string><string name="ranklabel">"Rank : "</string><string name="confirmationMsg1">Thanks for joining NZTA!</string></file><file path="/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/values/styles.xml" qualifiers=""><style name="TextLabel" parent="TextAppearance.AppCompat">
         <item name="android:textColorHint">@color/white</item>
         <item name="android:textSize">18sp</item>
         <item name="colorAccent">@color/red</item>
