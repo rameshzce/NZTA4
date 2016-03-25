@@ -121,7 +121,7 @@ public class GoGreenActivity extends AppCompatActivity {
             SpecialAdapter adapter = new SpecialAdapter(
                     GoGreenActivity.this, personList, R.layout.list_item,
                     new String[]{TAG_ID, TAG_ADD},
-                    new int[]{R.id.id, R.id.address}
+                    new int[]{R.id.id, R.id.address}, "GoGreen"
             );
 
             list.setAdapter(adapter);

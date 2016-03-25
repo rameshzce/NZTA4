@@ -23,13 +23,15 @@ import java.util.List;
 public class SpecialAdapter extends SimpleAdapter {
     private int[] colors = new int[]{0x30FF0000, 0x300000FF};
     private int[] padding = new int[]{0, 20};
+    String fromActivity;
 
     private int[] listItemBackground = new int[]{R.drawable.list_background1, R.drawable.list_background2};
     private int[] galleryBackground = new int[]{R.drawable.gallery_bg4, R.drawable.gallery_bg4};
     private int[] videoBackground = new int[]{R.drawable.gallery_bg5, R.drawable.gallery_bg5};
 
-    public SpecialAdapter(Context context, List<HashMap<String, String>> items, int resource, String[] from, int[] to) {
+    public SpecialAdapter(Context context, List<HashMap<String, String>> items, int resource, String[] from, int[] to, String activity) {
         super(context, items, resource, from, to);
+        fromActivity = activity;
     }
 
     @Override
@@ -100,10 +102,12 @@ public class SpecialAdapter extends SimpleAdapter {
 
         //view.setLayoutParams(params);
         //view.setRight(100);
+        if (fromActivity.equalsIgnoreCase("GoGreen")) {
+            ll.setBackgroundResource(R.drawable.list_background5);
+            tr2.setBackgroundResource(R.drawable.gallery_bg6);
+            tr3.setBackgroundResource(R.drawable.gallery_bg7);
+        }
 
-        ll.setBackgroundResource(R.drawable.list_background5);
-        tr2.setBackgroundResource(R.drawable.gallery_bg6);
-        tr3.setBackgroundResource(R.drawable.gallery_bg7);
         return view;
     }
 }

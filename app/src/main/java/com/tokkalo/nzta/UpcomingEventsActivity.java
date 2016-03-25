@@ -158,7 +158,7 @@ public class UpcomingEventsActivity extends AppCompatActivity {
             SpecialAdapter adapter = new SpecialAdapter(
                     UpcomingEventsActivity.this, personList, R.layout.list_item,
                     new String[]{TAG_ID, TAG_ADD},
-                    new int[]{R.id.id, R.id.address}
+                    new int[]{R.id.id, R.id.address}, "UpComingEvents"
             );
 
             list.setAdapter(adapter);
