@@ -316,5 +316,12 @@ public class UpcomingEventsActivity extends AppCompatActivity {
                 return "L";
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(UpcomingEventsActivity.this, MemberActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        UpcomingEventsActivity.this.startActivity(intent);
+    }
 }
 

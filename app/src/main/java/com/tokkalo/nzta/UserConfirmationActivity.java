@@ -189,6 +189,7 @@ public class UserConfirmationActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(UserConfirmationActivity.this, MemberActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         UserConfirmationActivity.this.startActivity(intent);
     }
 }

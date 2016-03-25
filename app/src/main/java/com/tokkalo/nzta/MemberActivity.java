@@ -69,4 +69,10 @@ public class MemberActivity extends AppCompatActivity {
         startActivity(i);
         finish();
     }
+
+    public void onBackPressed() {
+        Intent intent = new Intent(MemberActivity.this, MemberActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        MemberActivity.this.startActivity(intent);
+    }
 }

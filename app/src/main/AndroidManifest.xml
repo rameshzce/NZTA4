@@ -64,7 +64,6 @@
         <activity
             android:name=".ExistingEventsActivity"
             android:theme="@style/AppTheme2" />
-        <activity android:name=".ComingEventsActivity" />
         <activity android:name=".UpcomingEventsActivity" />
         <activity android:name=".UCEventsActivity" />
         <activity android:name=".MemberActivity" />

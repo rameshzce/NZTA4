@@ -138,4 +138,11 @@ public class ExistingEventsActivity extends AppCompatActivity {
             }
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(ExistingEventsActivity.this, MemberActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        ExistingEventsActivity.this.startActivity(intent);
+    }
 }
