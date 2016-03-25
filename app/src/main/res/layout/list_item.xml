@@ -16,21 +16,101 @@
             android:id="@+id/id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:textColor="@color/white"
             android:textSize="20dip"
-            android:textStyle="bold"
-            android:typeface="sans" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/address"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/id"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="1dip"
+            android:layout_marginBottom="4dp"
             android:textColor="@color/white"
             android:textSize="15dip" />
 
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/address"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:minHeight="30dp">
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/tableLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/address"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="fill_parent"
+                        android:layout_marginRight="1dip"
+                        android:minHeight="30dp">
+
+                        <ImageView
+                            android:id="@+id/imageGallery"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/camera"></ImageView>
+
+                        <TextView
+                            android:id="@+id/photoGallery"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/photoGallery"
+                            android:textColor="@color/white"
+                            android:textSize="15dip" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/tableLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/address"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="1dip"
+                        android:minHeight="30dp">
+
+                        <ImageView
+                            android:id="@+id/imageVideo"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/video"></ImageView>
+
+                        <TextView
+                            android:id="@+id/videoGallery"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/videoGallery"
+                            android:textColor="@color/white"
+                            android:textSize="15dip" />
+
+
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+        </TableLayout>
+
     </LinearLayout>
-
-
 </RelativeLayout>

@@ -168,6 +168,7 @@
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="teal">#008080</color>
     <color name="upcomingEvents">#ff218e</color>
+    <color name="upcomingEventsTitle">#7f023f</color>
     <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
     <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
     <color name="wallet_bright_foreground_holo_light">#ff000000</color>

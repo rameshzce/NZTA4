@@ -72,7 +72,6 @@
         <activity
             android:name="com.tokkalo.nzta.ExistingEventsActivity"
             android:theme="@style/AppTheme2" />
-        <activity android:name="com.tokkalo.nzta.ComingEventsActivity" />
         <activity android:name="com.tokkalo.nzta.UpcomingEventsActivity" />
         <activity android:name="com.tokkalo.nzta.UCEventsActivity" />
         <activity android:name="com.tokkalo.nzta.MemberActivity" />
@@ -102,6 +101,7 @@
         <activity
             android:name="com.tokkalo.nzta.VideoGalleryActivity"
             android:screenOrientation="portrait" />
+        <activity android:name="com.tokkalo.nzta.GoGreenActivity" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
