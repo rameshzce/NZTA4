@@ -172,4 +172,10 @@ public class ReferFriendActivity extends AppCompatActivity {
         toast.setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL, 0, 100);
         toast.show();
     }
+
+    public void onBackPressed() {
+        Intent intent = new Intent(ReferFriendActivity.this, MemberActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        ReferFriendActivity.this.startActivity(intent);
+    }
 }

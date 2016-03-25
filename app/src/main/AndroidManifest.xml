@@ -92,7 +92,8 @@
         <activity android:name=".PlayVideoActivity" />
         <activity
             android:name=".VideoGalleryActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".GoGreenActivity"></activity>
     </application>
 
 </manifest>

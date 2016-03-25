@@ -35,4 +35,10 @@ public class NewZealandActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+    public void onBackPressed() {
+        Intent intent = new Intent(NewZealandActivity.this, MemberActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        NewZealandActivity.this.startActivity(intent);
+    }
 }

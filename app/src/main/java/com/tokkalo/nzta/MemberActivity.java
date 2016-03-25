@@ -59,7 +59,7 @@ public class MemberActivity extends AppCompatActivity {
     }
 
     public void rowClick3(View view) {
-        Intent i = new Intent(applicationContext, PopUpActivity.class);
+        Intent i = new Intent(applicationContext, GoGreenActivity.class);
         startActivity(i);
         finish();
     }
