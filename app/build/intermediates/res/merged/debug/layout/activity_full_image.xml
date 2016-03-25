@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/existingEvents"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnImagePrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/existingEventsTitle"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:text="Previous" />
+
+            <Button
+                android:id="@+id/btnImageNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/existingEventsTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:text="Next" />
+
+        </LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnImageNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/existingEventsTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:text="Share Image" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:minHeight="80dp">
+
+            <TextView
+                android:id="@+id/photoGallery"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/photoGallery"
+                android:textColor="@color/white"
+                android:textSize="18dip" />
+
+            <TextView
+                android:id="@+id/videoGallery"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/videoGallery"
+                android:textColor="@color/white"
+                android:textSize="18dip" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,206 @@
+-injars /Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
+-outjars /Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /Users/rameshkolamala/Library/Android/sdk/build-tools/23.0.2/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontwarn
+-printconfiguration /Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/multi-dex/debug/components.flags
+
+
+-keep class com.tokkalo.nzta.MainActivity {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.GcmBroadcastReceiver {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.GCMNotificationIntentService {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.UserConfirmationActivity {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.UserActivity {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.ProfileActivity {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.MembershipActivity {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.ReferFriendActivity {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.NewZealandActivity {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.InviteFriendActivity {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.ExistingEventsActivity {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.ComingEventsActivity {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.UpcomingEventsActivity {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.UCEventsActivity {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.MemberActivity {
+    <init>();
+}
+
+-keep class com.tokkalo.nzta.PopUpActivity {
+    <init>();
+}
+
+-keep class com.facebook.FacebookActivity {
+    <init>();
+}
+
+-keep class com.twitter.sdk.android.tweetcomposer.ComposerActivity {
+    <init>();
+}
+
+-keep class com.twitter.sdk.android.tweetcomposer.TweetUploadService {
+    <init>();
+}
+
+-keep class com.twitter.sdk.android.core.identity.OAuthActivity {
+    <init>();
+}
+
+-keep class com.twitter.sdk.android.core.identity.ShareEmailActivity {
+    <init>();
+}
+
+-keep class com.twitter.sdk.android.tweetui.PlayerActivity {
+    <init>();
+}
+
+-keep class com.twitter.sdk.android.tweetui.GalleryActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.PhoneNumberActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.ConfirmationCodeActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.LoginCodeActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.PinCodeActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.FailureActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.ContactsActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.EmailRequestActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.PhoneNumberActionBarActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.ConfirmationCodeActionBarActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.LoginCodeActionBarActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.FailureActionBarActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.ContactsActionBarActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.PinCodeActionBarActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.EmailRequestActionBarActivity {
+    <init>();
+}
+
+-keep class com.digits.sdk.android.ContactsUploadService {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.AdActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.appinvite.PreviewActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.auth.api.signin.RevocationBoundService {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementContentProvider {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementService {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
