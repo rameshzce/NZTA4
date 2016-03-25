@@ -65,7 +65,7 @@ public class MemberActivity extends AppCompatActivity {
     }
 
     public void rowClick4(View view) {
-        Intent i = new Intent(applicationContext, ReferFriendActivity.class);
+        Intent i = new Intent(applicationContext, InviteFriendActivity.class);
         startActivity(i);
         finish();
     }
