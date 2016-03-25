@@ -137,6 +137,7 @@
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
     <color name="navy">#000080</color>
+    <color name="nzBlood">#FF0000</color>
     <color name="olive">#808000</color>
     <color name="place_autocomplete_prediction_primary_text">#212121</color>
     <color name="place_autocomplete_prediction_primary_text_highlight">#757575</color>

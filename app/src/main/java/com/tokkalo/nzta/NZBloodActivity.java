@@ -23,7 +23,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class GoGreenActivity extends AppCompatActivity {
+public class NZBloodActivity extends AppCompatActivity {
     String myJSON;
     TextView textView;
 
@@ -44,8 +44,7 @@ public class GoGreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_go_green);
-
+        setContentView(R.layout.activity_nzblood);
         list = (ListView) findViewById(R.id.listView);
         personList = new ArrayList<HashMap<String, String>>();
 
@@ -83,16 +82,16 @@ public class GoGreenActivity extends AppCompatActivity {
         TextView gg = (TextView) findViewById(R.id.goGreen);
         gg.setTypeface(font);
 
-        TextView nb = (TextView) findViewById(R.id.nzBlood);
-        nb.setTypeface(font);
-
-        nb.setOnClickListener(new View.OnClickListener() {
+        gg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(GoGreenActivity.this, NZBloodActivity.class);
-                GoGreenActivity.this.startActivity(intent);
+                Intent intent = new Intent(NZBloodActivity.this, GoGreenActivity.class);
+                NZBloodActivity.this.startActivity(intent);
             }
         });
+
+        TextView nb = (TextView) findViewById(R.id.nzBlood);
+        nb.setTypeface(font);
 
         gg.setBackgroundColor(Color.parseColor("#009668"));
         nb.setBackgroundColor(Color.parseColor("#ff0000"));
@@ -127,9 +126,9 @@ public class GoGreenActivity extends AppCompatActivity {
 
 
             SpecialAdapter adapter = new SpecialAdapter(
-                    GoGreenActivity.this, personList, R.layout.list_item,
+                    NZBloodActivity.this, personList, R.layout.list_item,
                     new String[]{TAG_ID, TAG_ADD},
-                    new int[]{R.id.id, R.id.address}, "GoGreen"
+                    new int[]{R.id.id, R.id.address}, "NZBlood"
             );
 
             list.setAdapter(adapter);
@@ -139,11 +138,5 @@ public class GoGreenActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-    }
-
-    public void onBackPressed() {
-        Intent intent = new Intent(GoGreenActivity.this, MemberActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        GoGreenActivity.this.startActivity(intent);
     }
 }

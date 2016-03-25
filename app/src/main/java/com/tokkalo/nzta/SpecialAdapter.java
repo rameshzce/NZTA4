@@ -108,6 +108,12 @@ public class SpecialAdapter extends SimpleAdapter {
             tr3.setBackgroundResource(R.drawable.gallery_bg7);
         }
 
+        if (fromActivity.equalsIgnoreCase("NZBlood")) {
+            ll.setBackgroundResource(R.drawable.list_background6);
+            tr2.setBackgroundResource(R.drawable.gallery_bg8);
+            tr3.setBackgroundResource(R.drawable.gallery_bg9);
+        }
+
         return view;
     }
 }

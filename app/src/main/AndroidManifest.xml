@@ -93,7 +93,8 @@
         <activity
             android:name=".VideoGalleryActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".GoGreenActivity"></activity>
+        <activity android:name=".GoGreenActivity" />
+        <activity android:name=".NZBloodActivity"></activity>
     </application>
 
 </manifest>
