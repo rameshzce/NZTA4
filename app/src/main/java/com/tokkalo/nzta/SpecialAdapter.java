@@ -100,6 +100,10 @@ public class SpecialAdapter extends SimpleAdapter {
 
         //view.setLayoutParams(params);
         //view.setRight(100);
+
+        ll.setBackgroundResource(R.drawable.list_background5);
+        tr2.setBackgroundResource(R.drawable.gallery_bg6);
+        tr3.setBackgroundResource(R.drawable.gallery_bg7);
         return view;
     }
 }
