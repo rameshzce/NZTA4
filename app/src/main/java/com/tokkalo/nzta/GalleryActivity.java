@@ -70,7 +70,7 @@ public class GalleryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_gallery);
 
         Intent intent = getIntent();
-        String galleryType = intent.getStringExtra("galleryType");
+        final String galleryType = intent.getStringExtra("galleryType");
         year = intent.getStringExtra("year");
 
         ActionBar ab = getSupportActionBar();
@@ -85,7 +85,7 @@ public class GalleryActivity extends AppCompatActivity {
         TextView vg = (TextView) findViewById(R.id.videoGallery);
         vg.setTypeface(font);
 
-        if (galleryType.equalsIgnoreCase("Photo Gallery")) {
+
             vg.setBackgroundColor(Color.parseColor("#b59206"));
             pg.setBackgroundColor(Color.parseColor("#ffd428"));
 
@@ -93,27 +93,11 @@ public class GalleryActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(GalleryActivity.this, VideoGalleryActivity.class);
-                    intent.putExtra("galleryType", "Video Gallery");
+                    intent.putExtra("galleryType", galleryType);
                     intent.putExtra("year", year);
                     GalleryActivity.this.startActivity(intent);
                 }
             });
-        }
-
-        if (galleryType.equalsIgnoreCase("Video Gallery")) {
-            pg.setBackgroundColor(Color.parseColor("#b59206"));
-            vg.setBackgroundColor(Color.parseColor("#ffd428"));
-
-            pg.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(GalleryActivity.this, GalleryActivity.class);
-                    intent.putExtra("galleryType", "Photo Gallery");
-                    intent.putExtra("year", year);
-                    GalleryActivity.this.startActivity(intent);
-                }
-            });
-        }
 
 
         TextView tv = new TextView(getApplicationContext());

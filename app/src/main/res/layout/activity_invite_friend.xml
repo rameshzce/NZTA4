@@ -21,13 +21,13 @@
         android:layout_marginTop="4sp"
         android:text="Invite a friend"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
 
     <EditText
         android:id="@+id/editTextMobile"
-        android:layout_width="250dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:background="#0372b9"
@@ -39,7 +39,7 @@
 
     <EditText
         android:id="@+id/editTextMsg"
-        android:layout_width="250dp"
+        android:layout_width="320dp"
         android:layout_marginTop="15sp"
         android:layout_height="wrap_content"
         android:gravity="top|left"
@@ -58,7 +58,7 @@
     <Button
         android:id="@+id/button"
         android:layout_width="175dp"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15sp"
         android:background="@drawable/bg_button_rounded2"
@@ -66,7 +66,7 @@
         android:text="Invite"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="16dp" />
+        android:textSize="20sp" />
 
 
     <TextView
@@ -76,7 +76,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15sp"
         android:textColor="@color/white"
-        android:textSize="16dp" />
+        android:textSize="16sp" />
 
     <!-- <Button
         android:id="@+id/sendMessage"

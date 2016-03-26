@@ -66,22 +66,8 @@ public class VideoGalleryActivity extends AppCompatActivity {
         TextView vg = (TextView) findViewById(R.id.videoGallery);
         vg.setTypeface(font);
 
-        if (galleryType.equalsIgnoreCase("Photo Gallery")) {
-            vg.setBackgroundColor(Color.parseColor("#b59206"));
-            pg.setBackgroundColor(Color.parseColor("#ffd428"));
 
-            vg.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(VideoGalleryActivity.this, VideoGalleryActivity.class);
-                    intent.putExtra("galleryType", "Video Gallery");
-                    intent.putExtra("year", year);
-                    VideoGalleryActivity.this.startActivity(intent);
-                }
-            });
-        }
 
-        if (galleryType.equalsIgnoreCase("Video Gallery")) {
             pg.setBackgroundColor(Color.parseColor("#b59206"));
             vg.setBackgroundColor(Color.parseColor("#ffd428"));
 
@@ -89,12 +75,11 @@ public class VideoGalleryActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(VideoGalleryActivity.this, GalleryActivity.class);
-                    intent.putExtra("galleryType", "Photo Gallery");
+                    intent.putExtra("galleryType", galleryType);
                     intent.putExtra("year", year);
                     VideoGalleryActivity.this.startActivity(intent);
                 }
             });
-        }
 
 
         TextView tv = new TextView(getApplicationContext());
@@ -105,7 +90,7 @@ public class VideoGalleryActivity extends AppCompatActivity {
 
         tv.setLayoutParams(lp);
 
-        tv.setText("Existing Events " + year);
+        tv.setText(galleryType + " " + year);
 
         tv.setGravity(Gravity.CENTER);
 
