@@ -19,7 +19,7 @@
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="fill_parent"
-            android:minHeight="40dp">
+            android:minHeight="50dp">
 
             <TextView
                 android:id="@+id/goGreen"
