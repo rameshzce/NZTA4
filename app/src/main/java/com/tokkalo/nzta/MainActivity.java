@@ -239,8 +239,10 @@ public class MainActivity extends AppCompatActivity {
             showToast("Please enter a name");
         } else if (mobile.isEmpty()) {
             showToast("Please enter a mobile number");
-        } else if (mobile.length() != 10) {
-            showToast("Mobile number must be 10 digits");
+        } else if (mobile.length() < 9) {
+            showToast("Mobile number must be 9 or 10 or 11 digits");
+        } else if (mobile.length() > 11) {
+            showToast("Mobile number must be 9 or 10 or 11 digits");
         } else if (email.isEmpty()) {
             showToast("Please enter an email id");
         } else {

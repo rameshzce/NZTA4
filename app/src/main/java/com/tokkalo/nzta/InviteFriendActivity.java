@@ -98,8 +98,10 @@ public class InviteFriendActivity extends AppCompatActivity {
 
         if (toMobile.isEmpty()) {
             showToast("Please enter a mobile number or email");
-        } else if (toMobile.length() != 10) {
-            showToast("Mobile number must be 10 digits");
+        } else if (toMobile.length() < 9) {
+            showToast("Mobile number must be 9 or 10 or 11 digits");
+        } else if (toMobile.length() > 11) {
+            showToast("Mobile number must be 9 or 10 or 11 digits");
         } else if (toMsg.isEmpty()) {
             showToast("Please enter a message");
         } else {

@@ -87,7 +87,7 @@
         android:layout_marginTop="15sp"
         android:layout_marginBottom="20sp"
         android:visibility="gone"
-        android:text="Do you want to invite another friend?"
+        android:text="Would you like to invite another friend?"
         android:textColor="@color/white"
         android:textSize="20sp" />
 
