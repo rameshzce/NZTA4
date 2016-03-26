@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,8 +39,10 @@ import java.util.List;
 
 public class InviteFriendActivity extends AppCompatActivity {
     private EditText editTextMobile;
+    private EditText editTextMsg;
     private String fromMobile;
     private String toMobile;
+    private String toMsg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +51,7 @@ public class InviteFriendActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        editTextMobile = (EditText) findViewById(R.id.editTextMobile);
+
 
         SharedPreferences prefs = getSharedPreferences("com.tokkalo.nzta", Context.MODE_PRIVATE);
 
@@ -55,22 +59,34 @@ public class InviteFriendActivity extends AppCompatActivity {
 
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/handlee-regular.ttf");
 
+        Button btn1 = (Button) findViewById(R.id.button);
+        btn1.setTypeface(font);
+
         TextView txt1 = (TextView) findViewById(R.id.textView1);
         txt1.setTypeface(font);
 
         TextView txt2 = (TextView) findViewById(R.id.textViewResult);
         txt2.setTypeface(font);
 
+        editTextMobile = (EditText) findViewById(R.id.editTextMobile);
         editTextMobile.setTypeface(font);
+        editTextMobile.setHintTextColor(Color.parseColor("#ffffff"));
+
+        editTextMsg = (EditText) findViewById(R.id.editTextMsg);
+        editTextMsg.setTypeface(font);
+        editTextMsg.setHintTextColor(Color.parseColor("#ffffff"));
     }
 
     public void submit(View view) {
         toMobile = editTextMobile.getText().toString();
+        toMsg = editTextMsg.getText().toString();
 
         if (toMobile.isEmpty()) {
-            showToast("Please enter a mobile number");
+            showToast("Please enter a mobile number or email");
         } else if (toMobile.length() != 10) {
             showToast("Mobile number must be 10 digits");
+        } else if (toMsg.isEmpty()) {
+            showToast("Please enter a message");
         } else {
             insertToDatabase(fromMobile, toMobile);
         }
