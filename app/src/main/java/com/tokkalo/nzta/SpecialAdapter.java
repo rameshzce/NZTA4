@@ -5,14 +5,17 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.HashMap;
 import java.util.List;
@@ -20,10 +23,11 @@ import java.util.List;
 /**
  * Created by rameshkolamala on 13/03/16.
  */
-public class SpecialAdapter extends SimpleAdapter {
+public final class SpecialAdapter extends SimpleAdapter {
     private int[] colors = new int[]{0x30FF0000, 0x300000FF};
     private int[] padding = new int[]{0, 20};
     String fromActivity;
+    Context cntxt;
 
     private int[] listItemBackground = new int[]{R.drawable.list_background1, R.drawable.list_background2};
     private int[] galleryBackground = new int[]{R.drawable.gallery_bg4, R.drawable.gallery_bg4};
@@ -32,6 +36,7 @@ public class SpecialAdapter extends SimpleAdapter {
     public SpecialAdapter(Context context, List<HashMap<String, String>> items, int resource, String[] from, int[] to, String activity) {
         super(context, items, resource, from, to);
         fromActivity = activity;
+        cntxt = context;
     }
 
     @Override
@@ -50,11 +55,11 @@ public class SpecialAdapter extends SimpleAdapter {
         ll.setLayoutParams(lpimgHeader);
 
 
-        TextView tv = (TextView) view.findViewById(R.id.id);
+        final TextView tv = (TextView) view.findViewById(R.id.id);
         Typeface font = Typeface.createFromAsset(tv.getContext().getAssets(), "fonts/handlee-regular.ttf");
         tv.setTypeface(font);
 
-        TextView tv2 = (TextView) view.findViewById(R.id.address);
+        final TextView tv2 = (TextView) view.findViewById(R.id.address);
 
         tv2.setTypeface(font);
 
@@ -98,6 +103,25 @@ public class SpecialAdapter extends SimpleAdapter {
             //lpimgHeader.setMargins(0, 0, 40, 0);
             //ll.setLayoutParams(lpimgHeader);
         }
+
+
+        tv3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                Toast.makeText(cntxt, "photo gallery clicked: " + tv.getText().toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        tv4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                Toast.makeText(cntxt, "video gallery clicked: " + tv.getText().toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
         //view.setLayoutParams(params);
