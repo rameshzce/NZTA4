@@ -33,7 +33,7 @@
         android:background="#0372b9"
         android:padding="10dp"
         android:imeOptions="actionNext"
-        android:hint="Mob / Email"
+        android:hint="Mobile"
         android:inputType="number"
         android:textColor="@color/white" />
 
@@ -66,7 +66,7 @@
         android:text="Invite"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textSize="22sp" />
 
 
     <TextView
@@ -78,6 +78,60 @@
         android:textColor="@color/white"
         android:textSize="16sp" />
 
+    <TextView
+        android:id="@+id/textViewResult2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15sp"
+        android:visibility="invisible"
+        android:text="Do you want to invite another friend?"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/referFriend"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/bg_button_rounded2"
+            android:onClick="inviteFriend"
+            android:text="Yes"
+            android:visibility="invisible"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:layout_marginRight="20sp"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="20sp"
+            android:background="@drawable/bg_button_rounded2"
+            android:onClick="goToHome"
+            android:text="No"
+            android:textSize="22sp"
+            android:visibility="invisible"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
     <!-- <Button
         android:id="@+id/sendMessage"
         android:layout_width="wrap_content"

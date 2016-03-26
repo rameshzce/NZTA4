@@ -40,6 +40,12 @@ import java.util.List;
 public class InviteFriendActivity extends AppCompatActivity {
     private EditText editTextMobile;
     private EditText editTextMsg;
+    private TextView txt1;
+    private TextView txt2;
+    private TextView txt3;
+    private Button btn1;
+    private Button btn2;
+    private Button btn3;
     private String fromMobile;
     private String toMobile;
     private String toMsg;
@@ -59,14 +65,23 @@ public class InviteFriendActivity extends AppCompatActivity {
 
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/handlee-regular.ttf");
 
-        Button btn1 = (Button) findViewById(R.id.button);
+        btn1 = (Button) findViewById(R.id.button);
         btn1.setTypeface(font);
 
-        TextView txt1 = (TextView) findViewById(R.id.textView1);
+        Button btn2 = (Button) findViewById(R.id.yes);
+        btn2.setTypeface(font);
+
+        Button btn3 = (Button) findViewById(R.id.no);
+        btn3.setTypeface(font);
+
+        txt1 = (TextView) findViewById(R.id.textView1);
         txt1.setTypeface(font);
 
-        TextView txt2 = (TextView) findViewById(R.id.textViewResult);
+        txt2 = (TextView) findViewById(R.id.textViewResult);
         txt2.setTypeface(font);
+
+        txt3 = (TextView) findViewById(R.id.textViewResult2);
+        txt3.setTypeface(font);
 
         editTextMobile = (EditText) findViewById(R.id.editTextMobile);
         editTextMobile.setTypeface(font);
@@ -170,8 +185,24 @@ public class InviteFriendActivity extends AppCompatActivity {
 
                         //Toast.makeText(ReferFriendActivity.this, message, Toast.LENGTH_SHORT).show();
 
+                        editTextMobile.setVisibility(View.GONE);
+
+                        editTextMsg.setVisibility(View.GONE);
+
                         TextView textViewResult = (TextView) findViewById(R.id.textViewResult);
                         textViewResult.setText(message);
+
+                        btn1.setVisibility(View.GONE);
+
+                        txt3.setVisibility(View.VISIBLE);
+
+                        btn2 = (Button) findViewById(R.id.yes);
+                        btn2.setVisibility(View.VISIBLE);
+
+                        btn3 = (Button) findViewById(R.id.no);
+                        btn3.setVisibility(View.VISIBLE);
+
+
                     } catch (JSONException e) {
                         e.printStackTrace();
                         Toast.makeText(InviteFriendActivity.this, "Error parsing JSON data.", Toast.LENGTH_SHORT).show();
@@ -192,6 +223,18 @@ public class InviteFriendActivity extends AppCompatActivity {
     }
 
     public void onBackPressed() {
+        Intent intent = new Intent(InviteFriendActivity.this, MemberActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        InviteFriendActivity.this.startActivity(intent);
+    }
+
+    public void inviteFriend(View view) {
+        Intent intent = new Intent(InviteFriendActivity.this, InviteFriendActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        InviteFriendActivity.this.startActivity(intent);
+    }
+
+    public void goToHome(View view) {
         Intent intent = new Intent(InviteFriendActivity.this, MemberActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         InviteFriendActivity.this.startActivity(intent);
