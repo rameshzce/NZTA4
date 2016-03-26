@@ -109,7 +109,6 @@ public final class SpecialAdapter extends SimpleAdapter {
         tv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(cntxt.getApplicationContext(), GalleryActivity.class);
                 intent.putExtra("galleryType", tv.getText().toString());
                 intent.putExtra("year", "2016");
@@ -123,7 +122,6 @@ public final class SpecialAdapter extends SimpleAdapter {
             @Override
             public void onClick(View view) {
                 //Toast.makeText(cntxt, "video gallery clicked: " + tv.getText().toString(), Toast.LENGTH_SHORT).show();
-
                 Intent intent = new Intent(cntxt.getApplicationContext(), VideoGalleryActivity.class);
                 intent.putExtra("galleryType", tv.getText().toString());
                 intent.putExtra("year", "2016");
