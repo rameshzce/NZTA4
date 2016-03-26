@@ -1,6 +1,7 @@
 package com.tokkalo.nzta;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.text.SpannableString;
@@ -109,17 +110,25 @@ public final class SpecialAdapter extends SimpleAdapter {
             @Override
             public void onClick(View view) {
 
-
-                Toast.makeText(cntxt, "photo gallery clicked: " + tv.getText().toString(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(cntxt.getApplicationContext(), GalleryActivity.class);
+                intent.putExtra("galleryType", tv.getText().toString());
+                intent.putExtra("year", "2016");
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                cntxt.getApplicationContext().startActivity(intent);
+                //Toast.makeText(cntxt, "photo gallery clicked: " + tv.getText().toString(), Toast.LENGTH_SHORT).show();
             }
         });
 
         tv4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Toast.makeText(cntxt, "video gallery clicked: " + tv.getText().toString(), Toast.LENGTH_SHORT).show();
 
-
-                Toast.makeText(cntxt, "video gallery clicked: " + tv.getText().toString(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(cntxt.getApplicationContext(), VideoGalleryActivity.class);
+                intent.putExtra("galleryType", tv.getText().toString());
+                intent.putExtra("year", "2016");
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                cntxt.getApplicationContext().startActivity(intent);
             }
         });
 
