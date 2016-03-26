@@ -74,11 +74,11 @@ public class SpecialAdapter2 extends SimpleAdapter {
 
         TableRow tr3 = (TableRow) view.findViewById(R.id.tableRow3);
 
-        SpannableString content = new SpannableString(tvs3);
-        content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
+        //SpannableString content = new SpannableString(tvs3);
+        //content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
 
-        SpannableString content2 = new SpannableString(tvs4);
-        content2.setSpan(new UnderlineSpan(), 0, content2.length(), 0);
+        //SpannableString content2 = new SpannableString(tvs4);
+        //content2.setSpan(new UnderlineSpan(), 0, content2.length(), 0);
 
 
         int colorPos = position % listItemBackground.length;
@@ -92,8 +92,8 @@ public class SpecialAdapter2 extends SimpleAdapter {
         ImageView im2 = (ImageView) view.findViewById(R.id.imageVideo);
 
         if (colorPos == 0) {
-            tv3.setText(content);
-            tv4.setText(content2);
+            //tv3.setText(content);
+            //tv4.setText(content2);
 
             //im1.setVisibility(View.GONE);
             //im2.setVisibility(View.GONE);

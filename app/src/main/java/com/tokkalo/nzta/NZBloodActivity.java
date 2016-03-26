@@ -85,6 +85,7 @@ public class NZBloodActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(NZBloodActivity.this, GoGreenActivity.class);
+                intent.putExtra("year", "");
                 NZBloodActivity.this.startActivity(intent);
             }
         });
