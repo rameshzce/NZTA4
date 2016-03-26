@@ -191,6 +191,7 @@ public class InviteFriendActivity extends AppCompatActivity {
 
                         TextView textViewResult = (TextView) findViewById(R.id.textViewResult);
                         textViewResult.setText(message);
+                        textViewResult.setVisibility(View.VISIBLE);
 
                         btn1.setVisibility(View.GONE);
 

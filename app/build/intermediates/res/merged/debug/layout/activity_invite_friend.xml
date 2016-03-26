@@ -75,6 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15sp"
+        android:visibility="gone"
         android:textColor="@color/white"
         android:textSize="20sp" />
 
@@ -85,7 +86,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15sp"
         android:layout_marginBottom="20sp"
-        android:visibility="invisible"
+        android:visibility="gone"
         android:text="Do you want to invite another friend?"
         android:textColor="@color/white"
         android:textSize="20sp" />
@@ -99,8 +100,7 @@
 
         <TableRow
             android:id="@+id/tableRow1"
-            android:layout_width="fill_parent"
-           >
+            android:layout_width="fill_parent">
 
             <Button
                 android:id="@+id/yes"
@@ -111,7 +111,7 @@
                 android:background="@drawable/bg_button_rounded2"
                 android:onClick="inviteFriend"
                 android:text="Yes"
-                android:visibility="invisible"
+                android:visibility="gone"
                 android:textAllCaps="false"
                 android:textSize="22sp"
                 android:textColor="@color/white" />
