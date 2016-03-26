@@ -105,7 +105,7 @@ public class ShowEventsActivity extends AppCompatActivity {
 
         ab.setCustomView(tv);
 
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
@@ -115,14 +115,14 @@ public class ShowEventsActivity extends AppCompatActivity {
                 ShowEventsActivity.this.startActivity(intent);
 
             }
-        });
+        });*/
 
         //getSearchResults();
 
-        showList();
+        showList(year);
     }
 
-    protected void showList() {
+    protected void showList(String year) {
         try {
             //JSONObject jsonObj = new JSONObject(myJSON);
             JSONObject jsonObj1 = new JSONObject(jsonData);
@@ -147,7 +147,7 @@ public class ShowEventsActivity extends AppCompatActivity {
             SpecialAdapter2 adapter = new SpecialAdapter2(
                     ShowEventsActivity.this, personList, R.layout.list_item2,
                     new String[]{TAG_ID, TAG_ADD},
-                    new int[]{R.id.id, R.id.address}
+                    new int[]{R.id.id, R.id.address}, year
             );
 
             list.setAdapter(adapter);
@@ -239,7 +239,7 @@ public class ShowEventsActivity extends AppCompatActivity {
                             String doners = jsonObj.getString("doners");
 
                             myJSON = doners;
-                            showList();
+                            //showList();
 
                         } else if (status.equals("FAILURE")) {
                             textView = (TextView) findViewById(R.id.textView);
