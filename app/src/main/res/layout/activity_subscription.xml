@@ -71,6 +71,7 @@
             android:layout_height="wrap_content"
             android:text="$35 family yearly"
             android:textColor="@color/white"
+            android:buttonTint="@color/white"
             android:textSize="20sp"
             android:onClick="onRadioButtonClicked" />
 
@@ -80,6 +81,7 @@
             android:layout_height="wrap_content"
             android:text="$10 student yearly"
             android:textColor="@color/white"
+            android:buttonTint="@color/white"
             android:textSize="20sp"
             android:onClick="onRadioButtonClicked" />
 
@@ -89,6 +91,7 @@
             android:layout_height="wrap_content"
             android:text="$250 - lifetime"
             android:textColor="@color/white"
+            android:buttonTint="@color/white"
             android:textSize="20sp"
             android:onClick="onRadioButtonClicked" />
     </RadioGroup>
