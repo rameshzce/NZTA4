@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/referFriend"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.tokkalo.nzta.InviteFriendActivity">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4sp"
+        android:text="Subscription"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="4sp"
+        android:maxLines="3"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Your small donations\ncan make nzta events big\nand its our family fun" />
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="#0372b9"
+        android:padding="10dp"
+        android:imeOptions="actionNext"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/editTextMobile"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:background="#0372b9"
+        android:padding="10dp"
+        android:imeOptions="actionDone"
+        android:hint="Mobile"
+        android:inputType="number"
+        android:textColor="@color/white" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="15sp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/familyYrarly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$35 family yearly"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/studentYearly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$10 student yearly"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/lifetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$250 - lifetime"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/bg_button_rounded2"
+        android:onClick="subscribe"
+        android:text="Subscribe"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15sp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewResult2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="20sp"
+        android:visibility="gone"
+        android:text="Would you like to invite another friend?"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridView1"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent">
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/bg_button_rounded2"
+                android:onClick="inviteFriend"
+                android:text="Yes"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/bg_button_rounded2"
+                android:onClick="goToHome"
+                android:text="No"
+                android:textSize="22sp"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </TableRow>
+    </TableLayout>
+
+
+    <!--
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/referFriend"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/bg_button_rounded2"
+            android:onClick="inviteFriend"
+            android:text="Yes"
+            android:visibility="invisible"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:layout_marginRight="20sp"
+            android:textColor="@color/white" />
+
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="20sp"
+            android:background="@drawable/bg_button_rounded2"
+            android:onClick="goToHome"
+            android:text="No"
+            android:textSize="22sp"
+            android:visibility="invisible"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>-->
+    <!-- <Button
+        android:id="@+id/sendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/bg_button_rounded"
+        android:onClick="sendMessage"
+        android:text="Send Message"
+        android:textColor="@color/white" /> -->
+
+</LinearLayout>

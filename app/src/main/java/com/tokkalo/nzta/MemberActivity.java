@@ -59,7 +59,8 @@ public class MemberActivity extends AppCompatActivity {
     }
 
     public void rowClick3(View view) {
-        Intent i = new Intent(applicationContext, GoGreenActivity.class);
+        //Intent i = new Intent(applicationContext, GoGreenActivity.class);
+        Intent i = new Intent(applicationContext, SubscriptionActivity.class);
         startActivity(i);
         finish();
     }

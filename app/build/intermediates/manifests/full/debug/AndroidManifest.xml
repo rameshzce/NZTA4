@@ -103,6 +103,7 @@
             android:screenOrientation="portrait" />
         <activity android:name="com.tokkalo.nzta.GoGreenActivity" />
         <activity android:name="com.tokkalo.nzta.NZBloodActivity" />
+        <activity android:name="com.tokkalo.nzta.SubscriptionActivity" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
