@@ -26,7 +26,7 @@ import java.util.List;
  */
 public final class SpecialAdapter extends SimpleAdapter {
     private int[] colors = new int[]{0x30FF0000, 0x300000FF};
-    private int[] padding = new int[]{0, 20};
+    private int[] padding = new int[]{20, 20};
     String fromActivity;
     Context cntxt;
 
@@ -52,7 +52,7 @@ public final class SpecialAdapter extends SimpleAdapter {
         LinearLayout ll = (LinearLayout) view.findViewById(R.id.layout1);
 
         RelativeLayout.LayoutParams lpimgHeader = new RelativeLayout.LayoutParams(ll.getLayoutParams());
-        lpimgHeader.setMargins(20, 0, 20, 0);
+        lpimgHeader.setMargins(40, 0, 40, 0);
         ll.setLayoutParams(lpimgHeader);
 
 
@@ -88,8 +88,8 @@ public final class SpecialAdapter extends SimpleAdapter {
         ll.setBackgroundResource(listItemBackground[colorPos]);
         tr2.setBackgroundResource(galleryBackground[colorPos]);
         tr3.setBackgroundResource(videoBackground[colorPos]);
-        tv.setPadding(padding[colorPos], 0, 0, 0);
-        tv2.setPadding(padding[colorPos], 0, 0, 0);
+        tv.setPadding(padding[colorPos], 0, 20, 0);
+        tv2.setPadding(padding[colorPos], 0, 20, 0);
 
         ImageView im1 = (ImageView) view.findViewById(R.id.imageGallery);
         ImageView im2 = (ImageView) view.findViewById(R.id.imageVideo);

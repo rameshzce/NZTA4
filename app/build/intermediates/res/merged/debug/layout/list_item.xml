@@ -19,6 +19,7 @@
             android:layout_marginLeft="10dp"
             android:textColor="@color/white"
             android:textSize="20dip"
+            android:layout_marginBottom="5dp"
             android:textStyle="bold" />
 
         <TextView
@@ -28,9 +29,9 @@
             android:layout_below="@id/id"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="1dip"
-            android:layout_marginBottom="4dp"
-            android:textColor="@color/white"
-            android:textSize="15dip" />
+            android:layout_marginBottom="10dp"
+            android:textColor="#fdcce4"
+            android:textSize="16dip" />
 
         <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/tableLayout1"
@@ -42,7 +43,7 @@
             <TableRow
                 android:id="@+id/tableRow1"
                 android:layout_width="fill_parent"
-                android:minHeight="30dp">
+                android:minHeight="40dp">
 
                 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:id="@+id/tableLayout2"
@@ -55,7 +56,7 @@
                         android:id="@+id/tableRow2"
                         android:layout_width="fill_parent"
                         android:layout_marginRight="1dip"
-                        android:minHeight="30dp">
+                        android:minHeight="40dp">
 
                         <ImageView
                             android:id="@+id/imageGallery"
@@ -71,8 +72,8 @@
                             android:layout_height="fill_parent"
                             android:gravity="center_vertical"
                             android:text="@string/photoGallery"
-                            android:textColor="@color/white"
-                            android:textSize="15dip" />
+                            android:textColor="#fdaed5"
+                            android:textSize="16dip" />
                     </TableRow>
                 </TableLayout>
 
@@ -87,7 +88,7 @@
                         android:id="@+id/tableRow3"
                         android:layout_width="fill_parent"
                         android:layout_marginLeft="1dip"
-                        android:minHeight="30dp">
+                        android:minHeight="40dp">
 
                         <ImageView
                             android:id="@+id/imageVideo"
@@ -103,8 +104,8 @@
                             android:layout_height="fill_parent"
                             android:gravity="center_vertical"
                             android:text="@string/videoGallery"
-                            android:textColor="@color/white"
-                            android:textSize="15dip" />
+                            android:textColor="#fdaed5"
+                            android:textSize="16dip" />
 
 
                     </TableRow>
