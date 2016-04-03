@@ -94,7 +94,7 @@ public class GoGreenActivity extends AppCompatActivity {
             }
         });
 
-        gg.setBackgroundColor(Color.parseColor("#009668"));
+        gg.setBackgroundColor(Color.parseColor("#2c6931"));
         nb.setBackgroundColor(Color.parseColor("#ff0000"));
 
         showList();

@@ -140,6 +140,9 @@ public final class SpecialAdapter extends SimpleAdapter {
             ll.setBackgroundResource(R.drawable.list_background5);
             tr2.setBackgroundResource(R.drawable.gallery_bg6);
             tr3.setBackgroundResource(R.drawable.gallery_bg7);
+            tv2.setTextColor(Color.parseColor("#9cffa5"));
+            tv3.setTextColor(Color.parseColor("#9cffa5"));
+            tv4.setTextColor(Color.parseColor("#9cffa5"));
         }
 
         if (fromActivity.equalsIgnoreCase("NZBlood")) {
