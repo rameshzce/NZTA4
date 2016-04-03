@@ -37,7 +37,7 @@ public class ExistingEventsActivity extends AppCompatActivity {
 
         Button btn1 = (Button) findViewById(R.id.button);
         btn1.setTypeface(font);
-        btn1.setBackgroundColor(Color.parseColor("#b59206"));
+        btn1.setBackgroundColor(Color.parseColor("#b56c00"));
 
         TextView txt1 = (TextView) findViewById(R.id.textView1);
         txt1.setTypeface(font);

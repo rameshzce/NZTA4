@@ -82,7 +82,7 @@ public class ShowEventsActivity extends AppCompatActivity {
 
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/handlee-regular.ttf");
 
-        ab.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#b59206")));
+        ab.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#b56c00")));
 
         TextView tv = new TextView(getApplicationContext());
 
