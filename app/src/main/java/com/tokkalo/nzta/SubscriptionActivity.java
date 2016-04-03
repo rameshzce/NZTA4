@@ -31,6 +31,7 @@ public class SubscriptionActivity extends AppCompatActivity {
     RadioButton radioButton;
     RadioButton radioButton2;
     RadioButton radioButton3;
+    RadioGroup radioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,8 +76,15 @@ public class SubscriptionActivity extends AppCompatActivity {
         editTextName.setTypeface(font);
         editTextName.setHintTextColor(Color.parseColor("#ffffff"));
 
+
         radioButton = (RadioButton) findViewById(R.id.familyYrarly);
         radioButton.setTypeface(font);
+
+        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        ;
+
+        //radioGroup.setLeft(editTextName.getLeft());
+        radioGroup.setLeft(50);
 
         radioButton2 = (RadioButton) findViewById(R.id.studentYearly);
         radioButton2.setTypeface(font);
