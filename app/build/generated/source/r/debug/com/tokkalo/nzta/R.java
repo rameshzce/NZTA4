@@ -19,10 +19,22 @@ public final class R {
         public static final int abc_slide_in_top=0x7f050007;
         public static final int abc_slide_out_bottom=0x7f050008;
         public static final int abc_slide_out_top=0x7f050009;
-        public static final int design_fab_in=0x7f05000a;
-        public static final int design_fab_out=0x7f05000b;
-        public static final int design_snackbar_in=0x7f05000c;
-        public static final int design_snackbar_out=0x7f05000d;
+        public static final int cycle=0x7f05000a;
+        public static final int design_fab_in=0x7f05000b;
+        public static final int design_fab_out=0x7f05000c;
+        public static final int design_snackbar_in=0x7f05000d;
+        public static final int design_snackbar_out=0x7f05000e;
+        public static final int fade_in=0x7f05000f;
+        public static final int hyperspace_in=0x7f050010;
+        public static final int hyperspace_out=0x7f050011;
+        public static final int push_left_in=0x7f050012;
+        public static final int push_left_out=0x7f050013;
+        public static final int push_up_in=0x7f050014;
+        public static final int push_up_out=0x7f050015;
+        public static final int shake=0x7f050016;
+        public static final int slide_in_top=0x7f050017;
+        public static final int slide_top_to_bottom=0x7f050018;
+        public static final int wave_scale=0x7f050019;
     }
     public static final class array {
         public static final int Names=0x7f0c0000;

@@ -32,7 +32,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="1dip"
             android:layout_marginBottom="10dp"
-            android:textColor="@color/white"
+            android:textColor="#ffffc2"
             android:textSize="16dip" />
 
         <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"

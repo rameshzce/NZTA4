@@ -9,6 +9,8 @@ import android.text.style.UnderlineSpan;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -133,6 +135,9 @@ public final class SpecialAdapter extends SimpleAdapter {
             }
         });
 
+        Animation animation = null;
+
+        animation = AnimationUtils.loadAnimation(cntxt, R.anim.push_left_in);
 
         //view.setLayoutParams(params);
         //view.setRight(100);
@@ -141,6 +146,8 @@ public final class SpecialAdapter extends SimpleAdapter {
             tr2.setBackgroundResource(R.drawable.gallery_bg6);
             tr3.setBackgroundResource(R.drawable.gallery_bg7);
             tv2.setTextColor(Color.parseColor("#9cffa5"));
+
+            animation = AnimationUtils.loadAnimation(cntxt, R.anim.shake);
         }
 
         if (fromActivity.equalsIgnoreCase("NZBlood")) {
@@ -148,7 +155,12 @@ public final class SpecialAdapter extends SimpleAdapter {
             tr2.setBackgroundResource(R.drawable.gallery_bg8);
             tr3.setBackgroundResource(R.drawable.gallery_bg9);
             tv2.setTextColor(Color.parseColor("#ffc8c8"));
+
+            animation = AnimationUtils.loadAnimation(cntxt, R.anim.hyperspace_in);
         }
+
+        view.startAnimation(animation);
+        animation = null;
 
         return view;
     }

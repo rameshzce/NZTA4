@@ -8,6 +8,8 @@ import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -126,6 +128,12 @@ public class SpecialAdapter2 extends SimpleAdapter {
             }
         });
 
+        Animation animation = null;
+
+        animation = AnimationUtils.loadAnimation(cntxt, R.anim.shake);
+
+        view.startAnimation(animation);
+        animation = null;
 
         //view.setLayoutParams(params);
         //view.setRight(100);

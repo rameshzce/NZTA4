@@ -74,7 +74,7 @@
                             android:layout_height="fill_parent"
                             android:gravity="center_vertical"
                             android:text="@string/photoGallery"
-                            android:textColor="#fdaed5"
+                            android:textColor="@color/white"
                             android:textSize="16dip" />
                     </TableRow>
                 </TableLayout>
@@ -106,7 +106,7 @@
                             android:layout_height="fill_parent"
                             android:gravity="center_vertical"
                             android:text="@string/videoGallery"
-                            android:textColor="#fdaed5"
+                            android:textColor="@color/white"
                             android:textSize="16dip" />
 
 
