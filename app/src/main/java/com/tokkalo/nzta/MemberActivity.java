@@ -44,6 +44,11 @@ public class MemberActivity extends AppCompatActivity {
         txt4.setTypeface(font);
 
 
+        TextView txt5 = (TextView) findViewById(R.id.textView5);
+        txt5.setTypeface(font);
+
+
+
     }
 
     public void rowClick1(View view) {
@@ -66,6 +71,12 @@ public class MemberActivity extends AppCompatActivity {
     }
 
     public void rowClick4(View view) {
+        Intent i = new Intent(applicationContext, InviteFriendActivity.class);
+        startActivity(i);
+        finish();
+    }
+
+    public void rowClick5(View view) {
         Intent i = new Intent(applicationContext, InviteFriendActivity.class);
         startActivity(i);
         finish();

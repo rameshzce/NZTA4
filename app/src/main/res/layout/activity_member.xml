@@ -158,6 +158,7 @@
     <TableRow
         android:id="@+id/tableRow4"
         android:layout_weight="1"
+        android:layout_marginBottom="1dip"
         android:background="@color/referFriend"
         android:gravity="center_vertical"
         android:onClick="rowClick4">
@@ -191,6 +192,41 @@
 
     </TableRow>
 
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_weight="1"
+        android:background="@color/helpTimes"
+        android:gravity="center_vertical"
+        android:onClick="rowClick5">
+
+
+        <TableLayout>
+
+
+            <TableRow
+                android:gravity="right"
+                android:layout_width="fill_parent">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:paddingLeft="60dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/invite_friend"></ImageView>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:text="Help times!"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="right"
+                    android:paddingRight="60dp"
+                    android:textStyle="bold"></TextView>
+            </TableRow>
+
+
+        </TableLayout>
+
+    </TableRow>
 
 </TableLayout>
 
