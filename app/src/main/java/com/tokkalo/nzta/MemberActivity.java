@@ -43,9 +43,14 @@ public class MemberActivity extends AppCompatActivity {
         TextView txt4 = (TextView) findViewById(R.id.textView4);
         txt4.setTypeface(font);
 
+        TextView txt4a = (TextView) findViewById(R.id.textView4a);
+        txt4a.setTypeface(font);
+
 
         TextView txt5 = (TextView) findViewById(R.id.textView5);
         txt5.setTypeface(font);
+        TextView txt5a = (TextView) findViewById(R.id.textView5a);
+        txt5a.setTypeface(font);
 
 
 

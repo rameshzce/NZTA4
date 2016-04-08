@@ -130,7 +130,7 @@ public class SpecialAdapter2 extends SimpleAdapter {
 
         Animation animation = null;
 
-        animation = AnimationUtils.loadAnimation(cntxt, R.anim.rotate);
+        animation = AnimationUtils.loadAnimation(cntxt, R.anim.slide_down);
 
         view.startAnimation(animation);
         animation = null;

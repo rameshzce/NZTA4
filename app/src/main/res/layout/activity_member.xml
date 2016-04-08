@@ -187,7 +187,20 @@
                     android:textStyle="bold"></TextView>
             </TableRow>
 
+            <TableRow
+                android:gravity="right"
+                android:layout_width="fill_parent">
 
+                <TextView
+                    android:id="@+id/textView4a"
+                    android:text="Family"
+                    android:layout_span="2"
+                    android:layout_gravity="right"
+                    android:textSize="30dp"
+                    android:textColor="@color/white"
+                    android:paddingRight="60dp"
+                    android:textStyle="bold"></TextView>
+            </TableRow>
         </TableLayout>
 
     </TableRow>
@@ -215,7 +228,7 @@
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:text="Help times!"
+                    android:text="Helping"
                     android:textSize="20dp"
                     android:textColor="@color/white"
                     android:layout_gravity="right"
@@ -223,7 +236,20 @@
                     android:textStyle="bold"></TextView>
             </TableRow>
 
+            <TableRow
+                android:gravity="right"
+                android:layout_width="fill_parent">
 
+                <TextView
+                    android:id="@+id/textView5a"
+                    android:text="Hands!"
+                    android:layout_span="2"
+                    android:layout_gravity="right"
+                    android:textSize="30dp"
+                    android:textColor="@color/white"
+                    android:paddingRight="60dp"
+                    android:textStyle="bold"></TextView>
+            </TableRow>
         </TableLayout>
 
     </TableRow>

@@ -147,7 +147,6 @@ public final class SpecialAdapter extends SimpleAdapter {
             tr3.setBackgroundResource(R.drawable.gallery_bg7);
             tv2.setTextColor(Color.parseColor("#9cffa5"));
 
-            animation = AnimationUtils.loadAnimation(cntxt, R.anim.shake);
         }
 
         if (fromActivity.equalsIgnoreCase("NZBlood")) {
@@ -156,7 +155,6 @@ public final class SpecialAdapter extends SimpleAdapter {
             tr3.setBackgroundResource(R.drawable.gallery_bg9);
             tv2.setTextColor(Color.parseColor("#ffc8c8"));
 
-            animation = AnimationUtils.loadAnimation(cntxt, R.anim.hyperspace_in);
         }
 
         view.startAnimation(animation);

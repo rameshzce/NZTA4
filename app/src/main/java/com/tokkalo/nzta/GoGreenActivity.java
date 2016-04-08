@@ -34,6 +34,7 @@ public class GoGreenActivity extends AppCompatActivity {
     SharedPreferences prefs;
 
     String jsonData = "{\"status\":\"SUCCESS\",\"message\":\"9 doner(s) found for your search.\",\"remarks\":\"\",\"doners\":{\"result\":[{\"id\":\"Plantation @ Western springs 2016\",\"name\":1,\"address\":\"Everything you need for better living. NZTA planting for go green. \"}, {\"id\":\"Plantation @ Western springs 2015\",\"name\":1,\"address\":\"Everything you need for better living. NZTA planting for go green. \"}]}}";
+
     JSONArray peoples = null;
 
     ArrayList<HashMap<String, String>> personList;
