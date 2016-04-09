@@ -60,7 +60,9 @@
         <activity android:name=".MembershipActivity" />
         <activity android:name=".ReferFriendActivity" />
         <activity android:name=".NewZealandActivity" />
-        <activity android:name=".InviteFriendActivity" />
+        <activity
+            android:name=".InviteFriendActivity"
+            android:windowSoftInputMode="adjustNothing" />
         <activity
             android:name=".ExistingEventsActivity"
             android:theme="@style/AppTheme2" />
