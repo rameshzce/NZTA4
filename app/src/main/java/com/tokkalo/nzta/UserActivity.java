@@ -95,13 +95,6 @@ public class UserActivity extends AppCompatActivity {
                 Intent membershipIntent = new Intent(UserActivity.this, MembershipActivity.class);
                 UserActivity.this.startActivity(membershipIntent);
                 return true;
-            case R.id.item3:
-                Intent referfriendIntent = new Intent(UserActivity.this, ReferFriendActivity.class);
-                UserActivity.this.startActivity(referfriendIntent);
-                return true;
-            case R.id.item5:
-                //alertMessage();
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
