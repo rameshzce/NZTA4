@@ -118,6 +118,7 @@
     <color name="goGreen">#10d295</color>
     <color name="gray">#808080</color>
     <color name="green">#008000</color>
+    <color name="helpTimes">#b21b0f</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>

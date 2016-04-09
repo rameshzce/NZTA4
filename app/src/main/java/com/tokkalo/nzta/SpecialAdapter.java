@@ -137,7 +137,7 @@ public final class SpecialAdapter extends SimpleAdapter {
 
         Animation animation = null;
 
-        animation = AnimationUtils.loadAnimation(cntxt, R.anim.slide_down);
+        animation = AnimationUtils.loadAnimation(cntxt, R.anim.slide_down2);
 
         //view.setLayoutParams(params);
         //view.setRight(100);

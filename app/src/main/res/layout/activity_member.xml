@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/tableLayout1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+        android:layout_height="wrap_content"
     android:background="#ffffff"
     android:stretchColumns="1">
 
 
     <TableRow
         android:id="@+id/tableRow1"
-        android:layout_weight="1"
+        android:layout_height="200dp"
         android:layout_marginBottom="1dip"
         android:onClick="rowClick1"
         android:gravity="center_vertical"
@@ -60,7 +67,6 @@
 
     <TableRow
         android:id="@+id/tableRow2"
-        android:layout_weight="1"
         android:layout_marginBottom="1dip"
         android:background="@color/existingEvents"
         android:gravity="center_vertical"
@@ -109,7 +115,6 @@
 
     <TableRow
         android:id="@+id/tableRow3"
-        android:layout_weight="1"
         android:layout_marginBottom="1dip"
         android:background="@color/goGreen"
         android:gravity="center_vertical"
@@ -157,7 +162,6 @@
 
     <TableRow
         android:id="@+id/tableRow4"
-        android:layout_weight="1"
         android:layout_marginBottom="1dip"
         android:background="@color/referFriend"
         android:gravity="center_vertical"
@@ -207,7 +211,6 @@
 
     <TableRow
         android:id="@+id/tableRow5"
-        android:layout_weight="1"
         android:background="@color/helpTimes"
         android:gravity="center_vertical"
         android:onClick="rowClick5">
@@ -256,3 +259,4 @@
 
 </TableLayout>
 
+</ScrollView>

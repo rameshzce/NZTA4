@@ -2,14 +2,18 @@ package com.tokkalo.nzta;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Point;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 public class MemberActivity extends AppCompatActivity {
     Context applicationContext;
+    int newHeight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +56,27 @@ public class MemberActivity extends AppCompatActivity {
         TextView txt5a = (TextView) findViewById(R.id.textView5a);
         txt5a.setTypeface(font);
 
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        int width = size.x;
+        int height = size.y;
+
+        TableRow tr1 = (TableRow) findViewById(R.id.tableRow1);
+        tr1.setMinimumHeight(height / 4);
+
+        TableRow tr2 = (TableRow) findViewById(R.id.tableRow2);
+        tr2.setMinimumHeight(height / 4);
+
+        TableRow tr3 = (TableRow) findViewById(R.id.tableRow3);
+        tr3.setMinimumHeight(height / 4);
+
+        TableRow tr4 = (TableRow) findViewById(R.id.tableRow4);
+        tr4.setMinimumHeight(height / 4);
+
+        TableRow tr5 = (TableRow) findViewById(R.id.tableRow5);
+        tr5.setMinimumHeight(height / 4);
+
 
 
     }
@@ -82,7 +107,7 @@ public class MemberActivity extends AppCompatActivity {
     }
 
     public void rowClick5(View view) {
-        Intent i = new Intent(applicationContext, InviteFriendActivity.class);
+        Intent i = new Intent(applicationContext, ProfileActivity.class);
         startActivity(i);
         finish();
     }
