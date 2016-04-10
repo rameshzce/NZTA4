@@ -98,7 +98,8 @@
         <activity android:name=".GoGreenActivity" />
         <activity android:name=".NZBloodActivity" />
         <activity android:name=".SubscriptionActivity" />
-        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".TestActivity" />
+        <activity android:name=".HelpingHandsActivity"></activity>
     </application>
 
 </manifest>

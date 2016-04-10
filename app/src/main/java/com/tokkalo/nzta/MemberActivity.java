@@ -110,7 +110,7 @@ public class MemberActivity extends AppCompatActivity {
     }
 
     public void rowClick5(View view) {
-        Intent i = new Intent(applicationContext, ProfileActivity.class);
+        Intent i = new Intent(applicationContext, HelpingHandsActivity.class);
         startActivity(i);
         finish();
     }
