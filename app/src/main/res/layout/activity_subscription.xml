@@ -64,21 +64,22 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/familyYrarly"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="$35 family yearly"
-            android:textColor="@color/white"
-            android:buttonTint="@color/white"
-            android:textSize="20sp"
-            android:onClick="onRadioButtonClicked" />
 
         <RadioButton
             android:id="@+id/studentYearly"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="$10 student yearly"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/familyYrarly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$35 family yearly"
             android:textColor="@color/white"
             android:buttonTint="@color/white"
             android:textSize="20sp"
