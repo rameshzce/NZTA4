@@ -65,6 +65,7 @@
         android:layout_marginTop="40sp"
         android:background="@drawable/bg_button_rounded2"
         android:text="My gallery"
+        android:onClick="myGallery"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="22sp" />

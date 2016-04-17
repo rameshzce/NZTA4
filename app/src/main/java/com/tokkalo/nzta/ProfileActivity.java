@@ -1,5 +1,7 @@
 package com.tokkalo.nzta;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;
 import android.graphics.Canvas;
@@ -28,11 +30,14 @@ public class ProfileActivity extends AppCompatActivity {
     private TextView txt1;
     private TextView txt2;
     private TextView txt3;
+    Context applicationContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+        applicationContext = getApplicationContext();
 
         getSupportActionBar().hide();
 
@@ -51,5 +56,11 @@ public class ProfileActivity extends AppCompatActivity {
         txt3.setTypeface(font);
     }
 
-
+    public void myGallery(View view) {
+        Intent i = new Intent(applicationContext, GalleryActivity.class);
+        i.putExtra("galleryType", "My Gallery");
+        i.putExtra("year", "");
+        startActivity(i);
+        finish();
+    }
 }
