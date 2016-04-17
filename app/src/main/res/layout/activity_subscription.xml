@@ -52,9 +52,21 @@
         android:layout_marginTop="10sp"
         android:background="#0372b9"
         android:padding="10dp"
-        android:imeOptions="actionDone"
+        android:imeOptions="actionNext"
         android:hint="Mobile"
         android:inputType="number"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/editTextReferredby"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:background="#0372b9"
+        android:padding="10dp"
+        android:imeOptions="actionDone"
+        android:hint="Referred by"
+        android:inputType="text"
         android:textColor="@color/white" />
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"

@@ -227,7 +227,7 @@
                     android:id="@+id/imageView5"
                     android:paddingLeft="60dp"
                     android:paddingRight="10dp"
-                    android:src="@drawable/invite_friend"></ImageView>
+                    android:src="@drawable/hands"></ImageView>
 
                 <TextView
                     android:id="@+id/textView5"

@@ -18,6 +18,7 @@ import android.widget.Toast;
 public class SubscriptionActivity extends AppCompatActivity {
     private EditText editTextMobile;
     private EditText editTextName;
+    private EditText editTextReferredby;
     private TextView txt1;
     private TextView txt2;
     private TextView txt3;
@@ -27,6 +28,7 @@ public class SubscriptionActivity extends AppCompatActivity {
     private Button btn3;
     private String fromMobile;
     private String toMobile;
+    private String referredBy;
     private String toName;
     RadioButton radioButton;
     RadioButton radioButton2;
@@ -76,6 +78,10 @@ public class SubscriptionActivity extends AppCompatActivity {
         editTextName.setTypeface(font);
         editTextName.setHintTextColor(Color.parseColor("#ffffff"));
 
+        editTextReferredby = (EditText) findViewById(R.id.editTextReferredby);
+        editTextReferredby.setTypeface(font);
+        editTextReferredby.setHintTextColor(Color.parseColor("#ffffff"));
+
 
         radioButton = (RadioButton) findViewById(R.id.familyYrarly);
         radioButton.setTypeface(font);
@@ -96,6 +102,7 @@ public class SubscriptionActivity extends AppCompatActivity {
     public void subscribe(View view) {
         toMobile = editTextMobile.getText().toString();
         toName = editTextName.getText().toString();
+        referredBy = editTextReferredby.getText().toString();
 
         if (toName.isEmpty()) {
             showToast("Please enter a name");
@@ -105,6 +112,8 @@ public class SubscriptionActivity extends AppCompatActivity {
             showToast("Mobile number must be 9 or 10 or 11 digits");
         } else if (toMobile.length() > 11) {
             showToast("Mobile number must be 9 or 10 or 11 digits");
+        } else if (referredBy.isEmpty()) {
+            showToast("Please enter a referrence");
         } else {
             //insertToDatabase(fromMobile, toMobile);
         }
