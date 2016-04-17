@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#eaeaea"
     android:gravity="center"
     android:orientation="vertical"
@@ -12,7 +13,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.tokkalo.nzta.ProfileActivity">
 
-    <ImageView
+    <!-- <ImageView
         android:id="@+id/profileImage"
         android:src="@drawable/icon_user"
         android:layout_gravity="center_horizontal"
@@ -20,7 +21,25 @@
         android:layout_marginTop="2sp"
         android:layout_height="150dp"
         android:background="@drawable/bg_image_rounded"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY" /> -->
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:src="@drawable/edit"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2sp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content" />
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/fb_image"
+        android:layout_marginTop="40sp"
+        app:siBorderWidth="10dp"
+        app:siBorderColor="#c4c4c4"
+        android:background="@drawable/frame" />
 
     <TextView
         android:id="@+id/textView1"
@@ -65,7 +84,6 @@
         android:layout_marginTop="40sp"
         android:background="@drawable/bg_button_rounded2"
         android:text="My gallery"
-        android:onClick="myGallery"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="22sp" />
