@@ -24,7 +24,20 @@
 
 
         <TableLayout>
+            <TableRow
+                android:gravity="right"
+                android:layout_width="fill_parent">
 
+                <TextView
+                    android:id="@+id/textView1a"
+                    android:text="Upcoming Events"
+                    android:layout_span="2"
+                    android:layout_gravity="right"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:paddingRight="60dp"
+                    android:textStyle="bold"></TextView>
+            </TableRow>
             <TableRow
                 android:gravity="right"
 
@@ -38,28 +51,15 @@
 
                 <TextView
                     android:id="@+id/textView1"
-                    android:text="Upcoming Events"
-                    android:textSize="20dp"
-                    android:textColor="@color/white"
-                    android:layout_gravity="right"
-                    android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
-            </TableRow>
-
-            <TableRow
-                android:gravity="right"
-                android:layout_width="fill_parent">
-
-                <TextView
-                    android:id="@+id/textView1a"
                     android:text="2016"
-                    android:layout_span="2"
-                    android:layout_gravity="right"
                     android:textSize="30dp"
                     android:textColor="@color/white"
+                    android:layout_gravity="right"
                     android:paddingRight="60dp"
                     android:textStyle="bold"></TextView>
             </TableRow>
+
+
         </TableLayout>
 
 
@@ -74,7 +74,20 @@
 
 
         <TableLayout>
+            <TableRow
+                android:gravity="right"
+                android:layout_width="fill_parent">
 
+                <TextView
+                    android:id="@+id/textView2a"
+                    android:text="Existing Events"
+                    android:layout_span="2"
+                    android:layout_gravity="right"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:paddingRight="60dp"
+                    android:textStyle="bold"></TextView>
+            </TableRow>
             <TableRow
                 android:gravity="right"
                 android:layout_width="fill_parent">
@@ -87,28 +100,15 @@
 
                 <TextView
                     android:id="@+id/textView2"
-                    android:text="Existing Events"
-                    android:textSize="20dp"
-                    android:textColor="@color/white"
-                    android:layout_gravity="right"
-                    android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
-            </TableRow>
-
-            <TableRow
-                android:gravity="right"
-                android:layout_width="fill_parent">
-
-                <TextView
-                    android:id="@+id/textView2a"
                     android:text="2015"
-                    android:layout_span="2"
-                    android:layout_gravity="right"
                     android:textSize="30dp"
                     android:textColor="@color/white"
+                    android:layout_gravity="right"
                     android:paddingRight="60dp"
                     android:textStyle="bold"></TextView>
             </TableRow>
+
+
         </TableLayout>
 
     </TableRow>
@@ -122,6 +122,20 @@
 
 
         <TableLayout>
+            <TableRow
+                android:gravity="right"
+                android:layout_width="fill_parent">
+
+                <TextView
+                    android:id="@+id/textView3a"
+                    android:text="Go green/NZ Blood"
+                    android:layout_span="2"
+                    android:layout_gravity="right"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:paddingRight="60dp"
+                    android:textStyle="bold"></TextView>
+            </TableRow>
 
             <TableRow
                 android:gravity="right"
@@ -134,28 +148,15 @@
 
                 <TextView
                     android:id="@+id/textView3"
-                    android:text="Go green/NZ Blood"
-                    android:textSize="20dp"
-                    android:textColor="@color/white"
-                    android:layout_gravity="right"
-                    android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
-            </TableRow>
-
-            <TableRow
-                android:gravity="right"
-                android:layout_width="fill_parent">
-
-                <TextView
-                    android:id="@+id/textView3a"
                     android:text="Others"
-                    android:layout_span="2"
-                    android:layout_gravity="right"
                     android:textSize="30dp"
                     android:textColor="@color/white"
+                    android:layout_gravity="right"
                     android:paddingRight="60dp"
                     android:textStyle="bold"></TextView>
             </TableRow>
+
+
         </TableLayout>
 
     </TableRow>
@@ -170,7 +171,20 @@
 
         <TableLayout>
 
+            <TableRow
+                android:gravity="right"
+                android:layout_width="fill_parent">
 
+                <TextView
+                    android:id="@+id/textView4a"
+                    android:text="Invite a Friend"
+                    android:layout_span="2"
+                    android:layout_gravity="right"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:paddingRight="60dp"
+                    android:textStyle="bold"></TextView>
+            </TableRow>
             <TableRow
                 android:gravity="right"
                 android:layout_width="fill_parent">
@@ -183,28 +197,15 @@
 
                 <TextView
                     android:id="@+id/textView4"
-                    android:text="Invite a Friend"
-                    android:textSize="20dp"
-                    android:textColor="@color/white"
-                    android:layout_gravity="right"
-                    android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
-            </TableRow>
-
-            <TableRow
-                android:gravity="right"
-                android:layout_width="fill_parent">
-
-                <TextView
-                    android:id="@+id/textView4a"
                     android:text="Family"
-                    android:layout_span="2"
-                    android:layout_gravity="right"
                     android:textSize="30dp"
                     android:textColor="@color/white"
+                    android:layout_gravity="right"
                     android:paddingRight="60dp"
                     android:textStyle="bold"></TextView>
             </TableRow>
+
+
         </TableLayout>
 
     </TableRow>
@@ -218,7 +219,20 @@
 
         <TableLayout>
 
+            <TableRow
+                android:gravity="right"
+                android:layout_width="fill_parent">
 
+                <TextView
+                    android:id="@+id/textView5a"
+                    android:text="Helping"
+                    android:layout_span="2"
+                    android:layout_gravity="right"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:paddingRight="60dp"
+                    android:textStyle="bold"></TextView>
+            </TableRow>
             <TableRow
                 android:gravity="right"
                 android:layout_width="fill_parent">
@@ -231,28 +245,15 @@
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:text="Helping"
-                    android:textSize="20dp"
-                    android:textColor="@color/white"
-                    android:layout_gravity="right"
-                    android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
-            </TableRow>
-
-            <TableRow
-                android:gravity="right"
-                android:layout_width="fill_parent">
-
-                <TextView
-                    android:id="@+id/textView5a"
                     android:text="Hands!"
-                    android:layout_span="2"
-                    android:layout_gravity="right"
                     android:textSize="30dp"
                     android:textColor="@color/white"
+                    android:layout_gravity="right"
                     android:paddingRight="60dp"
                     android:textStyle="bold"></TextView>
             </TableRow>
+
+
         </TableLayout>
 
     </TableRow>
