@@ -99,7 +99,8 @@
         <activity android:name=".NZBloodActivity" />
         <activity android:name=".SubscriptionActivity" />
         <activity android:name=".TestActivity" />
-        <activity android:name=".HelpingHandsActivity"></activity>
+        <activity android:name=".HelpingHandsActivity" />
+        <activity android:name=".TeamActivity"></activity>
     </application>
 
 </manifest>

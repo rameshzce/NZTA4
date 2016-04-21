@@ -23,7 +23,7 @@
         android:background="@color/upcomingEvents">
 
 
-        <TableLayout>
+        <TableLayout android:layout_marginLeft="30dp">
             <TableRow
                 android:gravity="right"
                 android:layout_width="fill_parent">
@@ -62,6 +62,11 @@
 
         </TableLayout>
 
+        <ImageView
+            android:id="@+id/arraow"
+            android:paddingLeft="40dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/arrow"></ImageView>
 
     </TableRow>
 
@@ -111,6 +116,10 @@
 
         </TableLayout>
 
+        <ImageView
+            android:paddingLeft="40dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/arrow"></ImageView>
     </TableRow>
 
     <TableRow
@@ -159,6 +168,10 @@
 
         </TableLayout>
 
+        <ImageView
+            android:paddingLeft="40dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/arrow"></ImageView>
     </TableRow>
 
     <TableRow
@@ -208,6 +221,10 @@
 
         </TableLayout>
 
+        <ImageView
+            android:paddingLeft="40dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/arrow"></ImageView>
     </TableRow>
 
     <TableRow
@@ -256,6 +273,10 @@
 
         </TableLayout>
 
+        <ImageView
+            android:paddingLeft="40dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/arrow"></ImageView>
     </TableRow>
 
 </TableLayout>

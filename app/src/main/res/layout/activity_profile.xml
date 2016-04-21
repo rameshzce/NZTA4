@@ -83,7 +83,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40sp"
         android:background="@drawable/bg_button_rounded2"
-        android:text="My gallery"
+        android:text="My Gallery"
         android:onClick="myGallery"
         android:textAllCaps="false"
         android:textColor="@color/white"

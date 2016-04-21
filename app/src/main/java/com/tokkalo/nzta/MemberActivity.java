@@ -139,6 +139,10 @@ public class MemberActivity extends AppCompatActivity {
                 Intent subscriptionIntent = new Intent(MemberActivity.this, SubscriptionActivity.class);
                 MemberActivity.this.startActivity(subscriptionIntent);
                 return true;
+            case R.id.item3:
+                Intent teamIntent = new Intent(MemberActivity.this, TeamActivity.class);
+                MemberActivity.this.startActivity(teamIntent);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
