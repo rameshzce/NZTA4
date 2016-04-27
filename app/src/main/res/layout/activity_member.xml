@@ -64,8 +64,8 @@
 
         <ImageView
             android:id="@+id/arraow"
-            android:paddingLeft="40dp"
-            android:paddingRight="10dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="20dp"
             android:src="@drawable/arrow"></ImageView>
 
     </TableRow>
@@ -117,8 +117,8 @@
         </TableLayout>
 
         <ImageView
-            android:paddingLeft="40dp"
-            android:paddingRight="10dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="20dp"
             android:src="@drawable/arrow"></ImageView>
     </TableRow>
 
@@ -169,8 +169,8 @@
         </TableLayout>
 
         <ImageView
-            android:paddingLeft="40dp"
-            android:paddingRight="10dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="20dp"
             android:src="@drawable/arrow"></ImageView>
     </TableRow>
 
@@ -222,8 +222,8 @@
         </TableLayout>
 
         <ImageView
-            android:paddingLeft="40dp"
-            android:paddingRight="10dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="20dp"
             android:src="@drawable/arrow"></ImageView>
     </TableRow>
 
@@ -274,8 +274,8 @@
         </TableLayout>
 
         <ImageView
-            android:paddingLeft="40dp"
-            android:paddingRight="10dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="20dp"
             android:src="@drawable/arrow"></ImageView>
     </TableRow>
 
