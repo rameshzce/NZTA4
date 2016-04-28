@@ -63,4 +63,12 @@ public class ProfileActivity extends AppCompatActivity {
         startActivity(i);
         finish();
     }
+
+    public void editProfile(View view) {
+        Intent i = new Intent(applicationContext, GalleryActivity.class);
+        i.putExtra("galleryType", "My Gallery");
+        i.putExtra("year", "");
+        startActivity(i);
+        finish();
+    }
 }

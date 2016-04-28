@@ -101,7 +101,7 @@
         <activity android:name=".TestActivity" />
         <activity android:name=".HelpingHandsActivity" />
         <activity android:name=".TeamActivity" />
-        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".SplashActivity" />
     </application>
 
 </manifest>
