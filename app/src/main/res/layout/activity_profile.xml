@@ -53,6 +53,18 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40sp"
+        android:textColor="#085a8e"
+        android:inputType="text"
+        android:visibility="gone"
+        android:textSize="25sp"
+        android:imeOptions="actionNext" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="320dp"
@@ -77,6 +89,18 @@
         android:textSize="20sp"
         android:text="rameshkolamala@gmail.com" />
 
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="4sp"
+        android:textColor="#085a8e"
+        android:inputType="text"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:imeOptions="actionDone" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="175dp"
@@ -86,6 +110,20 @@
         android:background="@drawable/bg_button_rounded2"
         android:text="My Gallery"
         android:onClick="myGallery"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40sp"
+        android:background="@drawable/bg_button_rounded2"
+        android:text="Update"
+        android:onClick="saveProfile"
+        android:visibility="gone"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="22sp" />
