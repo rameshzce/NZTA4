@@ -13,6 +13,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -25,6 +26,7 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ProfileActivity extends AppCompatActivity {
     private Button btn;
@@ -34,6 +36,8 @@ public class ProfileActivity extends AppCompatActivity {
     private TextView txt3;
     private EditText email;
     private EditText name;
+    String profileName = "";
+    String profileEmail = "";
     Context applicationContext;
 
     @Override
@@ -44,6 +48,10 @@ public class ProfileActivity extends AppCompatActivity {
         applicationContext = getApplicationContext();
 
         getSupportActionBar().hide();
+
+        Intent intent = getIntent();
+
+        Bundle extras = intent.getExtras();
 
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/handlee-regular.ttf");
 
@@ -61,6 +69,22 @@ public class ProfileActivity extends AppCompatActivity {
 
         txt3 = (TextView) findViewById(R.id.textView3);
         txt3.setTypeface(font);
+
+        if (extras != null) {
+            if (extras.containsKey("name")) {
+                profileName = intent.getStringExtra("name");
+                txt1.setText(profileName);
+            } else {
+                txt1.setText("Ramesh Kolamala");
+            }
+
+            if (extras.containsKey("email")) {
+                profileEmail = intent.getStringExtra("email");
+                txt3.setText(profileEmail);
+            } else {
+                txt3.setText("rameshkolamala@gmail.com");
+            }
+        }
 
         name = (EditText) findViewById(R.id.editTextName);
         name.setTypeface(font);
@@ -91,6 +115,11 @@ public class ProfileActivity extends AppCompatActivity {
         editName.setVisibility(View.VISIBLE);
         editName.setText(txtName.getText());
 
+        editName.setActivated(true);
+        //editName.setPressed(true);
+        //editName.setCursorVisible(true);
+        //editName.setSelection(editName.getText().length());
+
         TextView txtEmail = (TextView) findViewById(R.id.textView3);
         txtEmail.setVisibility(View.GONE);
 
@@ -100,10 +129,29 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     public void saveProfile(View view) {
-        Intent i = new Intent(applicationContext, ProfileActivity.class);
-        i.putExtra("galleryType", "My Gallery");
-        i.putExtra("year", "");
-        startActivity(i);
-        finish();
+        EditText editName = (EditText) findViewById(R.id.editTextName);
+        EditText editEmail = (EditText) findViewById(R.id.editTextEmail);
+        String name = editName.getText().toString();
+        String email = editEmail.getText().toString();
+
+        if (name.isEmpty()) {
+            showToast("Please enter a name");
+        } else if (email.isEmpty()) {
+            showToast("Please enter an email id");
+        } else {
+            Intent i = new Intent(applicationContext, ProfileActivity.class);
+            i.putExtra("name", name);
+            i.putExtra("email", email);
+            startActivity(i);
+            finish();
+        }
+
+
+    }
+
+    public void showToast(String msg) {
+        Toast toast = Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL, 0, 100);
+        toast.show();
     }
 }
