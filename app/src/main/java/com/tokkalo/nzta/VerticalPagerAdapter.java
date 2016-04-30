@@ -33,6 +33,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
     private String[] teamNames;
     private String[] teamMobiles;
     private String[] teamEmails;
+    private String[] teamColors;
 
     public VerticalPagerAdapter(Context c, int parent, int childs) {
         mContext = c;
@@ -67,6 +68,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
         teamNames = new String[]{"Dharmendar Alle", "Vijay Kosana", "Sai Santhan Reddy Kusam"};
         teamMobiles = new String[]{"M. 0212663666", "M. 021739943", "M. 02102399325"};
         teamEmails = new String[]{"nztapresdent@gmail.com", "vijakosana@gmail.com", "saisanthan@gmail.com"};
+        teamColors = new String[]{"#0671B5", "#AC36CA", "#C59107"};
 
         LinearLayout linear = new LinearLayout(mContext);
         linear.setOrientation(LinearLayout.VERTICAL);
@@ -137,8 +139,8 @@ public class VerticalPagerAdapter extends PagerAdapter {
 
         linear.addView(arrow);
 
-
-        setColors(position, linear);
+        linear.setBackgroundColor(Color.parseColor(teamColors[position]));
+        //setColors(position, linear);
         container.addView(linear);
         return linear;
     }
