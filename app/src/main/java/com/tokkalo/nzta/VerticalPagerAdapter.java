@@ -74,6 +74,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
         linear.setOrientation(LinearLayout.VERTICAL);
         linear.setGravity(Gravity.CENTER);
         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
+
         linear.setLayoutParams(lp);
 
         Typeface font = Typeface.createFromAsset(mContext.getAssets(), "fonts/handlee-regular.ttf");
@@ -103,7 +104,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
 
         ImageView imgView = new ImageView(mContext);
         imgView.setImageResource(teamImages[position]);
-
+        imgView.setPadding(0, 50, 0, 100);
         linear.addView(imgView);
 
         TextView name = new TextView(mContext);
@@ -132,11 +133,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
 
         ImageView arrow = new ImageView(mContext);
         arrow.setImageResource(R.drawable.down_arrow);
-
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(100, 100);
-        params.setMargins(0, 500, 0, 10);
-        arrow.setLayoutParams(params);
-
+        arrow.setPadding(0, 300, 0, 0);
         linear.addView(arrow);
 
         linear.setBackgroundColor(Color.parseColor(teamColors[position]));
