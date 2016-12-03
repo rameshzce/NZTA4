@@ -30,34 +30,34 @@ public class MemberActivity extends AppCompatActivity {
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/handlee-regular.ttf");
 
         TextView txt1 = (TextView) findViewById(R.id.textView1);
-        txt1.setTypeface(font);
+        //txt1.setTypeface(font);
 
         TextView txt1a = (TextView) findViewById(R.id.textView1a);
-        txt1a.setTypeface(font);
+        //txt1a.setTypeface(font);
 
         TextView txt2 = (TextView) findViewById(R.id.textView2);
-        txt2.setTypeface(font);
+        //txt2.setTypeface(font);
 
         TextView txt2a = (TextView) findViewById(R.id.textView2a);
-        txt2a.setTypeface(font);
+        //txt2a.setTypeface(font);
 
         TextView txt3 = (TextView) findViewById(R.id.textView3);
-        txt3.setTypeface(font);
+        //txt3.setTypeface(font);
 
         TextView txt3a = (TextView) findViewById(R.id.textView3a);
-        txt3a.setTypeface(font);
+        //txt3a.setTypeface(font);
 
         TextView txt4 = (TextView) findViewById(R.id.textView4);
-        txt4.setTypeface(font);
+        //txt4.setTypeface(font);
 
         TextView txt4a = (TextView) findViewById(R.id.textView4a);
-        txt4a.setTypeface(font);
-
+        //txt4a.setTypeface(font);
 
         TextView txt5 = (TextView) findViewById(R.id.textView5);
-        txt5.setTypeface(font);
+        //txt5.setTypeface(font);
+
         TextView txt5a = (TextView) findViewById(R.id.textView5a);
-        txt5a.setTypeface(font);
+        //txt5a.setTypeface(font);
 
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();

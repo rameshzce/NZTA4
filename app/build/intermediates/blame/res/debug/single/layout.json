@@ -4,20 +4,20 @@
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/layout/dgts__country_row.xml"
     },
     {
-        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__app_card.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.3/res/layout/tw__app_card.xml"
-    },
-    {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/dgts__activity_confirmation.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/layout/dgts__activity_confirmation.xml"
     },
     {
-        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow_custom.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_big_media_narrow_custom.xml"
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__app_card.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.3/res/layout/tw__app_card.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_existing_events.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/activity_existing_events.xml"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_big_media_narrow_custom.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/list_fragment.xml",
@@ -44,28 +44,28 @@
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/popup.xml"
     },
     {
-        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__gallery_activity.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/layout/tw__gallery_activity.xml"
-    },
-    {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__gallery_activity.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/layout/tw__gallery_activity.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__video_control.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/layout/tw__video_control.xml"
     },
     {
-        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/viewpager_item.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/viewpager_item.xml"
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__tweet.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/layout/tw__tweet.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__tweet.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/layout/tw__tweet.xml"
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/viewpager_item.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/viewpager_item.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",

@@ -137,7 +137,7 @@
 
                 <TextView
                     android:id="@+id/textView3a"
-                    android:text="Go green/NZ Blood"
+                    android:text="Helping"
                     android:layout_span="2"
                     android:layout_gravity="right"
                     android:textSize="20dp"
@@ -157,7 +157,7 @@
 
                 <TextView
                     android:id="@+id/textView3"
-                    android:text="Others"
+                    android:text="Hands!"
                     android:textSize="30dp"
                     android:textColor="@color/white"
                     android:layout_gravity="right"
@@ -242,7 +242,7 @@
 
                 <TextView
                     android:id="@+id/textView5a"
-                    android:text="Helping"
+                    android:text="All"
                     android:layout_span="2"
                     android:layout_gravity="right"
                     android:textSize="20dp"
@@ -262,7 +262,7 @@
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:text="Hands!"
+                    android:text="Messages"
                     android:textSize="30dp"
                     android:textColor="@color/white"
                     android:layout_gravity="right"
