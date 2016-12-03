@@ -65,20 +65,22 @@ public class MemberActivity extends AppCompatActivity {
         int width = size.x;
         int height = size.y;
 
+        int h = (height / 4) - 50;
+
         TableRow tr1 = (TableRow) findViewById(R.id.tableRow1);
-        tr1.setMinimumHeight(height / 4);
+        tr1.setMinimumHeight(h);
 
         TableRow tr2 = (TableRow) findViewById(R.id.tableRow2);
-        tr2.setMinimumHeight(height / 4);
+        tr2.setMinimumHeight(h);
 
         TableRow tr3 = (TableRow) findViewById(R.id.tableRow3);
-        tr3.setMinimumHeight(height / 4);
+        tr3.setMinimumHeight(h);
 
         TableRow tr4 = (TableRow) findViewById(R.id.tableRow4);
-        tr4.setMinimumHeight(height / 4);
+        tr4.setMinimumHeight(h);
 
         TableRow tr5 = (TableRow) findViewById(R.id.tableRow5);
-        tr5.setMinimumHeight(height / 4);
+        tr5.setMinimumHeight(h);
 
 
 
