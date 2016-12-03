@@ -19,7 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Del med"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Del med %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Skjul"</string>
-    <string name="com_facebook_device_auth_instructions">Gå til %@ på smarttelefonen eller datamaskinen din, og oppgi denne koden:</string>
+    <string name="com_facebook_device_auth_instructions">Gå til &lt;b>facebook.com/device&lt;/b> på smarttelefonen eller datamaskinen din, og oppgi denne koden:</string>
     <string name="com_facebook_image_download_unknown_error">Det oppstod en uventet feil ved nedlasting av et bilde.</string>
     <string name="com_facebook_internet_permission_error_message">Webvisning-innlogging krever INTERNETT-tillatelse</string>
     <string name="com_facebook_internet_permission_error_title">AndroidManifest-feil</string>
@@ -79,6 +79,7 @@
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Enheter"</string>
     <string msgid="2132213647576279742" name="place_autocomplete_clear_button">"Slett søket"</string>
     <string msgid="4600782048316473865" name="place_autocomplete_search_hint">"Søk"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Søk"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Kjøp med Google"</string>
 </resources>

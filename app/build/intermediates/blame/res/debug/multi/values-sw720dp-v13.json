@@ -7,17 +7,17 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 75,
-                    "endOffset": 126
+                    "endColumn": 63,
+                    "endOffset": 114
                 },
                 "from": {
-                    "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.5/res/values-sw720dp/values-sw720dp.xml",
+                    "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0-alpha1/res/values-sw720dp-v13/values-sw720dp-v13.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 238,
-                        "endColumn": 75,
-                        "endOffset": 309
+                        "startOffset": 55,
+                        "endColumn": 63,
+                        "endOffset": 114
                     }
                 }
             }

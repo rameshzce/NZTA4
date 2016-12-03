@@ -7,19 +7,17 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endLine": 6,
-                    "endColumn": 12,
-                    "endOffset": 305
+                    "endColumn": 65,
+                    "endOffset": 116
                 },
                 "from": {
-                    "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/values-v16/values-v16.xml",
+                    "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v16/values-v16.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 245,
-                        "endLine": 8,
-                        "endColumn": 12,
-                        "endOffset": 495
+                        "startOffset": 55,
+                        "endColumn": 65,
+                        "endOffset": 116
                     }
                 }
             }

@@ -19,13 +19,13 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"共有"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%sと共有"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"折りたたむ"</string>
-    <string name="com_facebook_device_auth_instructions">スマートフォンまたはコンピュータから%@にアクセスし、次のコードを入力してください。</string>
+    <string name="com_facebook_device_auth_instructions">スマートフォンまたはコンピュータから&lt;b>facebook.com/device&lt;/b>にアクセスし、次のコードを入力してください。</string>
     <string name="com_facebook_image_download_unknown_error">画像のダウンロード中に予期しないエラーが発生しました。</string>
     <string name="com_facebook_internet_permission_error_message">WebViewログインにはINTERNET権限が必要です</string>
     <string name="com_facebook_internet_permission_error_title">AndroidManifestエラー</string>
     <string name="com_facebook_like_button_liked">いいね！済み</string>
     <string name="com_facebook_like_button_not_liked">いいね！</string>
-    <string name="com_facebook_loading">読み込み中...</string>
+    <string name="com_facebook_loading">読み込み中…</string>
     <string name="com_facebook_loginview_cancel_action">キャンセル</string>
     <string name="com_facebook_loginview_log_in_button">ログイン</string>
     <string name="com_facebook_loginview_log_in_button_long">Facebookでログイン</string>
@@ -79,6 +79,7 @@
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"端末"</string>
     <string msgid="2132213647576279742" name="place_autocomplete_clear_button">"検索をクリア"</string>
     <string msgid="4600782048316473865" name="place_autocomplete_search_hint">"検索"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"検索"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Googleで購入"</string>
 </resources>

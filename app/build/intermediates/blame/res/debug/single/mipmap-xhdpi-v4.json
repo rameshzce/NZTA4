@@ -8,6 +8,10 @@
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_drawer1.png",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/mipmap-xhdpi/ic_drawer1.png"
+    },
+    {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/tab1.png",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/mipmap-xhdpi/tab1.png"
     },

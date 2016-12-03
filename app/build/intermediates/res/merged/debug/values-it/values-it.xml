@@ -19,7 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Condividi con"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Condividi con %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Comprimi"</string>
-    <string name="com_facebook_device_auth_instructions">Accedi a %@ nel tuo smartphone o computer e inserisci questo codice:</string>
+    <string name="com_facebook_device_auth_instructions">Accedi a &lt;b>facebook.com/device&lt;/b> nel tuo smartphone o computer e inserisci questo codice:</string>
     <string name="com_facebook_image_download_unknown_error">Errore imprevisto durante il
         caricamento di un\'immagine.</string>
     <string name="com_facebook_internet_permission_error_message">L\'accesso tramite Web richiede
@@ -27,7 +27,7 @@
     <string name="com_facebook_internet_permission_error_title">AndroidManifest Error</string>
     <string name="com_facebook_like_button_liked">Ti piace</string>
     <string name="com_facebook_like_button_not_liked">Mi piace</string>
-    <string name="com_facebook_loading">Caricamento...</string>
+    <string name="com_facebook_loading">Caricamento…</string>
     <string name="com_facebook_loginview_cancel_action">Annulla</string>
     <string name="com_facebook_loginview_log_in_button">Accedi</string>
     <string name="com_facebook_loginview_log_in_button_long">Accedi con Facebook</string>
@@ -81,6 +81,7 @@
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Dispositivi"</string>
     <string msgid="2132213647576279742" name="place_autocomplete_clear_button">"Cancella ricerca"</string>
     <string msgid="4600782048316473865" name="place_autocomplete_search_hint">"Cerca"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Ricerca"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Acquista con Google"</string>
 </resources>

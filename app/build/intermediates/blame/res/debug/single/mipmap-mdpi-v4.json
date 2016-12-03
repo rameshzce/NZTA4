@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_drawer2.png",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/mipmap-mdpi/ic_drawer2.png"
+    },
+    {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },

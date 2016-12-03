@@ -19,13 +19,13 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Del med"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Del med %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Skjul"</string>
-    <string name="com_facebook_device_auth_instructions">Gå til %@ på din smartphone eller computer, og indtast denne kode:</string>
+    <string name="com_facebook_device_auth_instructions">Gå til &lt;b>facebook.com/device&lt;/b> på din smartphone eller computer, og indtast denne kode:</string>
     <string name="com_facebook_image_download_unknown_error">Der opstod en uventet fejl under download af et billede.</string>
     <string name="com_facebook_internet_permission_error_message">WebView-login kræver tilladelse til INTERNET</string>
     <string name="com_facebook_internet_permission_error_title">Fejl i forbindelse med AndroidManifest</string>
     <string name="com_facebook_like_button_liked">Synes godt om</string>
     <string name="com_facebook_like_button_not_liked">Synes godt om</string>
-    <string name="com_facebook_loading">Indlæser ...</string>
+    <string name="com_facebook_loading">Indlæser …</string>
     <string name="com_facebook_loginview_cancel_action">Annuller</string>
     <string name="com_facebook_loginview_log_in_button">Log på</string>
     <string name="com_facebook_loginview_log_in_button_long">Log på med Facebook</string>
@@ -79,6 +79,7 @@
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Enheder"</string>
     <string msgid="2132213647576279742" name="place_autocomplete_clear_button">"Ryd søgning"</string>
     <string msgid="4600782048316473865" name="place_autocomplete_search_hint">"Søg"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Søg"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Køb med Google"</string>
 </resources>

@@ -19,13 +19,13 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Partilhar com"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Partilhar com %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Reduzir"</string>
-    <string name="com_facebook_device_auth_instructions">Visita %@ no teu smartphone ou computador e insere este código:</string>
+    <string name="com_facebook_device_auth_instructions">Visita &lt;b>facebook.com/device&lt;/b> no teu smartphone ou computador e insere este código:</string>
     <string name="com_facebook_image_download_unknown_error">Ocorreu um erro inesperado ao descarregar uma imagem.</string>
     <string name="com_facebook_internet_permission_error_message">O início de sessão WebView necessita de permissão para aceder à INTERNET</string>
     <string name="com_facebook_internet_permission_error_title">Erro AndroidManifest</string>
     <string name="com_facebook_like_button_liked">Gostei</string>
     <string name="com_facebook_like_button_not_liked">Gosto</string>
-    <string name="com_facebook_loading">A carregar...</string>
+    <string name="com_facebook_loading">A carregar…</string>
     <string name="com_facebook_loginview_cancel_action">Cancelar</string>
     <string name="com_facebook_loginview_log_in_button">Iniciar sessão</string>
     <string name="com_facebook_loginview_log_in_button_long">Iniciar sessão com o Facebook</string>
@@ -79,6 +79,7 @@
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Dispositivos"</string>
     <string msgid="2132213647576279742" name="place_autocomplete_clear_button">"Limpar pesquisa"</string>
     <string msgid="4600782048316473865" name="place_autocomplete_search_hint">"Pesquisar"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Pesquisar"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"+999"</string>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Comprar com a Google"</string>
 </resources>

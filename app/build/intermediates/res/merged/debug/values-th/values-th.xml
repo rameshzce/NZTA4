@@ -19,13 +19,13 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"แชร์กับ"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"แชร์กับ %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"ยุบ"</string>
-    <string name="com_facebook_device_auth_instructions">ไปที่ %@ ในสมาร์ทโฟนหรือคอมพิวเตอร์ของคุณ แล้วป้อนรหัสนี้:</string>
+    <string name="com_facebook_device_auth_instructions">ไปที่ &lt;b>facebook.com/device&lt;/b> ในสมาร์ทโฟนหรือคอมพิวเตอร์ของคุณ แล้วป้อนรหัสนี้:</string>
     <string name="com_facebook_image_download_unknown_error">เกิดข้อผิดพลาดที่ไม่คาดคิดขณะดาวน์โหลดรูปภาพ</string>
     <string name="com_facebook_internet_permission_error_message">การเข้าสู่ระบบ WebView จำเป็นต้องได้รับอนุญาตจากอินเทอร์เน็ต</string>
     <string name="com_facebook_internet_permission_error_title">ข้อผิดพลาดของ AndroidManifest</string>
     <string name="com_facebook_like_button_liked">ถูกใจแล้ว</string>
     <string name="com_facebook_like_button_not_liked">ถูกใจ</string>
-    <string name="com_facebook_loading">กำลังโหลด...</string>
+    <string name="com_facebook_loading">กำลังโหลด…</string>
     <string name="com_facebook_loginview_cancel_action">ยกเลิก</string>
     <string name="com_facebook_loginview_log_in_button">เข้าสู่ระบบ</string>
     <string name="com_facebook_loginview_log_in_button_long">เข้าสู่ระบบด้วย Facebook</string>
@@ -79,6 +79,7 @@
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"อุปกรณ์"</string>
     <string msgid="2132213647576279742" name="place_autocomplete_clear_button">"ล้างการค้นหา"</string>
     <string msgid="4600782048316473865" name="place_autocomplete_search_hint">"ค้นหา"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"ค้นหา"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"ซื้อด้วย Google"</string>
 </resources>

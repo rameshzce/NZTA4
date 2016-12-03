@@ -19,13 +19,13 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Jakaminen:"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Jakaminen: %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Kutista"</string>
-    <string name="com_facebook_device_auth_instructions">Siirry osoitteeseen %@ älypuhelimella tai tietokoneella ja anna seuraava koodi:</string>
+    <string name="com_facebook_device_auth_instructions">Siirry osoitteeseen &lt;b>facebook.com/device&lt;/b> älypuhelimella tai tietokoneella ja anna seuraava koodi:</string>
     <string name="com_facebook_image_download_unknown_error">Odottamaton virhe kuvan palvelimesta lataamisen aikana.</string>
     <string name="com_facebook_internet_permission_error_message">WebView-kirjautuminen edellyttää INTERNET-käyttöoikeutta</string>
     <string name="com_facebook_internet_permission_error_title">AndroidManifest-virhe</string>
     <string name="com_facebook_like_button_liked">Tykätty</string>
     <string name="com_facebook_like_button_not_liked">Tykkää</string>
-    <string name="com_facebook_loading">Ladataan...</string>
+    <string name="com_facebook_loading">Ladataan…</string>
     <string name="com_facebook_loginview_cancel_action">Peruuta</string>
     <string name="com_facebook_loginview_log_in_button">Kirjaudu sisään</string>
     <string name="com_facebook_loginview_log_in_button_long">Kirjaudu sisään Facebookin avulla</string>
@@ -79,6 +79,7 @@
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Laitteet"</string>
     <string msgid="2132213647576279742" name="place_autocomplete_clear_button">"Tyhjennä haku."</string>
     <string msgid="4600782048316473865" name="place_autocomplete_search_hint">"Haku"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Haku"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Maksa Googlen kautta"</string>
 </resources>

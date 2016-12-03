@@ -12,6 +12,10 @@
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/layout/dgts__activity_confirmation.xml"
     },
     {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_existing_events.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/activity_existing_events.xml"
     },
@@ -22,6 +26,14 @@
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/place_autocomplete_fragment.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_splash.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_template_custom_big.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_custom_big.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__activity_composer.xml",
@@ -37,23 +49,27 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_multichoice_material.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/select_dialog_multichoice_material.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__video_control.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/layout/tw__video_control.xml"
     },
     {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/viewpager_item.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/viewpager_item.xml"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__tweet.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/layout/tw__tweet.xml"
     },
     {
-        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
-        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/viewpager_item.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/viewpager_item.xml"
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_send_message.xml",
@@ -64,16 +80,20 @@
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_tab_icon.xml"
     },
     {
-        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/mr_media_route_chooser_dialog.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout/mr_media_route_chooser_dialog.xml"
-    },
-    {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_tab_text.xml"
     },
     {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/mr_media_route_chooser_dialog.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout/mr_media_route_chooser_dialog.xml"
+    },
+    {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__media_badge.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/layout/tw__media_badge.xml"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_helping_hands.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/activity_helping_hands.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__tweet_compact.xml",
@@ -85,7 +105,7 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_title_item.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_action_bar_title_item.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
@@ -93,7 +113,7 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_alert_dialog_material.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_alert_dialog_material.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/list_single.xml",
@@ -105,11 +125,11 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_mode_close_item_material.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_icon.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_list_menu_item_icon.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__activity_share_email.xml",
@@ -125,7 +145,7 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_chronometer.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_part_chronometer.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__action_bar.xml",
@@ -133,11 +153,11 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_small.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.10.1/res/layout/messenger_button_send_blue_small.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/layout/messenger_button_send_blue_small.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_dialog_title_material.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_new_zealand.xml",
@@ -148,8 +168,16 @@
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/layout/dgts__activity_pin_code.xml"
     },
     {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/com_facebook_smart_device_dialog_fragment.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/layout/com_facebook_smart_device_dialog_fragment.xml"
+    },
+    {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_big_media_narrow.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_lines_media.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_home.xml",
@@ -165,7 +193,7 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_media.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_media.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_gallery.xml",
@@ -185,15 +213,15 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_content_include.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_screen_content_include.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_small.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.10.1/res/layout/messenger_button_send_white_small.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/layout/messenger_button_send_white_small.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_select_dialog_material.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_select_dialog_material.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_invite_friend.xml",
@@ -201,7 +229,7 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_time.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_part_time.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__composer_view.xml",
@@ -213,15 +241,15 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_item_material.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/select_dialog_item_material.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_radio.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_big_media.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_big_media.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_ucevents.xml",
@@ -238,6 +266,10 @@
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/program_list.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/program_list.xml"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_action.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_subscription.xml",
@@ -264,12 +296,20 @@
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/layout/dgts__state_button.xml"
     },
     {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_custom.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_big_media_custom.xml"
+    },
+    {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/dgts__activity_contacts.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.10.0/res/layout/dgts__activity_contacts.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_membership.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/activity_membership.xml"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0-alpha1/res/layout/design_bottom_sheet_dialog.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/dgts__activity_phone_number.xml",
@@ -281,7 +321,7 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_singlechoice_material.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/mr_media_route_list_item.xml",
@@ -289,11 +329,11 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_menu_item_layout.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_activity_chooser_view_list_item.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
@@ -309,7 +349,7 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_media_cancel_action.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_media_cancel_action.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_member.xml",
@@ -321,19 +361,19 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_menu_layout.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_action_menu_layout.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/com_facebook_login_fragment.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.10.1/res/layout/com_facebook_login_fragment.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/layout/com_facebook_login_fragment.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_popup_menu_item_layout.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_round.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.10.1/res/layout/messenger_button_send_blue_round.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/layout/messenger_button_send_blue_round.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_upcoming_events.xml",
@@ -341,15 +381,19 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_alert_dialog_button_bar_material.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_media_custom.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_up_container.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_action_bar_up_container.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_search_view.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_search_view.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
@@ -365,11 +409,11 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/com_facebook_device_auth_dialog_fragment.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.10.1/res/layout/com_facebook_device_auth_dialog_fragment.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/layout/com_facebook_device_auth_dialog_fragment.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_checkbox.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_full_image.xml",
@@ -377,7 +421,7 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.10.1/res/layout/messenger_button_send_white_round.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/layout/messenger_button_send_white_round.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
@@ -385,19 +429,19 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_mode_bar.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_action_mode_bar.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_large.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.10.1/res/layout/messenger_button_send_blue_large.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/layout/messenger_button_send_blue_large.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.10.1/res/layout/com_facebook_activity_layout.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/layout/com_facebook_activity_layout.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_layout.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_list_menu_item_layout.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/list_fragment3.xml",
@@ -405,7 +449,7 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_simple.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_screen_simple.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_nzblood.xml",
@@ -417,19 +461,19 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_toolbar.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_screen_toolbar.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_activity_chooser_view.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_activity_chooser_view.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_expanded_menu_layout.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_expanded_menu_layout.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_large.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.10.1/res/layout/messenger_button_send_white_large.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/layout/messenger_button_send_white_large.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_refer_friend.xml",
@@ -441,7 +485,7 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/list_item2.xml",
@@ -449,7 +493,11 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_team.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/activity_team.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/imageview.xml",
@@ -457,7 +505,11 @@
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/com_facebook_tooltip_bubble.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.10.1/res/layout/com_facebook_tooltip_bubble.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/layout/com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_action_tombstone.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_user.xml",
@@ -480,11 +532,15 @@
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/activity_user_confirmation.xml"
     },
     {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_media_action.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_media_action.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/support_simple_spinner_dropdown_item.xml"
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/support_simple_spinner_dropdown_item.xml"
     }
 ]

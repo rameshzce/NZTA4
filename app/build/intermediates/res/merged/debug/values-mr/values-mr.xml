@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="com_facebook_device_auth_instructions">आपला स्‍मार्ट फोन किंवा संगणकावर %@ ला भेट द्या आणि हा कोड प्रविष्‍ट करा:</string>
+    <string name="com_facebook_device_auth_instructions">आपला स्‍मार्ट फोन किंवा संगणकावर &lt;b>facebook.com/device&lt;/b> ला भेट द्या आणि हा कोड प्रविष्‍ट करा:</string>
     <string name="com_facebook_image_download_unknown_error">प्रतिमा डाउनलोड करताना अनपेक्षित त्रुटी.</string>
     <string name="com_facebook_internet_permission_error_message">वेबदृश्य लॉग इन आवश्यकता इंटरनेट परवानगी</string>
     <string name="com_facebook_internet_permission_error_title">AndroidManifest त्रुटी</string>
     <string name="com_facebook_like_button_liked">आवडलेले</string>
     <string name="com_facebook_like_button_not_liked">आवडले</string>
-    <string name="com_facebook_loading">लोड होत आहे...</string>
+    <string name="com_facebook_loading">लोड होत आहे…</string>
     <string name="com_facebook_loginview_cancel_action">रद्द करा</string>
     <string name="com_facebook_loginview_log_in_button">लॉग इन करा</string>
     <string name="com_facebook_loginview_log_in_button_long">फेसबुकसह लॉग इन करा</string>

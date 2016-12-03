@@ -19,7 +19,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Sdílet pomocí"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Sdílet pomocí %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Sbalit"</string>
-    <string name="com_facebook_device_auth_instructions">Přejděte ze smartphonu nebo počítače na %@ a zadejte tento kód:</string>
+    <string name="com_facebook_device_auth_instructions">Přejděte ze smartphonu nebo počítače na &lt;b>facebook.com/device&lt;/b> a zadejte tento kód:</string>
     <string name="com_facebook_image_download_unknown_error">Při stahování obrázku došlo k nečekané chybě.</string>
     <string name="com_facebook_internet_permission_error_message">Webové přihlášení vyžaduje oprávnění použít INTERNET</string>
     <string name="com_facebook_internet_permission_error_title">Chyba AndroidManifest</string>
@@ -79,6 +79,7 @@
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Zařízení"</string>
     <string msgid="2132213647576279742" name="place_autocomplete_clear_button">"Vymazat vyhledávání"</string>
     <string msgid="4600782048316473865" name="place_autocomplete_search_hint">"Vyhledávání"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Hledat"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Koupit pomocí Googlu"</string>
 </resources>

@@ -19,13 +19,13 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"इसके द्वारा साझा करें"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s के साथ साझा करें"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"संक्षिप्त करें"</string>
-    <string name="com_facebook_device_auth_instructions">अपने स्मार्टफ़ोन या कंप्यूटर पर %@ पर जाएँ और यह कोड डालें:</string>
+    <string name="com_facebook_device_auth_instructions">अपने स्मार्टफ़ोन या कंप्यूटर पर &lt;b>facebook.com/device&lt;/b> पर जाएँ और यह कोड डालें:</string>
     <string name="com_facebook_image_download_unknown_error">एक चित्र डाउनलोड करते समय अनपेक्षित गलती हुई.</string>
     <string name="com_facebook_internet_permission_error_message">WebView लॉग इन के लिए INTERNET अनुमति की आवश्यकता है</string>
     <string name="com_facebook_internet_permission_error_title">AndroidManifest गलती</string>
     <string name="com_facebook_like_button_liked">पसंद किया</string>
     <string name="com_facebook_like_button_not_liked">पसंद करें</string>
-    <string name="com_facebook_loading">लोड हो रहा है...</string>
+    <string name="com_facebook_loading">लोड हो रहा है…</string>
     <string name="com_facebook_loginview_cancel_action">रद्द करें</string>
     <string name="com_facebook_loginview_log_in_button">लॉग इन करें</string>
     <string name="com_facebook_loginview_log_in_button_long">Facebook से लॉग इन करें</string>
@@ -79,6 +79,7 @@
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"डिवाइस"</string>
     <string msgid="2132213647576279742" name="place_autocomplete_clear_button">"खोज साफ़ करें"</string>
     <string msgid="4600782048316473865" name="place_autocomplete_search_hint">"खोजें"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"खोज"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="4184147110658930238" name="wallet_buy_button_place_holder">"Google से खरीदें"</string>
 </resources>

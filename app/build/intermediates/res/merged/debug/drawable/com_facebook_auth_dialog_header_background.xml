@@ -20,11 +20,10 @@
 -->
 
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/com_facebook_blue" />
+    <solid android:color="#fffafafa" />
     <corners
         android:bottomLeftRadius="0dp"
         android:bottomRightRadius="0dp"
         android:topLeftRadius="@dimen/com_facebook_auth_dialog_corner_radius"
         android:topRightRadius="@dimen/com_facebook_auth_dialog_corner_radius" />
 </shape>
-<!-- From: file:/Users/swiese/fbandroid-sdk/facebook/src/main/res/drawable/com_facebook_auth_dialog_header_background.xml -->

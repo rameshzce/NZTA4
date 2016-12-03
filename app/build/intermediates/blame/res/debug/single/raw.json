@@ -1,7 +1,31 @@
 [
     {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/raw/imgview_pentagon.svg",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.github.siyamed/android-shape-imageview/0.9.3/res/raw/imgview_pentagon.svg"
+    },
+    {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/raw/gtm_analytics",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/res/raw/gtm_analytics"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/raw/imgview_heart.svg",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.github.siyamed/android-shape-imageview/0.9.3/res/raw/imgview_heart.svg"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/raw/imgview_octogon.svg",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.github.siyamed/android-shape-imageview/0.9.3/res/raw/imgview_octogon.svg"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/raw/imgview_star.svg",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.github.siyamed/android-shape-imageview/0.9.3/res/raw/imgview_star.svg"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/raw/imgview_diamond.svg",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.github.siyamed/android-shape-imageview/0.9.3/res/raw/imgview_diamond.svg"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/raw/imgview_hexagon.svg",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.github.siyamed/android-shape-imageview/0.9.3/res/raw/imgview_hexagon.svg"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/raw/tw__cacerts",
