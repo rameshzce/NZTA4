@@ -35,8 +35,7 @@
                     android:layout_gravity="right"
                     android:textSize="20dp"
                     android:textColor="@color/white"
-                    android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
+                    android:paddingRight="60dp" />
             </TableRow>
             <TableRow
                 android:gravity="right"
@@ -47,7 +46,7 @@
                     android:id="@+id/imageView1"
                     android:paddingLeft="60dp"
                     android:paddingRight="10dp"
-                    android:src="@drawable/upcoming_events"></ImageView>
+                    android:src="@drawable/upcoming_events" />
 
                 <TextView
                     android:id="@+id/textView1"
@@ -56,17 +55,18 @@
                     android:textColor="@color/white"
                     android:layout_gravity="right"
                     android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold" />
             </TableRow>
 
 
         </TableLayout>
 
+
         <ImageView
             android:id="@+id/arraow"
             android:paddingLeft="0dp"
             android:paddingRight="20dp"
-            android:src="@drawable/arrow"></ImageView>
+            android:src="@drawable/arrow" />
 
     </TableRow>
 
@@ -90,8 +90,7 @@
                     android:layout_gravity="right"
                     android:textSize="20dp"
                     android:textColor="@color/white"
-                    android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
+                    android:paddingRight="60dp" />
             </TableRow>
             <TableRow
                 android:gravity="right"
@@ -101,7 +100,7 @@
                     android:id="@+id/imageView2"
                     android:paddingLeft="60dp"
                     android:paddingRight="10dp"
-                    android:src="@drawable/existing_events"></ImageView>
+                    android:src="@drawable/existing_events" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -110,7 +109,7 @@
                     android:textColor="@color/white"
                     android:layout_gravity="right"
                     android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold" />
             </TableRow>
 
 
@@ -119,7 +118,7 @@
         <ImageView
             android:paddingLeft="0dp"
             android:paddingRight="20dp"
-            android:src="@drawable/arrow"></ImageView>
+            android:src="@drawable/arrow" />
     </TableRow>
 
     <TableRow
@@ -142,8 +141,7 @@
                     android:layout_gravity="right"
                     android:textSize="20dp"
                     android:textColor="@color/white"
-                    android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
+                    android:paddingRight="60dp" />
             </TableRow>
 
             <TableRow
@@ -153,7 +151,7 @@
                 <ImageView
                     android:id="@+id/imageView3"
                     android:paddingLeft="60dp"
-                    android:src="@drawable/go_green"></ImageView>
+                    android:src="@drawable/go_green" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -162,7 +160,7 @@
                     android:textColor="@color/white"
                     android:layout_gravity="right"
                     android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold" />
             </TableRow>
 
 
@@ -171,7 +169,7 @@
         <ImageView
             android:paddingLeft="0dp"
             android:paddingRight="20dp"
-            android:src="@drawable/arrow"></ImageView>
+            android:src="@drawable/arrow" />
     </TableRow>
 
     <TableRow
@@ -195,8 +193,7 @@
                     android:layout_gravity="right"
                     android:textSize="20dp"
                     android:textColor="@color/white"
-                    android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
+                    android:paddingRight="60dp" />
             </TableRow>
             <TableRow
                 android:gravity="right"
@@ -206,7 +203,7 @@
                     android:id="@+id/imageView4"
                     android:paddingLeft="60dp"
                     android:paddingRight="10dp"
-                    android:src="@drawable/invite_friend"></ImageView>
+                    android:src="@drawable/invite_friend" />
 
                 <TextView
                     android:id="@+id/textView4"
@@ -215,7 +212,7 @@
                     android:textColor="@color/white"
                     android:layout_gravity="right"
                     android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold" />
             </TableRow>
 
 
@@ -224,12 +221,12 @@
         <ImageView
             android:paddingLeft="0dp"
             android:paddingRight="20dp"
-            android:src="@drawable/arrow"></ImageView>
+            android:src="@drawable/arrow" />
     </TableRow>
 
     <TableRow
         android:id="@+id/tableRow5"
-        android:background="@color/helpTimes"
+        android:background="@color/allMessages"
         android:gravity="center_vertical"
         android:onClick="rowClick5">
 
@@ -247,8 +244,7 @@
                     android:layout_gravity="right"
                     android:textSize="20dp"
                     android:textColor="@color/white"
-                    android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
+                    android:paddingRight="60dp" />
             </TableRow>
             <TableRow
                 android:gravity="right"
@@ -258,7 +254,7 @@
                     android:id="@+id/imageView5"
                     android:paddingLeft="60dp"
                     android:paddingRight="10dp"
-                    android:src="@drawable/hands"></ImageView>
+                    android:src="@drawable/hands" />
 
                 <TextView
                     android:id="@+id/textView5"
@@ -267,7 +263,7 @@
                     android:textColor="@color/white"
                     android:layout_gravity="right"
                     android:paddingRight="60dp"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold" />
             </TableRow>
 
 
@@ -276,7 +272,7 @@
         <ImageView
             android:paddingLeft="0dp"
             android:paddingRight="20dp"
-            android:src="@drawable/arrow"></ImageView>
+            android:src="@drawable/arrow" />
     </TableRow>
 
 </TableLayout>
