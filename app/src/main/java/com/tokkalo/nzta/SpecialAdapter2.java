@@ -31,7 +31,7 @@ public class SpecialAdapter2 extends SimpleAdapter {
 
     private int[] listItemBackground = new int[]{R.drawable.list_background4, R.drawable.list_background4};
     private int[] galleryBackground = new int[]{R.drawable.gallery_bg10, R.drawable.gallery_bg10};
-    private int[] eventImage = new int[]{R.drawable.camera, R.drawable.video};
+    private int[] eventImage = new int[]{R.drawable.icon_batukamma, R.drawable.icon_blooddonations};
 
     public SpecialAdapter2(Context context, List<HashMap<String, String>> items, int resource, String[] from, int[] to, String year) {
         super(context, items, resource, from, to);
