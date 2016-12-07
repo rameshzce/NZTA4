@@ -87,7 +87,8 @@ public class MemberActivity extends AppCompatActivity {
     }
 
     public void rowClick1(View view) {
-        Intent i = new Intent(applicationContext, UpcomingEventsActivity.class);
+        //Intent i = new Intent(applicationContext, UpcomingEventsActivity.class);
+        Intent i = new Intent(applicationContext, EventsActivity.class);
         startActivity(i);
         finish();
     }

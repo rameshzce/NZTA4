@@ -12,47 +12,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:textColor="@color/white"
-            android:textSize="20dip"
-            android:layout_marginBottom="5dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/address"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/id"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="1dip"
-            android:layout_marginBottom="10dp"
-            android:textColor="#ffffc2"
-            android:textSize="16dip" />
 
         <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/tableLayout1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/address"
-            android:stretchColumns="*">
-
-            <TableRow
-                android:id="@+id/tableRow1"
-                android:layout_width="fill_parent"
-                android:minHeight="40dp">
-
-                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:id="@+id/tableLayout2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_below="@id/address"
-                    android:stretchColumns="*">
+                    android:layout_below="@id/address">
 
                     <TableRow
                         android:id="@+id/tableRow2"
@@ -60,60 +25,28 @@
                         android:layout_marginRight="1dip"
                         android:minHeight="40dp">
 
+                        <TextView
+                            android:id="@+id/id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="15dip"
+                            android:layout_marginBottom="5dp" />
+
                         <ImageView
-                            android:id="@+id/imageGallery"
+                            android:id="@+id/image"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="10dp"
-                            android:src="@drawable/camera"></ImageView>
-
-                        <TextView
-                            android:id="@+id/photoGallery"
-                            android:layout_width="fill_parent"
-                            android:layout_height="fill_parent"
-                            android:gravity="center_vertical"
-                            android:text="@string/photoGallery"
-                            android:textColor="@color/white"
-                            android:textSize="16dip" />
-                    </TableRow>
-                </TableLayout>
-
-                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/tableLayout3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_below="@id/address"
-                    android:stretchColumns="*">
-
-                    <TableRow
-                        android:id="@+id/tableRow3"
-                        android:layout_width="fill_parent"
-                        android:layout_marginLeft="1dip"
-                        android:minHeight="40dp">
-
-                        <ImageView
-                            android:id="@+id/imageVideo"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="10dp"
-                            android:src="@drawable/video"></ImageView>
-
-                        <TextView
-                            android:id="@+id/videoGallery"
-                            android:layout_width="fill_parent"
-                            android:layout_height="fill_parent"
-                            android:gravity="center_vertical"
-                            android:text="@string/videoGallery"
-                            android:textColor="@color/white"
-                            android:textSize="16dip" />
+                            android:layout_marginRight="10dp"></ImageView>
 
 
                     </TableRow>
                 </TableLayout>
-            </TableRow>
-        </TableLayout>
+
+
 
     </LinearLayout>
 </RelativeLayout>

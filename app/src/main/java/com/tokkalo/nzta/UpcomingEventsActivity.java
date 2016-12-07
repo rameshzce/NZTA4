@@ -101,11 +101,11 @@ public class UpcomingEventsActivity extends AppCompatActivity {
 
         tv.setLayoutParams(lp);
 
-        tv.setText("Upcoming events 2016");
+        tv.setText("Events");
 
         tv.setGravity(Gravity.CENTER);
 
-        tv.setTypeface(font);
+        //tv.setTypeface(font);
 
         tv.setTextColor(Color.parseColor("#FFFFFF"));
         tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 20);
