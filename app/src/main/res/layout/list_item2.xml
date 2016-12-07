@@ -22,8 +22,8 @@
                     <TableRow
                         android:id="@+id/tableRow2"
                         android:layout_width="fill_parent"
-                        android:layout_marginRight="1dip"
-                        android:minHeight="40dp">
+                        android:layout_marginRight="0dip"
+                        android:minHeight="70dp">
 
                         <TextView
                             android:id="@+id/id"
@@ -32,15 +32,16 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:textColor="@color/white"
-                            android:textSize="15dip"
-                            android:layout_marginBottom="5dp" />
+                            android:textSize="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="0dp" />
 
                         <ImageView
                             android:id="@+id/image"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:layout_gravity="center_vertical"
-                            android:layout_marginRight="10dp"></ImageView>
+                            android:layout_marginRight="0dp"></ImageView>
 
 
                     </TableRow>

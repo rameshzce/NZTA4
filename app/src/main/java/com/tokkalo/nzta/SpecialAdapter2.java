@@ -30,7 +30,7 @@ public class SpecialAdapter2 extends SimpleAdapter {
     String eventYear;
 
     private int[] listItemBackground = new int[]{R.drawable.list_background4, R.drawable.list_background4};
-    private int[] galleryBackground = new int[]{R.drawable.gallery_bg2, R.drawable.gallery_bg2};
+    private int[] galleryBackground = new int[]{R.drawable.gallery_bg10, R.drawable.gallery_bg10};
     private int[] eventImage = new int[]{R.drawable.camera, R.drawable.video};
 
     public SpecialAdapter2(Context context, List<HashMap<String, String>> items, int resource, String[] from, int[] to, String year) {
@@ -47,7 +47,7 @@ public class SpecialAdapter2 extends SimpleAdapter {
         LinearLayout ll = (LinearLayout) view.findViewById(R.id.layout1);
 
         RelativeLayout.LayoutParams lpimgHeader = new RelativeLayout.LayoutParams(ll.getLayoutParams());
-        lpimgHeader.setMargins(40, 0, 40, 0);
+        lpimgHeader.setMargins(0, 0, 0, 0);
         ll.setLayoutParams(lpimgHeader);
 
 
@@ -58,18 +58,14 @@ public class SpecialAdapter2 extends SimpleAdapter {
         TableRow tr2 = (TableRow) view.findViewById(R.id.tableRow2);
 
 
-
-
-
-        int colorPos = position % listItemBackground.length;
+        int pos = position % listItemBackground.length;
         //ll.setBackgroundResource(listItemBackground[colorPos]);
-        tr2.setBackgroundResource(galleryBackground[colorPos]);
-        tv.setPadding(padding[colorPos], 0, 20, 0);
-        img.setBackgroundResource(eventImage[colorPos]);
+        tr2.setBackgroundResource(galleryBackground[pos]);
+        tv.setPadding(padding[pos], 0, 20, 0);
+        img.setBackgroundResource(eventImage[pos]);
 
 
-
-
+        view.setMinimumHeight(90);
 
 
         return view;
