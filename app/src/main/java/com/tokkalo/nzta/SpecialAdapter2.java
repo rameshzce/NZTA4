@@ -67,6 +67,21 @@ public class SpecialAdapter2 extends SimpleAdapter {
 
 
         view.setMinimumHeight(90);
+        final int pos2 = position;
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Toast.makeText(cntxt, "video gallery clicked: " + tv.getText().toString(), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(cntxt.getApplicationContext(), DisplayEvent.class);
+                intent.putExtra("eventName", tv.getText().toString());
+                intent.putExtra("eventPosition", pos2);
+
+
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                cntxt.getApplicationContext().startActivity(intent);
+            }
+        });
 
 
         return view;
