@@ -125,7 +125,9 @@ public class MainActivity extends AppCompatActivity {
                                 "Auth Token: "
                                 + loginResult.getAccessToken().getToken()
                 );*/
-                insertToDatabase(userId, userId, userId);
+                String token = FirebaseInstanceId.getInstance().getToken();
+                String loginType = "4";
+                insertToDatabase(userId, userId, userId, token, loginType);
             }
 
             @Override
@@ -229,20 +231,23 @@ public class MainActivity extends AppCompatActivity {
 
 
         String refreshedToken = FirebaseInstanceId.getInstance().getToken();
-        Log.d(TAG, "Refreshed token: " + refreshedToken);
+
+        /*Log.d(TAG, "Refreshed token: " + refreshedToken);
 
         Toast.makeText(applicationContext,
                 refreshedToken,
-                Toast.LENGTH_LONG).show();
+                Toast.LENGTH_LONG).show();*/
 
     }
 
     public void insert(View view) {
 
-
         String name = editTextName.getText().toString();
         String mobile = editTextMobile.getText().toString();
         String email = editTextEmail.getText().toString();
+
+        String token = FirebaseInstanceId.getInstance().getToken();
+        String loginType = "3";
 
         if (name.isEmpty()) {
             showToast("Please enter a name");
@@ -255,12 +260,12 @@ public class MainActivity extends AppCompatActivity {
         } else if (email.isEmpty()) {
             showToast("Please enter an email id");
         } else {
-            insertToDatabase(name, mobile, email);
+            insertToDatabase(name, mobile, email, token, loginType);
         }
 
     }
 
-    private void insertToDatabase(final String name, String mobileNumber, String organization) {
+    private void insertToDatabase(final String name, String mobileNumber, String organization, String token, String loginType) {
         final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this);
         progressDialog.setCancelable(true);
         progressDialog.setMessage("Please wait...");
@@ -274,6 +279,8 @@ public class MainActivity extends AppCompatActivity {
                 nameValuePairs.add(new BasicNameValuePair("fname", params[0]));
                 nameValuePairs.add(new BasicNameValuePair("mobile", params[1]));
                 nameValuePairs.add(new BasicNameValuePair("organization", params[2]));
+                nameValuePairs.add(new BasicNameValuePair("device_id", params[3]));
+                nameValuePairs.add(new BasicNameValuePair("login_type", params[4]));
 
                 String result = null;
                 InputStream inputStream = null;
@@ -330,6 +337,8 @@ public class MainActivity extends AppCompatActivity {
                 super.onPostExecute(result);
                 progressDialog.hide();
 
+                //Log.d("Json", "Json result: " + result);
+
                 //TextView textViewResult = (TextView) findViewById(R.id.textViewResult);
                 //textViewResult.setText(result);
 
@@ -344,7 +353,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                             String phone = jsonObj.getString("phone");
-                            String otp = jsonObj.getString("otp");
+                            //String otp = jsonObj.getString("otp");
 
                             RegisterUser(phone, name);
 
@@ -356,7 +365,7 @@ public class MainActivity extends AppCompatActivity {
                             } else {
                                 Intent intent = new Intent(MainActivity.this, UserConfirmationActivity.class);
                                 intent.putExtra("phone", phone);
-                                intent.putExtra("otp", otp);
+                                //intent.putExtra("otp", otp);
                                 MainActivity.this.startActivity(intent);
                             }
 
@@ -375,7 +384,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         SendPostReqAsyncTask sendPostReqAsyncTask = new SendPostReqAsyncTask();
-        sendPostReqAsyncTask.execute(name, mobileNumber, organization);
+        sendPostReqAsyncTask.execute(name, mobileNumber, organization, token, loginType);
     }
 
     // When Register Me button is clicked

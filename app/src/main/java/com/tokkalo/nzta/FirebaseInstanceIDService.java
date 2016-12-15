@@ -22,7 +22,7 @@ public class FirebaseInstanceIDService extends FirebaseInstanceIdService {
 
         String token = FirebaseInstanceId.getInstance().getToken();
 
-        registerToken(token);
+        //registerToken(token);
     }
 
     private void registerToken(String token) {
