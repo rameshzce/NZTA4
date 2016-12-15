@@ -2037,28 +2037,9 @@
                     "startLine": 280,
                     "startColumn": 4,
                     "startOffset": 20520,
-                    "endColumn": 121,
-                    "endOffset": 20637
-                },
-                "from": {
-                    "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.4.0/res/values-v21/appinvite_styles.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 101,
-                        "endColumn": 121,
-                        "endOffset": 218
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 281,
-                    "startColumn": 4,
-                    "startOffset": 20642,
-                    "endLine": 283,
+                    "endLine": 282,
                     "endColumn": 12,
-                    "endOffset": 20812
+                    "endOffset": 20690
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v21/values-v21.xml",
@@ -2074,12 +2055,12 @@
             },
             {
                 "to": {
-                    "startLine": 284,
+                    "startLine": 283,
                     "startColumn": 4,
-                    "startOffset": 20817,
-                    "endLine": 288,
+                    "startOffset": 20695,
+                    "endLine": 287,
                     "endColumn": 12,
-                    "endOffset": 21153
+                    "endOffset": 21031
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-v21/values-v21.xml",

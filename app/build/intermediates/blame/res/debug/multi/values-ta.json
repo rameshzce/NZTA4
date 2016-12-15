@@ -6,9 +6,9 @@
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
-                    "startOffset": 55,
+                    "startOffset": 105,
                     "endColumn": 187,
-                    "endOffset": 238
+                    "endOffset": 288
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -25,9 +25,9 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 243,
+                    "startOffset": 293,
                     "endColumn": 112,
-                    "endOffset": 351
+                    "endOffset": 401
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -44,9 +44,9 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 356,
+                    "startOffset": 406,
                     "endColumn": 112,
-                    "endOffset": 464
+                    "endOffset": 514
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -63,9 +63,9 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 469,
+                    "startOffset": 519,
                     "endColumn": 93,
-                    "endOffset": 558
+                    "endOffset": 608
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -82,9 +82,9 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 563,
+                    "startOffset": 613,
                     "endColumn": 74,
-                    "endOffset": 633
+                    "endOffset": 683
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -101,9 +101,9 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 638,
+                    "startOffset": 688,
                     "endColumn": 72,
-                    "endOffset": 706
+                    "endOffset": 756
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -120,9 +120,9 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 711,
+                    "startOffset": 761,
                     "endColumn": 60,
-                    "endOffset": 767
+                    "endOffset": 817
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -139,9 +139,9 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 772,
+                    "startOffset": 822,
                     "endColumn": 74,
-                    "endOffset": 842
+                    "endOffset": 892
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -158,9 +158,9 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 847,
+                    "startOffset": 897,
                     "endColumn": 74,
-                    "endOffset": 917
+                    "endOffset": 967
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -177,9 +177,9 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 922,
+                    "startOffset": 972,
                     "endColumn": 97,
-                    "endOffset": 1015
+                    "endOffset": 1065
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -196,9 +196,9 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1020,
+                    "startOffset": 1070,
                     "endColumn": 74,
-                    "endOffset": 1090
+                    "endOffset": 1140
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -215,9 +215,9 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1095,
+                    "startOffset": 1145,
                     "endColumn": 74,
-                    "endOffset": 1165
+                    "endOffset": 1215
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -234,9 +234,9 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1170,
+                    "startOffset": 1220,
                     "endColumn": 91,
-                    "endOffset": 1257
+                    "endOffset": 1307
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -253,9 +253,9 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1262,
+                    "startOffset": 1312,
                     "endColumn": 111,
-                    "endOffset": 1369
+                    "endOffset": 1419
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -272,9 +272,9 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1374,
+                    "startOffset": 1424,
                     "endColumn": 65,
-                    "endOffset": 1435
+                    "endOffset": 1485
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -291,9 +291,9 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1440,
+                    "startOffset": 1490,
                     "endColumn": 64,
-                    "endOffset": 1500
+                    "endOffset": 1550
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -310,9 +310,9 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1505,
+                    "startOffset": 1555,
                     "endColumn": 152,
-                    "endOffset": 1653
+                    "endOffset": 1703
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",
@@ -329,9 +329,28 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1658,
+                    "startOffset": 1708,
+                    "endColumn": 224,
+                    "endOffset": 1928
+                },
+                "from": {
+                    "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/res/values-ta/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 285,
+                        "endColumn": 224,
+                        "endOffset": 509
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1933,
                     "endColumn": 62,
-                    "endOffset": 1716
+                    "endOffset": 1991
                 },
                 "from": {
                     "file": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.18.0/res/values-ta/values-ta.xml",

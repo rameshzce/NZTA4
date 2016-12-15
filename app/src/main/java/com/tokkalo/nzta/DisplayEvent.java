@@ -17,7 +17,6 @@ import android.widget.TextView;
 public class DisplayEvent extends AppCompatActivity {
     SharedPreferences prefs;
     Context applicationContext;
-    String eventPosition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +41,7 @@ public class DisplayEvent extends AppCompatActivity {
 
         Intent intent = getIntent();
         final String eventName = intent.getStringExtra("eventName");
-        eventPosition = intent.getStringExtra("eventPosition");
+        //final String eventPosition = intent.getStringExtra("eventPosition");
 
         tv.setText(eventName);
 

@@ -20,10 +20,6 @@
     <init>();
 }
 
--keep class com.tokkalo.nzta.GCMNotificationIntentService {
-    <init>();
-}
-
 -keep class com.tokkalo.nzta.UserConfirmationActivity {
     <init>();
 }
@@ -136,35 +132,23 @@
     <init>();
 }
 
--keep class com.google.android.gms.ads.AdActivity {
+-keep class com.tokkalo.nzta.EventsActivity {
     <init>();
 }
 
--keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
+-keep class com.tokkalo.nzta.DisplayEvent {
     <init>();
 }
 
--keep class com.google.android.gms.appinvite.PreviewActivity {
+-keep class com.tokkalo.nzta.MyFirebaseMessagingService {
     <init>();
 }
 
--keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity {
+-keep class com.tokkalo.nzta.FirebaseInstanceIDService {
     <init>();
 }
 
--keep class com.google.android.gms.auth.api.signin.RevocationBoundService {
-    <init>();
-}
-
--keep class com.google.android.gms.measurement.AppMeasurementContentProvider {
-    <init>();
-}
-
--keep class com.google.android.gms.measurement.AppMeasurementReceiver {
-    <init>();
-}
-
--keep class com.google.android.gms.measurement.AppMeasurementService {
+-keep class com.tokkalo.nzta.ShowNotificationActivity {
     <init>();
 }
 
@@ -173,6 +157,38 @@
 }
 
 -keep class com.facebook.CustomTabMainActivity {
+    <init>();
+}
+
+-keep class com.google.firebase.messaging.FirebaseMessagingService {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdInternalReceiver {
+    <init>();
+}
+
+-keep class com.google.firebase.iid.FirebaseInstanceIdService {
+    <init>();
+}
+
+-keep class com.google.firebase.provider.FirebaseInitProvider {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementService {
     <init>();
 }
 

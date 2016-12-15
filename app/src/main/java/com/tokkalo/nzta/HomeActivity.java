@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesUtil;
+//import com.google.android.gms.common.GooglePlayServicesUtil;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -55,7 +55,7 @@ public class HomeActivity extends AppCompatActivity {
 
     // Check if Google Playservices is installed in Device or not
     private boolean checkPlayServices() {
-        int resultCode = GooglePlayServicesUtil
+       /* int resultCode = GooglePlayServicesUtil
                 .isGooglePlayServicesAvailable(this);
         // When Play services not found in device
         if (resultCode != ConnectionResult.SUCCESS) {
@@ -71,7 +71,7 @@ public class HomeActivity extends AppCompatActivity {
                 finish();
             }
             return false;
-        }
+        }*/
         return true;
     }
 

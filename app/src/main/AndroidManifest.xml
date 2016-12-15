@@ -26,6 +26,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!-- [START fcm_default_icon] -->
+        <!--
+             Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon_batukamma" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <!-- [END fcm_default_icon] -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -52,8 +69,6 @@
         </receiver>
 
         <!-- Register Service -->
-
-        <service android:name=".GCMNotificationIntentService" />
 
         <activity android:name=".UserConfirmationActivity" />
         <activity android:name=".UserActivity" />
@@ -105,7 +120,23 @@
         <activity android:name=".TeamActivity" />
         <activity android:name=".SplashActivity" />
         <activity android:name=".EventsActivity" />
-        <activity android:name=".DisplayEvent"></activity>
+        <activity android:name=".DisplayEvent" />
+
+        <!-- [START firebase_service] -->
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <service android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_iid_service] -->
+        <activity android:name=".ShowNotificationActivity"></activity>
     </application>
 
 </manifest>

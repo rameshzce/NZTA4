@@ -24,15 +24,30 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
-    <uses-feature
-        android:glEsVersion="0x00020000"
-        android:required="true" /> <!-- GCM Permissions - End here -->
+    <!-- GCM Permissions - End here -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+
+        <!-- [START fcm_default_icon] -->
+        <!--
+             Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon_batukamma" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <!-- [END fcm_default_icon] -->
         <activity android:name="com.tokkalo.nzta.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -59,8 +74,6 @@
         </receiver>
 
         <!-- Register Service -->
-
-        <service android:name="com.tokkalo.nzta.GCMNotificationIntentService" />
 
         <activity android:name="com.tokkalo.nzta.UserConfirmationActivity" />
         <activity android:name="com.tokkalo.nzta.UserActivity" />
@@ -110,48 +123,88 @@
         <activity android:name="com.tokkalo.nzta.HelpingHandsActivity" />
         <activity android:name="com.tokkalo.nzta.TeamActivity" />
         <activity android:name="com.tokkalo.nzta.SplashActivity" />
-        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
-        <activity
-            android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:theme="@android:style/Theme.Translucent" />
-        <activity
-            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
-            android:theme="@style/Theme.IAPTheme" />
-        <activity
-            android:name="com.google.android.gms.appinvite.PreviewActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppInvite.Preview" >
-            <intent-filter>
-                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+        <activity android:name="com.tokkalo.nzta.EventsActivity" />
+        <activity android:name="com.tokkalo.nzta.DisplayEvent" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+        <!-- [START firebase_service] -->
+        <service android:name="com.tokkalo.nzta.MyFirebaseMessagingService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
-        </activity>
+        </service>
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <service android:name="com.tokkalo.nzta.FirebaseInstanceIDService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_iid_service] -->
+        <activity android:name="com.tokkalo.nzta.ShowNotificationActivity" />
         <activity
-            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-            android:excludeFromRecents="true"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true" >
+        </activity>
+        <activity android:name="com.facebook.CustomTabMainActivity" />
         <!--
-Service handling Google Sign-In user revocation. For apps that do not integrate with
-            Google Sign-In, this service will never be started.
+ FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
         -->
         <service
-            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
             android:exported="true"
-            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.tokkalo.nzta" />
+            </intent-filter>
+        </receiver>
+        <!--
+ Internal (not exported) receiver used by the app to start its own exported services
+             without risk of being spoofed.
+        -->
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+            android:exported="false" />
+        <!--
+ FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
 
         <provider
-            android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"
-            android:authorities="com.tokkalo.nzta.google_measurement_service"
-            android:exported="false" />
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.tokkalo.nzta.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-            android:enabled="true" >
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
             <intent-filter>
-                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
             </intent-filter>
         </receiver>
 
@@ -159,12 +212,6 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:name="com.google.android.gms.measurement.AppMeasurementService"
             android:enabled="true"
             android:exported="false" />
-
-        <activity
-            android:name="com.facebook.CustomTabActivity"
-            android:exported="true" >
-        </activity>
-        <activity android:name="com.facebook.CustomTabMainActivity" />
     </application>
 
 </manifest>

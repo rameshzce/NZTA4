@@ -37,8 +37,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesUtil;
-import com.google.android.gms.gcm.GoogleCloudMessaging;
+//import com.google.android.gms.common.GooglePlayServicesUtil;
+//import com.google.android.gms.gcm.GoogleCloudMessaging;
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
     ProgressDialog prgDialog;
     RequestParams params = new RequestParams();
-    GoogleCloudMessaging gcmObj;
+    //GoogleCloudMessaging gcmObj;
     Context applicationContext;
     String regId = "";
 
@@ -92,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String REG_ID = "regId";
     public static final String EMAIL_ID = "eMailId";
     public static final String MOBILE_NUMBER = "mobileNumber";
+    private static final String TAG = "MyFirebaseIIDService";
 
 
     @Override
@@ -210,11 +212,11 @@ public class MainActivity extends AppCompatActivity {
         String registrationId = prefs.getString(REG_ID, "");
 
         String mobileNumber = prefs.getString(MOBILE_NUMBER, "");
-
+        //mobileNumber = "123";
         if (!TextUtils.isEmpty(mobileNumber)) {
             Intent i = new Intent(applicationContext, MemberActivity.class);
-            //startActivity(i);
-            //finish();
+            startActivity(i);
+            finish();
         }
 
         //When Email ID is set in Sharedpref, User will be taken to HomeActivity
@@ -225,6 +227,13 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
 
+
+        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+        Log.d(TAG, "Refreshed token: " + refreshedToken);
+
+        Toast.makeText(applicationContext,
+                refreshedToken,
+                Toast.LENGTH_LONG).show();
 
     }
 
@@ -387,7 +396,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             protected String doInBackground(Void... params) {
                 String msg = "";
-                try {
+                /*try {
                     if (gcmObj == null) {
                         gcmObj = GoogleCloudMessaging
                                 .getInstance(applicationContext);
@@ -398,7 +407,7 @@ public class MainActivity extends AppCompatActivity {
 
                 } catch (IOException ex) {
                     msg = "Error :" + ex.getMessage();
-                }
+                }*/
                 return msg;
             }
 
@@ -505,7 +514,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Check if Google Playservices is installed in Device or not
     private boolean checkPlayServices() {
-        int resultCode = GooglePlayServicesUtil
+        /*int resultCode = GooglePlayServicesUtil
                 .isGooglePlayServicesAvailable(this);
         // When Play services not found in device
         if (resultCode != ConnectionResult.SUCCESS) {
@@ -526,7 +535,7 @@ public class MainActivity extends AppCompatActivity {
             //applicationContext,
             //"This device supports Play services, App will work normally",
             //Toast.LENGTH_LONG).show();
-        }
+        }*/
         return true;
     }
 

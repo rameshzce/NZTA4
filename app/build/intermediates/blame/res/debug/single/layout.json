@@ -52,8 +52,16 @@
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/layout/tw__gallery_activity.xml"
     },
     {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_events.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/activity_events.xml"
+    },
+    {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__video_control.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.10.0/res/layout/tw__video_control.xml"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_show_notification.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/activity_show_notification.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/tw__tweet.xml",
@@ -346,6 +354,10 @@
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/place_autocomplete_progress.xml",
         "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout/place_autocomplete_progress.xml"
+    },
+    {
+        "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/activity_display_event.xml",
+        "source": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/src/main/res/layout/activity_display_event.xml"
     },
     {
         "merged": "/Users/rameshkolamala/AndroidStudioProjects/NZTA/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
