@@ -10,9 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.Gravity;
+import android.webkit.WebView;
 import android.widget.AbsListView;
 import android.widget.RelativeLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
+import android.text.Html;
 
 public class DisplayEvent extends AppCompatActivity {
     SharedPreferences prefs;
@@ -55,5 +58,12 @@ public class DisplayEvent extends AppCompatActivity {
         ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
 
         ab.setCustomView(tv);
+
+        TableRow tr1 = (TableRow) findViewById(R.id.tableRow1);
+        tr1.setMinimumHeight(50);
+
+        TextView start_message = (TextView) findViewById(R.id.start_message);
+        start_message.setText(Html.fromHtml("Thank you for downloading \"Demotivational Posters\" Click start below to start. To advance to the next picture click the \"Next\" button. If you see an image you would like to download click the \"Download\" button. If you enjoy this app please leave a rating."));
+
     }
 }
