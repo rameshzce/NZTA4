@@ -100,8 +100,7 @@ public class MemberActivity extends AppCompatActivity {
     }
 
     public void rowClick3(View view) {
-        Intent i = new Intent(applicationContext, GoGreenActivity.class);
-        //Intent i = new Intent(applicationContext, SubscriptionActivity.class);
+        Intent i = new Intent(applicationContext, HelpingHandsActivity.class);
         startActivity(i);
         finish();
     }
@@ -113,7 +112,7 @@ public class MemberActivity extends AppCompatActivity {
     }
 
     public void rowClick5(View view) {
-        Intent i = new Intent(applicationContext, HelpingHandsActivity.class);
+        Intent i = new Intent(applicationContext, MessagesActivity.class);
         startActivity(i);
         finish();
     }

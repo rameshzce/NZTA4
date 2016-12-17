@@ -136,7 +136,8 @@
             </intent-filter>
         </service>
         <!-- [END firebase_iid_service] -->
-        <activity android:name=".ShowNotificationActivity"></activity>
+        <activity android:name=".ShowNotificationActivity" />
+        <activity android:name=".MessagesActivity"></activity>
     </application>
 
 </manifest>
