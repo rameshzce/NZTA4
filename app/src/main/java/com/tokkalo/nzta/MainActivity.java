@@ -4,6 +4,8 @@ import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
+import com.facebook.GraphRequest;
+import com.facebook.GraphResponse;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 //import com.twitter.sdk.android.Twitter;
@@ -65,10 +67,6 @@ import org.apache.http.message.BasicNameValuePair;
 public class MainActivity extends AppCompatActivity {
     //private TwitterLoginButton loginButton;
 
-    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
-    //private static final String TWITTER_KEY = "tNMYriDJoxKnASqEvLCUdhES4";
-    //private static final String TWITTER_SECRET = "vZwTgq47Ixd67kzykhFAwULOHSL2ZnTubYqi4X17l8THSRman6";
-
     private EditText editTextName;
     private EditText editTextMobile;
     private EditText editTextEmail;
@@ -95,17 +93,25 @@ public class MainActivity extends AppCompatActivity {
     public static final String MOBILE_NUMBER = "mobileNumber";
     private static final String TAG = "MyFirebaseIIDService";
 
+    private static final String TOKEN = FirebaseInstanceId.getInstance().getToken();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
-        //Fabric.with(this, new Twitter(authConfig));
 
         FacebookSdk.sdkInitialize(getApplicationContext());
         callbackManager = CallbackManager.Factory.create();
 
+
         setContentView(R.layout.activity_main);
+
+        SharedPreferences prefs = getSharedPreferences("com.tokkalo.nzta", Context.MODE_PRIVATE);
+
+        String login = prefs.getString("login", "");
+
+        //Log.v("LoginActivity", token);
+        //Log.d("Token1", TOKEN);
 
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/handlee-regular.ttf");
 
@@ -125,9 +131,33 @@ public class MainActivity extends AppCompatActivity {
                                 "Auth Token: "
                                 + loginResult.getAccessToken().getToken()
                 );*/
-                String token = FirebaseInstanceId.getInstance().getToken();
-                String loginType = "4";
-                insertToDatabase(userId, userId, userId, token, loginType);
+
+
+                GraphRequest request = GraphRequest.newMeRequest(
+                        loginResult.getAccessToken(),
+                        new GraphRequest.GraphJSONObjectCallback() {
+                            @Override
+                            public void onCompleted(JSONObject object, GraphResponse response) {
+                                //Log.v("LoginActivity", response.toString());
+
+                                try {
+                                    // Application code
+                                    String id = object.getString("id");
+                                    String name = object.getString("name");
+                                    String loginType = "4";
+                                    insertToDatabase(name, id, id, TOKEN, loginType);
+
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                    Toast.makeText(MainActivity.this, "Error parsing JSON data.", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
+
+                Bundle parameters = new Bundle();
+                parameters.putString("fields", "id,name,email,gender,birthday");
+                request.setParameters(parameters);
+                request.executeAsync();
             }
 
             @Override
@@ -210,33 +240,23 @@ public class MainActivity extends AppCompatActivity {
         // Set Cancelable as False
         prgDialog.setCancelable(false);
 
-        SharedPreferences prefs = getSharedPreferences("com.tokkalo.nzta", Context.MODE_PRIVATE);
-        String registrationId = prefs.getString(REG_ID, "");
-
-        String mobileNumber = prefs.getString(MOBILE_NUMBER, "");
-        //mobileNumber = "123";
-        if (!TextUtils.isEmpty(mobileNumber)) {
-            Intent i = new Intent(applicationContext, MemberActivity.class);
-            startActivity(i);
-            finish();
-        }
-
-        //When Email ID is set in Sharedpref, User will be taken to HomeActivity
-        if (!TextUtils.isEmpty(registrationId)) {
-            Intent i = new Intent(applicationContext, MemberActivity.class);
-            i.putExtra("regId", registrationId);
-            startActivity(i);
-            finish();
-        }
 
 
-        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+
+
 
         /*Log.d(TAG, "Refreshed token: " + refreshedToken);
 
         Toast.makeText(applicationContext,
                 refreshedToken,
                 Toast.LENGTH_LONG).show();*/
+
+        if (!TextUtils.isEmpty(login)) {
+            Intent i = new Intent(applicationContext, MemberActivity.class);
+            startActivity(i);
+            finish();
+
+        }
 
     }
 
@@ -265,15 +285,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void insertToDatabase(final String name, String mobileNumber, String organization, String token, String loginType) {
+    private void insertToDatabase(final String name, final String mobileNumber, final String organization, final String token, String loginType) {
         final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this);
         progressDialog.setCancelable(true);
         progressDialog.setMessage("Please wait...");
         progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
 
         class SendPostReqAsyncTask extends AsyncTask<String, Void, String> {
+
+
             @Override
             protected String doInBackground(String... params) {
+                //Log.d("Token2", TOKEN);
 
                 List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
                 nameValuePairs.add(new BasicNameValuePair("fname", params[0]));
@@ -359,13 +382,9 @@ public class MainActivity extends AppCompatActivity {
 
                             Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
 
-                            if (phone.equals(name)) {
+                            if (phone.equals(mobileNumber)) {
                                 Intent intent = new Intent(MainActivity.this, MemberActivity.class);
-                                MainActivity.this.startActivity(intent);
-                            } else {
-                                Intent intent = new Intent(MainActivity.this, UserConfirmationActivity.class);
                                 intent.putExtra("phone", phone);
-                                //intent.putExtra("otp", otp);
                                 MainActivity.this.startActivity(intent);
                             }
 
@@ -394,7 +413,8 @@ public class MainActivity extends AppCompatActivity {
 
         if (checkPlayServices()) {
             // Register Device in GCM Server
-            registerInBackground(phone, name);
+            //registerInBackground(phone, name);
+            storeRegIdinSharedPref(applicationContext, regId, phone);
         }
     }
 
@@ -445,8 +465,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("com.tokkalo.nzta",
                 Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
-        editor.putString(REG_ID, regId);
-        editor.putString(MOBILE_NUMBER, mobile);
+        editor.putString("login", mobile);
         editor.commit();
         storeRegIdinServer(mobile);
 
