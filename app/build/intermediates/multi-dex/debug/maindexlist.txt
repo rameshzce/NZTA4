@@ -14,6 +14,7 @@ android/support/design/R$layout.class
 com/google/firebase/FirebaseException.class
 android/support/v4/view/NestedScrollingParent.class
 android/support/v4/view/MenuCompat.class
+com/google/android/gms/common/util/zza.class
 android/support/v4/media/session/MediaControllerCompat.class
 android/support/v4/app/FragmentStatePagerAdapter.class
 android/support/v4/net/ConnectivityManagerCompatApi24.class
@@ -22,6 +23,7 @@ android/support/annotation/IdRes.class
 android/support/v4/util/DebugUtils.class
 android/support/v4/view/ViewPager$4.class
 android/support/design/widget/Snackbar$2.class
+com/google/android/gms/internal/zzbql.class
 android/support/annotation/ColorInt.class
 android/support/annotation/RawRes.class
 com/google/android/gms/iid/MessengerCompat.class
@@ -36,6 +38,7 @@ android/support/v4/net/ConnectivityManagerCompat$HoneycombMR2ConnectivityManager
 android/support/v4/media/MediaBrowserCompat$Subscription.class
 android/support/v4/app/LoaderManager.class
 android/support/design/widget/AppBarLayout$Behavior$DragCallback.class
+com/google/android/gms/common/internal/zzaa$zza.class
 android/support/design/widget/AnimationUtils.class
 android/support/v7/widget/RecyclerView$AdapterDataObservable.class
 android/support/v7/view/menu/MenuBuilder$Callback.class
@@ -46,6 +49,7 @@ com/facebook/FacebookButtonBase.class
 android/support/v4/net/ConnectivityManagerCompat$JellyBeanConnectivityManagerCompatImpl.class
 com/google/firebase/messaging/RemoteMessage.class
 com/facebook/appevents/AppEventsConstants.class
+com/google/firebase/FirebaseOptions$Builder.class
 com/tokkalo/nzta/GalleryActivity$1.class
 android/support/v4/net/ConnectivityManagerCompatHoneycombMR2.class
 com/tokkalo/nzta/MainActivity$2.class
@@ -75,6 +79,7 @@ android/support/v4/app/FragmentTabHost.class
 com/tokkalo/nzta/VerticalPagerAdapter.class
 com/tokkalo/nzta/GoGreenActivity.class
 android/support/v4/app/DialogFragment.class
+com/google/android/gms/tasks/Tasks.class
 android/support/v4/util/ArrayMap.class
 android/support/design/widget/TabLayout$TabLayoutOnPageChangeListener.class
 com/facebook/share/widget/CreateAppGroupDialog$Result.class
@@ -102,6 +107,7 @@ android/support/v7/graphics/drawable/DrawerArrowDrawable.class
 android/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper.class
 android/support/v4/app/TaskStackBuilder.class
 com/google/firebase/iid/FirebaseInstanceIdReceiver.class
+com/google/firebase/FirebaseApp$zzc.class
 android/support/v7/app/ActionBar$OnNavigationListener.class
 com/tokkalo/nzta/SpecialAdapter.class
 android/support/v4/view/accessibility/AccessibilityNodeProviderCompat.class
@@ -138,6 +144,7 @@ android/support/design/widget/Snackbar$SnackbarLayout.class
 android/support/annotation/ArrayRes.class
 android/support/v7/app/AppCompatCallback.class
 android/support/v7/widget/RecyclerView$Recycler.class
+com/google/firebase/FirebaseApp$zza.class
 android/support/v7/widget/ListPopupWindow.class
 android/support/v4/view/animation/FastOutSlowInInterpolator.class
 android/support/v7/view/menu/MenuPresenter$Callback.class
@@ -146,6 +153,7 @@ android/support/v4/text/util/LinkifyCompat.class
 android/support/design/widget/SnackbarManager.class
 com/tokkalo/nzta/ReferFriendActivity.class
 android/support/design/widget/CoordinatorLayoutInsetsHelperLollipop.class
+com/google/android/gms/common/util/zzw.class
 android/support/design/widget/Snackbar$7.class
 com/tokkalo/nzta/CustomNumberPicker.class
 android/support/v4/media/MediaMetadataCompat$TextKey.class
@@ -180,6 +188,7 @@ android/support/v4/os/UserManagerCompat.class
 com/tokkalo/nzta/DisplayEvent.class
 android/support/v4/app/ServiceCompat$StopForegroundFlags.class
 okhttp3/FormBody$Builder.class
+com/google/firebase/FirebaseOptions.class
 android/support/design/widget/AppBarLayout$1.class
 android/support/annotation/MenuRes.class
 android/support/v4/view/LayoutInflaterFactory.class
@@ -201,6 +210,7 @@ android/support/v7/widget/ChildHelper.class
 com/tokkalo/nzta/CustomListAdapter.class
 android/support/v4/media/VolumeProviderCompat$ControlType.class
 android/support/v4/view/ViewPropertyAnimatorListenerAdapter.class
+com/google/android/gms/common/util/zzo.class
 android/support/design/widget/Snackbar$5.class
 com/google/android/gms/common/internal/zzan.class
 android/support/v4/content/LocalBroadcastManager.class
@@ -226,6 +236,7 @@ android/support/v4/view/animation/LookupTableInterpolator.class
 android/support/v4/os/TraceCompat.class
 android/support/v7/widget/AdapterHelper$Callback.class
 com/google/android/gms/measurement/AppMeasurement.class
+com/google/firebase/iid/zza.class
 android/support/v7/appcompat/R$styleable.class
 android/support/v7/widget/Toolbar.class
 com/google/firebase/iid/zzh$zza.class
@@ -241,14 +252,17 @@ android/support/design/widget/CoordinatorLayoutInsetsHelper.class
 com/facebook/FacebookSdk.class
 android/support/v7/graphics/drawable/DrawerArrowDrawable$ArrowDirection.class
 android/support/v7/widget/RecyclerView$AdapterDataObserver.class
+com/google/android/gms/internal/zzbqj.class
 com/emoiluj/doubleviewpager/HorizontalViewPager.class
 android/support/design/widget/HeaderBehavior$FlingRunnable.class
+com/google/firebase/FirebaseOptions$1.class
 android/support/v7/widget/RecyclerView$ItemAnimator$AdapterChanges.class
 com/facebook/internal/FacebookDialogFragment.class
 com/tokkalo/nzta/FullImageActivity$1.class
 android/support/v4/view/ViewCompatJellybeanMr2.class
 android/support/v7/widget/RecyclerView$3.class
 android/support/design/widget/SwipeDismissBehavior.class
+com/google/android/gms/common/util/zzt.class
 bolts/AggregateException.class
 com/google/android/gms/iid/zzb.class
 android/support/v4/media/session/MediaSessionCompat$Callback.class
@@ -275,6 +289,7 @@ com/google/android/gms/iid/zzb$zza.class
 android/support/v7/app/ActionBarActivity.class
 com/google/firebase/iid/FirebaseInstanceIdService.class
 com/google/android/gms/common/util/zzs.class
+com/google/android/gms/common/internal/zzam.class
 android/support/v4/net/ConnectivityManagerCompat$BaseConnectivityManagerCompatImpl.class
 android/support/v4/media/session/MediaSessionCompat$Token.class
 android/support/v4/app/ActivityCompatApi23.class
@@ -302,6 +317,7 @@ android/support/design/widget/Snackbar$1.class
 android/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase.class
 android/support/v4/view/ViewPager$DecorView.class
 com/tokkalo/nzta/EventsActivity.class
+com/google/firebase/iid/zzf$1.class
 android/support/v7/widget/TintTypedArray.class
 android/support/v4/media/MediaBrowserCompat$ConnectionCallback$ConnectionCallbackInternal.class
 android/support/v4/view/ViewCompat$LollipopViewCompatImpl$1.class
@@ -318,6 +334,7 @@ android/support/v4/graphics/drawable/DrawableCompat.class
 android/support/v7/app/ActionBarDrawerToggle.class
 android/support/v7/app/ActionBar$OnMenuVisibilityListener.class
 android/support/v4/app/ServiceCompat.class
+com/google/android/gms/tasks/Task.class
 com/loopj/android/http/ResponseHandlerInterface.class
 android/support/v4/app/AppOpsManagerCompat.class
 android/support/annotation/FloatRange.class
@@ -336,6 +353,7 @@ com/tokkalo/nzta/MainActivity$1SendPostReqAsyncTask.class
 android/support/v7/widget/StaggeredGridLayoutManager.class
 android/support/v4/app/BaseFragmentActivityGingerbread.class
 android/support/v4/media/session/PlaybackStateCompatApi21.class
+com/google/firebase/FirebaseApp$zzb.class
 com/tokkalo/nzta/UCEventsActivity.class
 android/support/v4/media/MediaBrowserCompat$MediaItem.class
 android/support/v4/app/FragmentController.class
@@ -370,6 +388,7 @@ android/support/v4/app/FragmentManagerImpl$4.class
 android/support/annotation/CheckResult.class
 android/support/v4/media/VolumeProviderCompat.class
 android/support/v4/view/ViewCompat$ICSViewCompatImpl.class
+com/google/firebase/FirebaseApiNotAvailableException.class
 android/support/annotation/AnimRes.class
 com/tokkalo/nzta/MainActivity$1.class
 android/support/v4/view/KeyEventCompat.class
@@ -430,8 +449,10 @@ android/support/annotation/RequiresPermission$Write.class
 com/google/android/gms/iid/MessengerCompat$zza.class
 android/support/v4/app/FragmentActivity$NonConfigurationInstances.class
 android/support/v4/media/MediaMetadataCompat$1.class
+com/google/android/gms/internal/zzbqk.class
 com/tokkalo/nzta/SendMessageActivity.class
 android/support/v7/app/AlertDialog$Builder.class
+com/google/android/gms/common/util/zzv.class
 com/google/android/gms/common/zzc.class
 android/support/design/R.class
 android/support/design/widget/Snackbar$6.class
@@ -468,6 +489,7 @@ android/support/design/widget/TabLayout$ViewPagerOnTabSelectedListener.class
 android/support/design/widget/AppBarLayout$OnOffsetChangedListener.class
 android/support/v7/app/ActionBar$NavigationMode.class
 android/support/v7/view/ActionMode.class
+com/google/android/gms/internal/zzbqm.class
 android/support/v4/app/BaseFragmentActivityHoneycomb.class
 android/support/v4/app/ActivityCompatApi23$RequestPermissionsRequestCodeValidator.class
 android/support/design/widget/Snackbar$8.class
@@ -615,6 +637,7 @@ android/support/design/widget/Snackbar$SnackbarLayout$OnAttachStateChangeListene
 com/tokkalo/nzta/TestActivity.class
 android/support/annotation/RestrictTo$Scope.class
 android/support/v7/app/AppCompatDelegate$NightMode.class
+com/google/android/gms/common/internal/zzaa.class
 okhttp3/Request.class
 android/support/v4/app/ServiceCompat$BaseServiceCompatImpl.class
 android/support/v4/view/VelocityTrackerCompat.class
@@ -626,6 +649,7 @@ android/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorFinishedListener
 android/support/v4/media/MediaBrowserCompat$MediaBrowserImplApi23.class
 android/support/v4/view/ViewCompat$KitKatViewCompatImpl.class
 android/support/v4/media/session/MediaSessionCompat$OnActiveChangeListener.class
+com/google/android/gms/common/util/zzc.class
 com/tokkalo/nzta/HomeActivity.class
 com/tokkalo/nzta/UserConfirmationActivity.class
 android/support/design/widget/ViewGroupUtils.class

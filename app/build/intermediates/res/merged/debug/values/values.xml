@@ -104,6 +104,7 @@
     <color name="dim_foreground_material_light">#ff323232</color>
     <color name="existingEvents">#ffd428</color>
     <color name="existingEventsTitle">#b59206</color>
+    <color name="fb">#3B5998</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
     <color name="fuchsia">#FF00FF</color>
@@ -1525,6 +1526,12 @@
     </style>
     <style name="CustomFont">
         <item name="font">@string/fonthandlee</item>
+    </style>
+    <style name="FacebookLoginButton">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_height">40dp</item>
     </style>
     <style name="MessengerButton">
     <item name="android:clickable">true</item>

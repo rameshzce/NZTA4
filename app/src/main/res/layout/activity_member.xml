@@ -52,8 +52,7 @@
                     android:textSize="30dp"
                     android:textColor="@color/white"
                     android:layout_gravity="right"
-                    android:paddingRight="0dp"
-                    android:textStyle="bold" />
+                    android:paddingRight="0dp" />
             </TableRow>
 
 
@@ -114,8 +113,7 @@
                         android:textSize="30dp"
                         android:textColor="@color/white"
                         android:layout_gravity="right"
-                        android:paddingRight="0dp"
-                        android:textStyle="bold" />
+                        android:paddingRight="0dp" />
                 </TableRow>
 
 
@@ -176,8 +174,7 @@
                         android:textSize="30dp"
                         android:textColor="@color/white"
                         android:layout_gravity="right"
-                        android:paddingRight="0dp"
-                        android:textStyle="bold" />
+                        android:paddingRight="0dp" />
                 </TableRow>
 
 
@@ -187,7 +184,7 @@
                 android:id="@+id/imageView3"
                 android:paddingLeft="60dp"
                 android:paddingRight="10dp"
-                android:src="@drawable/go_green"
+                android:src="@drawable/hands"
                 android:layout_weight="1" />
 
             <ImageView
@@ -237,8 +234,7 @@
                         android:textSize="30dp"
                         android:textColor="@color/white"
                         android:layout_gravity="right"
-                        android:paddingRight="0dp"
-                        android:textStyle="bold" />
+                        android:paddingRight="0dp" />
                 </TableRow>
 
 
@@ -298,8 +294,7 @@
                         android:textSize="30dp"
                         android:textColor="@color/white"
                         android:layout_gravity="right"
-                        android:paddingRight="0dp"
-                        android:textStyle="bold" />
+                        android:paddingRight="0dp" />
                 </TableRow>
 
 
@@ -309,7 +304,9 @@
                 android:id="@+id/imageView5"
                 android:paddingLeft="60dp"
                 android:paddingRight="10dp"
-                android:src="@drawable/hands"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/all_messages"
                 android:layout_weight="1" />
 
             <ImageView
