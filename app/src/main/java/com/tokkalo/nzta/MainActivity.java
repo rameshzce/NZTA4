@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         info = (TextView) findViewById(R.id.fbLoginInfo);
-        info.setTypeface(font);
+        //info.setTypeface(font);
         loginButtonFb = (LoginButton) findViewById(R.id.login_button);
 
         loginButtonFb.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
@@ -143,32 +143,32 @@ public class MainActivity extends AppCompatActivity {
 
 
         TextView txt1 = (TextView) findViewById(R.id.textView1);
-        txt1.setTypeface(font);
+        //txt1.setTypeface(font);
 
         Button btn1 = (Button) findViewById(R.id.button);
-        btn1.setTypeface(font);
+        //btn1.setTypeface(font);
 
         EditText txt2 = (EditText) findViewById(R.id.editTextName);
-        txt2.setTypeface(font);
+        //txt2.setTypeface(font);
 
         EditText txt3 = (EditText) findViewById(R.id.editTextMobile);
-        txt3.setTypeface(font);
+        //txt3.setTypeface(font);
 
         EditText txt4 = (EditText) findViewById(R.id.editTextEmail);
-        txt4.setTypeface(font);
+        //txt4.setTypeface(font);
 
 
         TextInputLayout til1 = (TextInputLayout) findViewById(R.id.nameLayout);
-        til1.getEditText().setTypeface(font);
-        til1.setTypeface(font);
+        //til1.getEditText().setTypeface(font);
+        //til1.setTypeface(font);
 
         TextInputLayout til2 = (TextInputLayout) findViewById(R.id.mobLayout);
-        til2.getEditText().setTypeface(font);
-        til2.setTypeface(font);
+        //til2.getEditText().setTypeface(font);
+        //til2.setTypeface(font);
 
         TextInputLayout til3 = (TextInputLayout) findViewById(R.id.emailLayout);
-        til3.getEditText().setTypeface(font);
-        til3.setTypeface(font);
+        //til3.getEditText().setTypeface(font);
+        //til3.setTypeface(font);
 
 
 

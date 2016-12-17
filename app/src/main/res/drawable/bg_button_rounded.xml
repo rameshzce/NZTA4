@@ -3,18 +3,18 @@
     android:shape="rectangle">
 
     <!-- Background color -->
-    <solid android:color="@color/bg_button_login"></solid>
+    <solid android:color="@color/fuchsia" />
 
     <!-- Padding -->
     <padding
         android:left="5dp"
         android:top="5dp"
         android:right="5dp"
-        android:bottom="5dp"></padding>
+        android:bottom="5dp" />
 
     <!-- Corner radius -->
-    <corners android:radius="5dp"></corners>
+    <corners android:radius="5dp" />
 
     <!-- Font radius -->
-    <font android:textSize="20dp"></font>
+    <font android:textSize="20dp" />
 </shape>
