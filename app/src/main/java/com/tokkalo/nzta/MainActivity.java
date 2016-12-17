@@ -309,9 +309,11 @@ public class MainActivity extends AppCompatActivity {
                 InputStream inputStream = null;
 
                 try {
+
+                    String token1 = FirebaseInstanceId.getInstance().getToken();
                     HttpClient httpClient = new DefaultHttpClient();
                     HttpPost httpPost = new HttpPost(
-                            "http://www.tokkalo.com/api/1/submit_user.php");
+                            "http://www.tokkalo.com/api/1/submit_user.php?token=" + token1);
                     httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
                     //httpPost.setHeader("Content-type", "application/json");
