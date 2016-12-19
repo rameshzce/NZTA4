@@ -3,20 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/item1"
-        android:icon="@mipmap/ic_launcher"
-        android:title="Profile" />
+        android:icon="@drawable/icon_batukamma"
+        android:title="Home" />
     <item
         android:id="@+id/item2"
         android:icon="@mipmap/ic_launcher"
-        android:title="Subscribe" />
+        android:title="Profile" />
     <item
         android:id="@+id/item3"
         android:icon="@mipmap/ic_launcher"
-        android:title="Team NZTA" />
+        android:title="Subscribe" />
     <item
         android:id="@+id/item4"
         android:icon="@mipmap/ic_launcher"
+        android:title="Team NZTA" />
+    <item
+        android:id="@+id/item5"
+        android:icon="@mipmap/ic_launcher"
         android:title="Sponsors" />
+    <item
+        android:id="@+id/item6"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Send a message" />
 
 
 </menu>

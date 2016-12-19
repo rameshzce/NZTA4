@@ -155,16 +155,28 @@ public class MemberActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.item1:
-                Intent profileIntent = new Intent(MemberActivity.this, ProfileActivity.class);
-                MemberActivity.this.startActivity(profileIntent);
+                Intent homeIntent = new Intent(MemberActivity.this, ProfileActivity.class);
+                MemberActivity.this.startActivity(homeIntent);
                 return true;
             case R.id.item2:
-                Intent subscriptionIntent = new Intent(MemberActivity.this, SubscriptionActivity.class);
-                MemberActivity.this.startActivity(subscriptionIntent);
+                Intent profile = new Intent(MemberActivity.this, SubscriptionActivity.class);
+                MemberActivity.this.startActivity(profile);
                 return true;
             case R.id.item3:
+                Intent subscriptionIntent = new Intent(MemberActivity.this, TeamActivity.class);
+                MemberActivity.this.startActivity(subscriptionIntent);
+                return true;
+            case R.id.item4:
                 Intent teamIntent = new Intent(MemberActivity.this, TeamActivity.class);
                 MemberActivity.this.startActivity(teamIntent);
+                return true;
+            case R.id.item5:
+                Intent sponsors = new Intent(MemberActivity.this, TeamActivity.class);
+                MemberActivity.this.startActivity(sponsors);
+                return true;
+            case R.id.item6:
+                Intent message = new Intent(MemberActivity.this, TeamActivity.class);
+                MemberActivity.this.startActivity(message);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

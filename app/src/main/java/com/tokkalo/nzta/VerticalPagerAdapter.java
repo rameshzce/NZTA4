@@ -97,7 +97,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
         desig.setGravity(Gravity.CENTER_HORIZONTAL);
         desig.setText(teamDesig[position]);
         desig.setTextColor(Color.WHITE);
-        desig.setTextSize(25);
+        desig.setTextSize(22);
         //desig.setTypeface(font);
         desig.setSingleLine(false);
         linear.addView(desig);
@@ -111,15 +111,15 @@ public class VerticalPagerAdapter extends PagerAdapter {
         name.setGravity(Gravity.CENTER_HORIZONTAL);
         name.setText(teamNames[position]);
         name.setTextColor(Color.WHITE);
-        name.setTextSize(20);
+        name.setTextSize(18);
         //name.setTypeface(font);
         linear.addView(name);
 
         TextView mobile = new TextView(mContext);
         mobile.setGravity(Gravity.CENTER_HORIZONTAL);
-        mobile.setText(teamMobiles[position]);
+        mobile.setText("M. " + teamMobiles[position]);
         mobile.setTextColor(Color.WHITE);
-        mobile.setTextSize(20);
+        mobile.setTextSize(18);
         //mobile.setTypeface(font);
         linear.addView(mobile);
 
@@ -127,7 +127,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
         email.setGravity(Gravity.CENTER_HORIZONTAL);
         email.setText(teamEmails[position]);
         email.setTextColor(Color.WHITE);
-        email.setTextSize(20);
+        email.setTextSize(18);
         //email.setTypeface(font);
         linear.addView(email);
 
