@@ -61,6 +61,7 @@
                         android:id="@+id/imageView2"
                         android:src="@drawable/camera"
                         android:gravity="center"
+                        android:onClick="showGallery"
                         android:layout_weight="1" />
 
                     <ImageView

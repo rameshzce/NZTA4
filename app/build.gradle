@@ -2,9 +2,16 @@ apply plugin: 'com.android.application'
 //apply plugin: 'io.fabric'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'nzta'
+            keyPassword 'Rams2000*'
+            storeFile file('/Users/rameshkolamala/keystore/nzta.jks')
+            storePassword 'Rams2000*'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
-
     defaultConfig {
         applicationId "com.tokkalo.nzta"
         minSdkVersion 15
@@ -17,6 +24,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
     useLibrary 'org.apache.http.legacy'
@@ -27,9 +35,8 @@ repositories {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:support-v4:23.1.1'
     compile 'com.android.support:design:23.1.1'
@@ -39,7 +46,6 @@ dependencies {
     compile project(':DoubleViewPager')
     compile 'com.google.firebase:firebase-messaging:10.0.1'
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
-
 }
 
 apply plugin: 'com.google.gms.google-services'

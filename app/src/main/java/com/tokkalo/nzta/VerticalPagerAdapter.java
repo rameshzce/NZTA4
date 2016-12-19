@@ -63,12 +63,12 @@ public class VerticalPagerAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        teamImages = new int[]{R.drawable.team1, R.drawable.team2, R.drawable.team3};
-        teamDesig = new String[]{"President", "Executive \n Committe Member", "Joint Treasurer"};
-        teamNames = new String[]{"Dharmendar Alle", "Vijay Kosana", "Sai Santhan Reddy Kusam"};
-        teamMobiles = new String[]{"M. 0212663666", "M. 021739943", "M. 02102399325"};
-        teamEmails = new String[]{"nztapresdent@gmail.com", "vijakosana@gmail.com", "saisanthan@gmail.com"};
-        teamColors = new String[]{"#0671B5", "#AC36CA", "#C59107"};
+        teamImages = new int[]{R.drawable.president, R.drawable.ramana_salvaji, R.drawable.arun, R.drawable.rajeswri, R.drawable.raj, R.drawable.narsing, R.drawable.srinivas, R.drawable.santhan_redddy, R.drawable.aravind_reddy, R.drawable.aruna, R.drawable.vijaykosna, R.drawable.sruti, R.drawable.rakesh_gondlyala, R.drawable.subrahamanyam};
+        teamDesig = new String[]{"President", "General Secretary", "Vice President", "Vice President", "Treasurer", "Joint Secretary", "Joint Secretary", "Joint Treasurer", "Executive Committee Member", "Executive Committee Member", "Executive Committee Member", "Executive Committee Member", "Executive Committee Member", "Executive Committee Member"};
+        teamNames = new String[]{"Mr. Dharmendar Alle", "Mr. Venkata Ramana Rao salvaji", "Mr.Arun Rao Paidigummala", "Mrs.Rajeshwari Gangishetty", "Mr.Raja Shekar Reddy Patlolla", "Mr. Narsing Rao Enaganti", "Mr. Srinivas Yepuri", "Mr.Sai Santhan Reddy Kusam", "Mr.Aravind Reddy Bathula", "Mrs.Aruna Salvaji", "Mr. Vijay Kosana", "Mrs.Dharani Shruthi Akoju", "Mr.Rakesh Gondlyala", "Mr.D.V.S.R.Subrahmanyam"};
+        teamMobiles = new String[]{"0212663666", "0220491003", "0212511454", "02102604222", "02102468855", "xxx", "xxx", "02102399325", "0220372376", "0211262640", "021739943", "02102923569", "0211558543", "0211899494"};
+        teamEmails = new String[]{"nztapresident@gmail.com", "generalsecretarynzta@gmail.com", "arunrao.p@gmail.com", "rajjugangishetty@gmail.com", "rrpatllola@gmail.com", "xxx", "xxx", "xxx", "aravind.bathula@gmail.com", "asalvaji@yahoo.com", "vijaykosana@gmail.com", "sruthiakoju@hotmail.com", "rakesh.gon@hotmail.com", "subbu.desu@gmail.com"};
+        teamColors = new String[]{"#AC36CA", "#AC36CA", "#C59107", "#C59107", "#C59107", "#C59107", "#C59107", "#C59107", "#0671B5", "#0671B5", "#0671B5", "#0671B5", "#0671B5", "#0671B5"};
 
         LinearLayout linear = new LinearLayout(mContext);
         linear.setOrientation(LinearLayout.VERTICAL);
@@ -98,7 +98,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
         desig.setText(teamDesig[position]);
         desig.setTextColor(Color.WHITE);
         desig.setTextSize(25);
-        desig.setTypeface(font);
+        //desig.setTypeface(font);
         desig.setSingleLine(false);
         linear.addView(desig);
 
@@ -112,7 +112,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
         name.setText(teamNames[position]);
         name.setTextColor(Color.WHITE);
         name.setTextSize(20);
-        name.setTypeface(font);
+        //name.setTypeface(font);
         linear.addView(name);
 
         TextView mobile = new TextView(mContext);
@@ -120,7 +120,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
         mobile.setText(teamMobiles[position]);
         mobile.setTextColor(Color.WHITE);
         mobile.setTextSize(20);
-        mobile.setTypeface(font);
+        //mobile.setTypeface(font);
         linear.addView(mobile);
 
         TextView email = new TextView(mContext);
@@ -128,7 +128,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
         email.setText(teamEmails[position]);
         email.setTextColor(Color.WHITE);
         email.setTextSize(20);
-        email.setTypeface(font);
+        //email.setTypeface(font);
         linear.addView(email);
 
         ImageView arrow = new ImageView(mContext);

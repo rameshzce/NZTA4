@@ -20,6 +20,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.AbsListView;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,6 +34,10 @@ public class GalleryActivity extends AppCompatActivity {
     String galleryType;
     int newWidth;
     String year;
+
+    private ImageView imageView;
+    private ImageLoader imgLoader;
+    private String strUrl = "https://upload.wikimedia.org/wikipedia/commons/4/4b/Everest_kalapatthar_crop.jpg";
 
     public static String[] prgmNameList = {
             "Let Us C", "c++", "JAVA",
@@ -134,21 +139,8 @@ public class GalleryActivity extends AppCompatActivity {
         //Toast.makeText(GalleryActivity.this, msg, Toast.LENGTH_LONG).show();
 
 
-        newWidth = ((width - 30) / 3);
-
-        if (rotation.equalsIgnoreCase("L")) {
-            newWidth = ((width - 50) / 5);
-        }
-
-        gv = (GridView) findViewById(R.id.gridView1);
-        gv.setAdapter(new CustomAdapter(this, prgmNameList, prgmImages, newWidth, year));
-
-        //gv.setVerticalSpacing(5);
-        gv.setNumColumns(3);
-
-        if (rotation.equalsIgnoreCase("L")) {
-            gv.setNumColumns(5);
-        }
+        imageView = (ImageView) findViewById(R.id.imageView1);
+        imgLoader = new ImageLoader(this);
 
     }
 
@@ -168,5 +160,9 @@ public class GalleryActivity extends AppCompatActivity {
                 //return "reverse landscape";
                 return "L";
         }
+    }
+
+    public void btnLoadImage(View v) {
+        imgLoader.displayImage(strUrl, imageView);
     }
 }

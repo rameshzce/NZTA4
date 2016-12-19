@@ -47,7 +47,7 @@ public class TeamActivity extends AppCompatActivity {
 
         tv.setGravity(Gravity.CENTER);
 
-        tv.setTypeface(font);
+        //tv.setTypeface(font);
 
         tv.setTextColor(Color.parseColor("#FFFFFF"));
         tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 20);
@@ -65,7 +65,7 @@ public class TeamActivity extends AppCompatActivity {
         //verticalChilds = getIntent().getExtras().getInt("VERTICAL");
 
         horizontalChilds = 1;
-        verticalChilds = 3;
+        verticalChilds = 14;
     }
 
     private void loadUI() {
