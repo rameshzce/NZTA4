@@ -50,41 +50,41 @@ public class SubscriptionActivity extends AppCompatActivity {
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/handlee-regular.ttf");
 
         btn1 = (Button) findViewById(R.id.button);
-        btn1.setTypeface(font);
+        //btn1.setTypeface(font);
 
         Button btn2 = (Button) findViewById(R.id.yes);
-        btn2.setTypeface(font);
+        //btn2.setTypeface(font);
 
         Button btn3 = (Button) findViewById(R.id.no);
-        btn3.setTypeface(font);
+        //btn3.setTypeface(font);
 
         txt1 = (TextView) findViewById(R.id.textView1);
-        txt1.setTypeface(font);
+        //txt1.setTypeface(font);
 
         txt4 = (TextView) findViewById(R.id.textView2);
-        txt4.setTypeface(font);
+        //txt4.setTypeface(font);
 
         txt2 = (TextView) findViewById(R.id.textViewResult);
-        txt2.setTypeface(font);
+        //txt2.setTypeface(font);
 
         txt3 = (TextView) findViewById(R.id.textViewResult2);
-        txt3.setTypeface(font);
+        //txt3.setTypeface(font);
 
         editTextMobile = (EditText) findViewById(R.id.editTextMobile);
-        editTextMobile.setTypeface(font);
+        //editTextMobile.setTypeface(font);
         editTextMobile.setHintTextColor(Color.parseColor("#ffffff"));
 
         editTextName = (EditText) findViewById(R.id.editTextName);
-        editTextName.setTypeface(font);
+        //editTextName.setTypeface(font);
         editTextName.setHintTextColor(Color.parseColor("#ffffff"));
 
         editTextReferredby = (EditText) findViewById(R.id.editTextReferredby);
-        editTextReferredby.setTypeface(font);
+        //editTextReferredby.setTypeface(font);
         editTextReferredby.setHintTextColor(Color.parseColor("#ffffff"));
 
 
         radioButton = (RadioButton) findViewById(R.id.familyYrarly);
-        radioButton.setTypeface(font);
+        //radioButton.setTypeface(font);
 
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
         ;
@@ -93,10 +93,10 @@ public class SubscriptionActivity extends AppCompatActivity {
         radioGroup.setLeft(50);
 
         radioButton2 = (RadioButton) findViewById(R.id.studentYearly);
-        radioButton2.setTypeface(font);
+        //radioButton2.setTypeface(font);
 
         radioButton3 = (RadioButton) findViewById(R.id.lifetime);
-        radioButton3.setTypeface(font);
+        //radioButton3.setTypeface(font);
     }
 
     public void subscribe(View view) {
