@@ -1,6 +1,7 @@
 package com.tokkalo.nzta;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,7 +31,7 @@ public class CustomVideoListAdapter extends ArrayAdapter<String> {
     }
 
     @Override
-    public View getView(int position, View view, ViewGroup parent) {
+    public View getView(final int position, View view, ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
         View rowView = inflater.inflate(R.layout.list_single, null, true);
 
@@ -45,6 +46,18 @@ public class CustomVideoListAdapter extends ArrayAdapter<String> {
                 .into(imageView);
 
         //imageView.setImageResource(imageId[position]);
+        imageView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                //Toast.makeText(context, "You Clicked " + result[position], Toast.LENGTH_LONG).show();
+                Intent i = new Intent(context, DisplayImageActivity.class);
+                // passing array index
+                i.putExtra("image", url + web[position]);
+                context.startActivity(i);
+            }
+        });
         return rowView;
     }
 }

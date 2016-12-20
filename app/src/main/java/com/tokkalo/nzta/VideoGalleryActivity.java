@@ -103,22 +103,22 @@ public class VideoGalleryActivity extends AppCompatActivity {
                 CustomVideoListAdapter(VideoGalleryActivity.this, images);
         list = (ListView) findViewById(R.id.listView);
         list.setAdapter(adapter);
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 //Toast.makeText(VideoGalleryActivity.this, "You Clicked at " + prgmNameList[+position], Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(VideoGalleryActivity.this, PlayVideoActivity.class);
+                Intent i = new Intent(VideoGalleryActivity.this, DisplayImageActivity.class);
                 // passing array index
                 i.putExtra("id", position);
                 i.putExtra("yearSelected", year);
-                i.putExtra("galleryType", "Video Gallery");
+                i.putExtra("eventName", "Video Gallery");
                 i.putExtra("year", year);
-                i.putExtra("video", images[position]);
+                i.putExtra("image", images[position]);
                 VideoGalleryActivity.this.startActivity(i);
             }
-        });
+        });*/
 
         /*Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
@@ -142,14 +142,7 @@ public class VideoGalleryActivity extends AppCompatActivity {
         gv = (GridView) findViewById(R.id.gridView2);
         gv.setAdapter(new CustomAdapter2(this, prgmNameList, prgmImages, newWidth, year));*/
 
-       /* imageView = (ImageView) findViewById(R.id.imageView);
-
-        Picasso.with(this)
-                .load("https://www.simplifiedcoding.net/wp-content/uploads/2015/10/advertise.png")
-                //.placeholder(R.drawable.placeholder)   // optional
-                //.error(R.drawable.error)      // optional
-                .resize(400,400)                        // optional
-                .into(imageView);*/
+       /* */
     }
 
     public String getRotation(Context context) {

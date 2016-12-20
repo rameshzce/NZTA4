@@ -138,7 +138,9 @@
         </service>
         <!-- [END firebase_iid_service] -->
         <activity android:name=".ShowNotificationActivity" />
-        <activity android:name=".MessagesActivity"></activity>
+        <activity android:name=".MessagesActivity" />
+        <activity android:name=".DisplayImage" />
+        <activity android:name=".DisplayImageActivity"></activity>
     </application>
 
 </manifest>
