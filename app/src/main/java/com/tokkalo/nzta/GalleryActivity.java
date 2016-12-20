@@ -25,6 +25,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 public class GalleryActivity extends AppCompatActivity {
@@ -84,25 +86,6 @@ public class GalleryActivity extends AppCompatActivity {
 
         ab.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#b59206")));
 
-        TextView pg = (TextView) findViewById(R.id.photoGallery);
-        pg.setTypeface(font);
-
-        TextView vg = (TextView) findViewById(R.id.videoGallery);
-        vg.setTypeface(font);
-
-
-            vg.setBackgroundColor(Color.parseColor("#b59206"));
-            pg.setBackgroundColor(Color.parseColor("#ffd428"));
-
-            vg.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(GalleryActivity.this, VideoGalleryActivity.class);
-                    intent.putExtra("galleryType", galleryType);
-                    intent.putExtra("year", year);
-                    GalleryActivity.this.startActivity(intent);
-                }
-            });
 
 
         TextView tv = new TextView(getApplicationContext());
@@ -139,8 +122,14 @@ public class GalleryActivity extends AppCompatActivity {
         //Toast.makeText(GalleryActivity.this, msg, Toast.LENGTH_LONG).show();
 
 
-        imageView = (ImageView) findViewById(R.id.imageView1);
-        imgLoader = new ImageLoader(this);
+        imageView = (ImageView) findViewById(R.id.imageView2);
+        //imgLoader = new ImageLoader(this);
+        Picasso.with(this)
+                .load("https://www.simplifiedcoding.net/wp-content/uploads/2015/10/advertise.png")
+                        //.placeholder(R.drawable.placeholder)   // optional
+                        //.error(R.drawable.error)      // optional
+                .resize(400, 400)                        // optional
+                .into(imageView);
 
     }
 
@@ -162,7 +151,5 @@ public class GalleryActivity extends AppCompatActivity {
         }
     }
 
-    public void btnLoadImage(View v) {
-        imgLoader.displayImage(strUrl, imageView);
-    }
+
 }

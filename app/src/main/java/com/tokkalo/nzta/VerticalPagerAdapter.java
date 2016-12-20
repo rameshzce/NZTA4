@@ -93,6 +93,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
         tvChild.setTextSize(70);
         linear.addView(tvChild);*/
 
+
         TextView desig = new TextView(mContext);
         desig.setGravity(Gravity.CENTER_HORIZONTAL);
         desig.setText(teamDesig[position]);
@@ -135,6 +136,11 @@ public class VerticalPagerAdapter extends PagerAdapter {
         arrow.setImageResource(R.drawable.down_arrow);
         arrow.setPadding(0, 300, 0, 0);
         linear.addView(arrow);
+
+        /*View bg = new View(mContext);
+        bg.setMinimumHeight(100);
+        bg.setBackgroundColor(Color.WHITE);
+        linear.addView(bg);*/
 
         linear.setBackgroundColor(Color.parseColor(teamColors[position]));
         //setColors(position, linear);

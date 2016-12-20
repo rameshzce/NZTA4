@@ -2,6 +2,7 @@ package com.tokkalo.nzta;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Point;
 import android.graphics.Typeface;
@@ -18,10 +19,13 @@ import android.view.WindowManager;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -32,14 +36,21 @@ public class VideoGalleryActivity extends AppCompatActivity {
     String galleryType;
     int newWidth;
     String year;
+    private ImageView imageView;
 
-    public static String[] prgmNameList = {
-            "sravya, geetha, radha dance", "madhu acting play", "sravya, geetha, radha dance",
-            "madhu acting play", "sravya, geetha, radha dance", "madhu acting play"
-    };
-    public static Integer[] prgmImages = {
-            R.drawable.video1, R.drawable.video2, R.drawable.video3,
-            R.drawable.video4, R.drawable.video5, R.drawable.video6
+
+    public String images[] = {
+            "images/thumb1.jpg",
+            "images/thumb2.jpg",
+            "images/thumb3.jpg",
+            "images/thumb4.jpg",
+            "images/thumb5.jpg",
+            "images/thumb6.jpg",
+            "images/thumb7.jpg",
+            "images/thumb8.jpg",
+            "images/thumb9.jpg",
+            "images/thumb10.jpg",
+            "images/thumb11.jpg",
     };
 
     ListView list;
@@ -51,8 +62,12 @@ public class VideoGalleryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_video_gallery);
 
         Intent intent = getIntent();
-        galleryType = intent.getStringExtra("galleryType");
+        galleryType = intent.getStringExtra("eventName");
         year = intent.getStringExtra("year");
+
+        SharedPreferences prefs = getSharedPreferences("com.tokkalo.nzta", Context.MODE_PRIVATE);
+
+        String eventName = prefs.getString("eventName", "");
 
         ActionBar ab = getSupportActionBar();
 
@@ -60,26 +75,7 @@ public class VideoGalleryActivity extends AppCompatActivity {
 
         ab.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#b59206")));
 
-        TextView pg = (TextView) findViewById(R.id.photoGallery);
-        pg.setTypeface(font);
 
-        TextView vg = (TextView) findViewById(R.id.videoGallery);
-        vg.setTypeface(font);
-
-
-
-            pg.setBackgroundColor(Color.parseColor("#b59206"));
-            vg.setBackgroundColor(Color.parseColor("#ffd428"));
-
-            pg.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(VideoGalleryActivity.this, GalleryActivity.class);
-                    intent.putExtra("galleryType", galleryType);
-                    intent.putExtra("year", year);
-                    VideoGalleryActivity.this.startActivity(intent);
-                }
-            });
 
 
         TextView tv = new TextView(getApplicationContext());
@@ -90,11 +86,11 @@ public class VideoGalleryActivity extends AppCompatActivity {
 
         tv.setLayoutParams(lp);
 
-        tv.setText(galleryType + " " + year);
+        tv.setText(eventName);
 
         tv.setGravity(Gravity.CENTER);
 
-        tv.setTypeface(font);
+        //tv.setTypeface(font);
 
         tv.setTextColor(Color.parseColor("#FFFFFF"));
         tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 20);
@@ -104,7 +100,7 @@ public class VideoGalleryActivity extends AppCompatActivity {
         ab.setCustomView(tv);
 
         CustomVideoListAdapter adapter = new
-                CustomVideoListAdapter(VideoGalleryActivity.this, prgmNameList, prgmImages);
+                CustomVideoListAdapter(VideoGalleryActivity.this, images);
         list = (ListView) findViewById(R.id.listView);
         list.setAdapter(adapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -119,7 +115,7 @@ public class VideoGalleryActivity extends AppCompatActivity {
                 i.putExtra("yearSelected", year);
                 i.putExtra("galleryType", "Video Gallery");
                 i.putExtra("year", year);
-                i.putExtra("video", prgmNameList[position]);
+                i.putExtra("video", images[position]);
                 VideoGalleryActivity.this.startActivity(i);
             }
         });
@@ -146,7 +142,14 @@ public class VideoGalleryActivity extends AppCompatActivity {
         gv = (GridView) findViewById(R.id.gridView2);
         gv.setAdapter(new CustomAdapter2(this, prgmNameList, prgmImages, newWidth, year));*/
 
+       /* imageView = (ImageView) findViewById(R.id.imageView);
 
+        Picasso.with(this)
+                .load("https://www.simplifiedcoding.net/wp-content/uploads/2015/10/advertise.png")
+                //.placeholder(R.drawable.placeholder)   // optional
+                //.error(R.drawable.error)      // optional
+                .resize(400,400)                        // optional
+                .into(imageView);*/
     }
 
     public String getRotation(Context context) {

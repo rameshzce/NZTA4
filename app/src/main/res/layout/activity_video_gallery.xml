@@ -18,35 +18,6 @@
         android:id="@+id/listView" />
 
 
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/tableLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/gridView1"
-        android:stretchColumns="*">
 
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="fill_parent"
-            android:minHeight="40dp">
 
-            <TextView
-                android:id="@+id/photoGallery"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:gravity="center"
-                android:text="@string/photoGallery"
-                android:textColor="@color/white"
-                android:textSize="18dip" />
-
-            <TextView
-                android:id="@+id/videoGallery"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:gravity="center"
-                android:text="@string/videoGallery"
-                android:textColor="@color/white"
-                android:textSize="18dip" />
-        </TableRow>
-    </TableLayout>
 </LinearLayout>

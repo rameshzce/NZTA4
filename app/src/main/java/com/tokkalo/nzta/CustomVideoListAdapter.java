@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 /**
  * Created by rameshkolamala on 23/03/16.
  */
@@ -16,14 +18,14 @@ public class CustomVideoListAdapter extends ArrayAdapter<String> {
 
     private final Activity context;
     private final String[] web;
-    private final Integer[] imageId;
+    public String url = "http://sdctbheemili.org/ios/events/";
+
 
     public CustomVideoListAdapter(Activity context,
-                                  String[] web, Integer[] imageId) {
+                                  String[] web) {
         super(context, R.layout.list_single, web);
         this.context = context;
         this.web = web;
-        this.imageId = imageId;
 
     }
 
@@ -31,16 +33,18 @@ public class CustomVideoListAdapter extends ArrayAdapter<String> {
     public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
         View rowView = inflater.inflate(R.layout.list_single, null, true);
-        TextView txtTitle = (TextView) rowView.findViewById(R.id.textView1);
 
-        Typeface font = Typeface.createFromAsset(txtTitle.getContext().getAssets(), "fonts/handlee-regular.ttf");
-        txtTitle.setTypeface(font);
-        txtTitle.setText(web[position]);
 
         ImageView imageView = (ImageView) rowView.findViewById(R.id.imageView1);
+        Picasso.with(context)
+                //.load("https://www.simplifiedcoding.net/wp-content/uploads/2015/10/advertise.png")
+                .load(url + web[position])
+                        //.placeholder(R.drawable.placeholder)   // optional
+                        //.error(R.drawable.error)      // optional
+                .resize(750, 500)                        // optional
+                .into(imageView);
 
-
-        imageView.setImageResource(imageId[position]);
+        //imageView.setImageResource(imageId[position]);
         return rowView;
     }
 }

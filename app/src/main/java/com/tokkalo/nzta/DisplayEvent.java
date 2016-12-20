@@ -50,6 +50,12 @@ public class DisplayEvent extends AppCompatActivity {
 
         tv.setText(eventName);
 
+        SharedPreferences prefs = getSharedPreferences("com.tokkalo.nzta", Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("eventName", eventName);
+        editor.commit();
+
         tv.setGravity(Gravity.CENTER);
 
         //tv.setTypeface(font);
@@ -70,7 +76,7 @@ public class DisplayEvent extends AppCompatActivity {
     }
 
     public void showGallery(View view) {
-        Intent i = new Intent(applicationContext, GalleryActivity.class);
+        Intent i = new Intent(applicationContext, VideoGalleryActivity.class);
         startActivity(i);
         finish();
     }

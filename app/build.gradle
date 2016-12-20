@@ -46,6 +46,7 @@ dependencies {
     compile project(':DoubleViewPager')
     compile 'com.google.firebase:firebase-messaging:10.0.1'
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile "com.squareup.picasso:picasso:2.4.0"
 }
 
 apply plugin: 'com.google.gms.google-services'
