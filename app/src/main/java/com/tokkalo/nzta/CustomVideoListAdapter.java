@@ -41,7 +41,7 @@ public class CustomVideoListAdapter extends ArrayAdapter<String> {
                 .load(url + web[position])
                         //.placeholder(R.drawable.placeholder)   // optional
                         //.error(R.drawable.error)      // optional
-                .resize(750, 500)                        // optional
+                .resize(600, 400)                        // optional
                 .into(imageView);
 
         //imageView.setImageResource(imageId[position]);
