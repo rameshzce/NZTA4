@@ -87,7 +87,7 @@ public class DisplayImageActivity extends AppCompatActivity {
                 .load(newImage)
                 .placeholder(R.drawable.progress_animation)   // optional
                         //.error(R.drawable.error)      // optional
-                .resize(600, 400)                        // optional
+                .resize(700, 450)                        // optional
                 .into(imageView);
     }
 }
