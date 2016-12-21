@@ -62,6 +62,22 @@ public class DisplayImageActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String image = intent.getStringExtra("image");
         String newImage = image.replace("thumb", "image");
+        if (eventName.equalsIgnoreCase("Ugadi")) {
+            newImage = newImage.replace("png", "jpg");
+        } else if (eventName.equalsIgnoreCase("Calender Inauguration")) {
+            newImage = newImage.replace("png", "jpg");
+        } else if (eventName.equalsIgnoreCase("Sankranthi")) {
+            newImage = newImage.replace("png", "jpg");
+        } else if (eventName.equalsIgnoreCase("Holi Funday")) {
+            newImage = newImage.replace("png", "jpg");
+        } else if (eventName.equalsIgnoreCase("Vinayaka Chaviti")) {
+            newImage = newImage.replace("png", "jpg");
+        } else if (eventName.equalsIgnoreCase("Blood Donations")) {
+            newImage = newImage.replace("png", "jpg");
+        } else if (eventName.equalsIgnoreCase("Batukamma")) {
+            newImage = newImage.replace("png", "jpg");
+        }
+
 
         //Log.d("Image:", newImage);
 
@@ -69,7 +85,7 @@ public class DisplayImageActivity extends AppCompatActivity {
 
         Picasso.with(this)
                 .load(newImage)
-                        //.placeholder(R.drawable.placeholder)   // optional
+                .placeholder(R.drawable.progress_animation)   // optional
                         //.error(R.drawable.error)      // optional
                 .resize(600, 400)                        // optional
                 .into(imageView);

@@ -40,7 +40,7 @@ public class CustomVideoListAdapter extends ArrayAdapter<String> {
         Picasso.with(context)
                 //.load("https://www.simplifiedcoding.net/wp-content/uploads/2015/10/advertise.png")
                 .load(url + web[position])
-                        //.placeholder(R.drawable.placeholder)   // optional
+                .placeholder(R.drawable.progress_animation)   // optional
                         //.error(R.drawable.error)      // optional
                 .resize(600, 400)                        // optional
                 .into(imageView);

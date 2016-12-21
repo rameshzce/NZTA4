@@ -28,6 +28,8 @@ import android.widget.Toast;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class VideoGalleryActivity extends AppCompatActivity {
     GridView gv;
@@ -39,8 +41,11 @@ public class VideoGalleryActivity extends AppCompatActivity {
     private ImageView imageView;
 
 
-    public String images[] = {
-            "images/thumb1.jpg",
+    public String images[];
+
+    ListView list;
+
+    List<String> imgs = new ArrayList<>(Arrays.asList("images/thumb1.jpg",
             "images/thumb2.jpg",
             "images/thumb3.jpg",
             "images/thumb4.jpg",
@@ -50,10 +55,7 @@ public class VideoGalleryActivity extends AppCompatActivity {
             "images/thumb8.jpg",
             "images/thumb9.jpg",
             "images/thumb10.jpg",
-            "images/thumb11.jpg",
-    };
-
-    ListView list;
+            "images/thumb11.jpg"));
 
 
     @Override
@@ -98,6 +100,47 @@ public class VideoGalleryActivity extends AppCompatActivity {
         ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
 
         ab.setCustomView(tv);
+
+        int imageSize = 11;
+        ;
+        String imagePath = "images";
+        String imageType = "jpg";
+
+        if (eventName.equalsIgnoreCase("Ugadi")) {
+            imagePath = "ugadi";
+            imageSize = 14;
+            imageType = "png";
+        } else if (eventName.equalsIgnoreCase("Calender Inauguration")) {
+            imagePath = "calendar";
+            imageSize = 17;
+            imageType = "png";
+        } else if (eventName.equalsIgnoreCase("Sankranthi")) {
+            imagePath = "sankranti";
+            imageSize = 9;
+            imageType = "png";
+        } else if (eventName.equalsIgnoreCase("Holi Funday")) {
+            imagePath = "holi";
+            imageSize = 8;
+            imageType = "png";
+        } else if (eventName.equalsIgnoreCase("Vinayaka Chaviti")) {
+            imagePath = "vinayaka";
+            imageSize = 13;
+            imageType = "png";
+        } else if (eventName.equalsIgnoreCase("Blood Donations")) {
+            imagePath = "blood_donation";
+            imageSize = 16;
+            imageType = "png";
+        } else if (eventName.equalsIgnoreCase("Batukamma")) {
+            imagePath = "batukamma";
+            imageSize = 10;
+            imageType = "png";
+        }
+
+        images = new String[imageSize];
+
+        for (int i = 0; i < imageSize; i++) {
+            images[i] = imagePath + "/thumb" + (i + 1) + "." + imageType;
+        }
 
         CustomVideoListAdapter adapter = new
                 CustomVideoListAdapter(VideoGalleryActivity.this, images);
