@@ -96,7 +96,7 @@ public class ShowEventsActivity extends AppCompatActivity {
 
         tv.setGravity(Gravity.CENTER);
 
-        tv.setTypeface(font);
+        //tv.setTypeface(font);
 
         tv.setTextColor(Color.parseColor("#FFFFFF"));
         tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 20);

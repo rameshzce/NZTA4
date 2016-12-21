@@ -36,11 +36,11 @@ public class ExistingEventsActivity extends AppCompatActivity {
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/handlee-regular.ttf");
 
         Button btn1 = (Button) findViewById(R.id.button);
-        btn1.setTypeface(font);
+        //btn1.setTypeface(font);
         btn1.setBackgroundColor(Color.parseColor("#b56c00"));
 
         TextView txt1 = (TextView) findViewById(R.id.textView1);
-        txt1.setTypeface(font);
+        //txt1.setTypeface(font);
 
         TextView tv = new TextView(getApplicationContext());
 
@@ -54,7 +54,7 @@ public class ExistingEventsActivity extends AppCompatActivity {
 
         tv.setGravity(Gravity.CENTER);
 
-        tv.setTypeface(font);
+        //tv.setTypeface(font);
 
         tv.setTextColor(Color.parseColor("#FFFFFF"));
         tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 20);

@@ -16,7 +16,6 @@
         android:layout_gravity="center_horizontal"
         android:textSize="30dp"
         android:textColor="@color/white"
-        android:textStyle="bold"
         android:text="Existing Events" />
 
     <com.tokkalo.nzta.CustomNumberPicker

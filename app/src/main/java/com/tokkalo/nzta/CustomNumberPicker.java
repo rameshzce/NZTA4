@@ -41,7 +41,7 @@ public class CustomNumberPicker extends android.widget.NumberPicker {
             ((TextView) view).setTextSize(34);
             ((TextView) view).setTextColor(Color.parseColor("#b59206"));
             Typeface font = Typeface.createFromAsset(view.getContext().getAssets(), "fonts/handlee-regular.ttf");
-            ((TextView) view).setTypeface(font);
+            //((TextView) view).setTypeface(font);
         }
     }
 }
