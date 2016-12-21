@@ -31,7 +31,7 @@ public class SpecialAdapter2 extends SimpleAdapter {
     String eventYear;
 
     private int[] listItemBackground = new int[]{R.drawable.list_background4, R.drawable.list_background4};
-    private int[] galleryBackground = new int[]{R.drawable.gallery_bg10, R.drawable.gallery_bg10};
+    private int[] galleryBackground = new int[]{R.drawable.gallery_bg10, R.drawable.gallery_bg11};
     private int[] eventImage = new int[]{R.drawable.icon_batukamma, R.drawable.icon_blooddonations};
     private int[] iconImages = new int[]{R.drawable.icon_calander_inagaration, R.drawable.icon_sankranthi, R.drawable.icon_independeneceday, R.drawable.icon_blooddonations, R.drawable.icon_holi, R.drawable.icon_ugadi, R.drawable.icon_independeneceday, R.drawable.icon_vinayakachaviti, R.drawable.icon_batukamma, R.drawable.icon_diwali, R.drawable.icon_vanabojanalu, R.drawable.icon_xmas};
 
@@ -62,7 +62,14 @@ public class SpecialAdapter2 extends SimpleAdapter {
 
         int pos = position % listItemBackground.length;
         //ll.setBackgroundResource(listItemBackground[colorPos]);
-        tr2.setBackgroundResource(galleryBackground[pos]);
+
+        if (eventYear == null) {
+            tr2.setBackgroundResource(R.drawable.gallery_bg10);
+        } else {
+            tr2.setBackgroundResource(R.drawable.gallery_bg11);
+        }
+
+
         tv.setPadding(padding[pos], 0, 20, 0);
         img.setBackgroundResource(iconImages[position]);
 

@@ -113,8 +113,9 @@ public class ExistingEventsActivity extends AppCompatActivity {
     public void getEvents(View view) {
         cnp = (CustomNumberPicker) findViewById(R.id.years);
         String year = "" + cnp.getValue();
-        Intent intent = new Intent(ExistingEventsActivity.this, ShowEventsActivity.class);
+        Intent intent = new Intent(ExistingEventsActivity.this, EventsActivity.class);
         intent.putExtra("year", year);
+        intent.putExtra("existingEvents", "yes");
         ExistingEventsActivity.this.startActivity(intent);
     }
 

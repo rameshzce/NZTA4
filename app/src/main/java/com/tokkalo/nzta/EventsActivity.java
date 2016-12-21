@@ -74,8 +74,15 @@ public class EventsActivity extends AppCompatActivity {
 
         tv.setLayoutParams(lp);
 
+        Intent intent = getIntent();
+        final String year = intent.getStringExtra("year");
 
-        tv.setText("Events");
+        if (year == null) {
+            tv.setText("Events");
+        } else {
+            tv.setText("Events " + year);
+        }
+
 
         tv.setGravity(Gravity.CENTER);
 
@@ -91,8 +98,6 @@ public class EventsActivity extends AppCompatActivity {
         list = (ListView) findViewById(R.id.listView);
         personList = new ArrayList<HashMap<String, String>>();
 
-        Intent intent = getIntent();
-        final String year = intent.getStringExtra("year");
 
         showList(year);
     }
