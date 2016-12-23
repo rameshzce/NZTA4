@@ -137,12 +137,13 @@ public class SendMessageActivity extends AppCompatActivity {
                     InputStream inputStream = null;
 
                     List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+                    nameValuePairs.add(new BasicNameValuePair("msg", params[0]));
 
 
                     try {
                         HttpClient httpClient = new DefaultHttpClient();
                         HttpPost httpPost = new HttpPost(
-                                "http://sdctbheemili.org/ios/android_message.php?msg=" + msg);
+                                "http://sdctbheemili.org/ios/android_message.php");
                         httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
                         HttpResponse response = httpClient.execute(httpPost);
@@ -220,7 +221,7 @@ public class SendMessageActivity extends AppCompatActivity {
 
             }
             SendPostReqAsyncTask sendPostReqAsyncTask = new SendPostReqAsyncTask();
-            sendPostReqAsyncTask.execute();
+            sendPostReqAsyncTask.execute(msg);
         }
 
     }
