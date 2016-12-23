@@ -29,6 +29,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
     private int mChilds;
     private JSONArray mColors;
     private int[] teamImages;
+    private int[] teamBgs;
     private String[] teamDesig;
     private String[] teamNames;
     private String[] teamMobiles;
@@ -69,6 +70,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
         teamMobiles = new String[]{"0212663666", "0220491003", "0212511454", "02102604222", "02102468855", "xxx", "xxx", "02102399325", "0220372376", "0211262640", "021739943", "02102923569", "0211558543", "0211899494"};
         teamEmails = new String[]{"nztapresident@gmail.com", "generalsecretarynzta@gmail.com", "arunrao.p@gmail.com", "rajjugangishetty@gmail.com", "rrpatllola@gmail.com", "xxx", "xxx", "xxx", "aravind.bathula@gmail.com", "asalvaji@yahoo.com", "vijaykosana@gmail.com", "sruthiakoju@hotmail.com", "rakesh.gon@hotmail.com", "subbu.desu@gmail.com"};
         teamColors = new String[]{"#AC36CA", "#AC36CA", "#C59107", "#C59107", "#C59107", "#C59107", "#C59107", "#C59107", "#0671B5", "#0671B5", "#0671B5", "#0671B5", "#0671B5", "#0671B5"};
+        teamBgs = new int[]{R.drawable.team_bg1, R.drawable.team_bg1, R.drawable.team_bg2, R.drawable.team_bg2, R.drawable.team_bg2, R.drawable.team_bg2, R.drawable.team_bg2, R.drawable.team_bg2, R.drawable.team_bg3, R.drawable.team_bg3, R.drawable.team_bg3, R.drawable.team_bg3, R.drawable.team_bg3, R.drawable.team_bg3};
 
         LinearLayout linear = new LinearLayout(mContext);
         linear.setOrientation(LinearLayout.VERTICAL);
@@ -77,7 +79,6 @@ public class VerticalPagerAdapter extends PagerAdapter {
 
         linear.setLayoutParams(lp);
 
-        Typeface font = Typeface.createFromAsset(mContext.getAssets(), "fonts/handlee-regular.ttf");
 
         /*TextView tvParent = new TextView(mContext);
         tvParent.setGravity(Gravity.CENTER_HORIZONTAL);
@@ -97,7 +98,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
         TextView desig = new TextView(mContext);
         desig.setGravity(Gravity.CENTER_HORIZONTAL);
         desig.setText(teamDesig[position]);
-        desig.setTextColor(Color.WHITE);
+        desig.setTextColor(Color.parseColor(teamColors[position]));
         desig.setTextSize(22);
         //desig.setTypeface(font);
         desig.setSingleLine(false);
@@ -143,6 +144,8 @@ public class VerticalPagerAdapter extends PagerAdapter {
         linear.addView(bg);*/
 
         linear.setBackgroundColor(Color.parseColor(teamColors[position]));
+
+        linear.setBackgroundResource(teamBgs[position]);
         //setColors(position, linear);
         container.addView(linear);
         return linear;
