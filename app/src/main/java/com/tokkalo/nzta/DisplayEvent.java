@@ -13,6 +13,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.AbsListView;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -69,6 +70,39 @@ public class DisplayEvent extends AppCompatActivity {
 
         TableRow tr1 = (TableRow) findViewById(R.id.tableRow1);
         tr1.setMinimumHeight(50);
+
+        ImageView img = (ImageView) findViewById(R.id.imageView1);
+
+        String imageName = "img_ugadi";
+
+        if (eventName.equalsIgnoreCase("Calender Inauguration")) {
+            imageName = "img_calender_inauguration";
+        } else if (eventName.equalsIgnoreCase("Sankranthi")) {
+            imageName = "img_sankranti";
+        } else if (eventName.equalsIgnoreCase("Republic Day")) {
+            imageName = "img_republic_day";
+        } else if (eventName.equalsIgnoreCase("Blood Donations")) {
+            imageName = "img_blood_donations";
+        } else if (eventName.equalsIgnoreCase("Holi Funday")) {
+            imageName = "img_holi";
+        } else if (eventName.equalsIgnoreCase("Ugadi")) {
+            imageName = "img_ugadi";
+        } else if (eventName.equalsIgnoreCase("Independence Day")) {
+            imageName = "img_independenceday";
+        } else if (eventName.equalsIgnoreCase("Vinayaka Chaviti")) {
+            imageName = "img_vinayakachaturdi";
+        } else if (eventName.equalsIgnoreCase("Batukamma")) {
+            imageName = "img_batukamma";
+        } else if (eventName.equalsIgnoreCase("Dasara & Diwali")) {
+            imageName = "img_dasara_diwali";
+        } else if (eventName.equalsIgnoreCase("Vanabojanalu")) {
+            imageName = "img_vanabojanalu";
+        } else if (eventName.equalsIgnoreCase("Xmas")) {
+            imageName = "img_xmas";
+        }
+
+        int id = getResources().getIdentifier("com.tokkalo.nzta:drawable/" + imageName, null, null);
+        img.setImageResource(id);
 
         TextView start_message = (TextView) findViewById(R.id.start_message);
         start_message.setText(Html.fromHtml("Thank you for downloading \"Demotivational Posters\" Click start below to start. To advance to the next picture click the \"Next\" button. If you see an image you would like to download click the \"Download\" button. If you enjoy this app please leave a rating."));
