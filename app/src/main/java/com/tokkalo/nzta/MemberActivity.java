@@ -175,7 +175,7 @@ public class MemberActivity extends AppCompatActivity {
                 MemberActivity.this.startActivity(sponsors);
                 return true;
             case R.id.item6:
-                Intent message = new Intent(MemberActivity.this, TeamActivity.class);
+                Intent message = new Intent(MemberActivity.this, SendMessageActivity.class);
                 MemberActivity.this.startActivity(message);
                 return true;
             default:
