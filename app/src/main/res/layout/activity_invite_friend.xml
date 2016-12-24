@@ -21,8 +21,7 @@
         android:layout_marginTop="4sp"
         android:text="Invite a friend"
         android:textColor="@color/white"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:textSize="20sp" />
 
 
     <EditText
@@ -37,22 +36,7 @@
         android:inputType="number"
         android:textColor="@color/white" />
 
-    <EditText
-        android:id="@+id/editTextMsg"
-        android:layout_width="320dp"
-        android:layout_marginTop="15sp"
-        android:layout_height="wrap_content"
-        android:gravity="top|left"
-        android:padding="10dp"
-        android:inputType="textMultiLine"
-        android:lines="8"
-        android:hint="Message"
-        android:imeOptions="actionDone"
-        android:background="#0372b9"
-        android:maxLines="10"
-        android:minLines="6"
-        android:textColor="@color/white"
-        android:scrollbars="vertical" />
+
 
 
     <Button
@@ -66,7 +50,7 @@
         android:text="Invite"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="22sp" />
+        android:textSize="20sp" />
 
 
     <TextView

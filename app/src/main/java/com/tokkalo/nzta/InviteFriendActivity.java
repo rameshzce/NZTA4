@@ -39,7 +39,6 @@ import java.util.List;
 
 public class InviteFriendActivity extends AppCompatActivity {
     private EditText editTextMobile;
-    private EditText editTextMsg;
     private TextView txt1;
     private TextView txt2;
     private TextView txt3;
@@ -63,38 +62,32 @@ public class InviteFriendActivity extends AppCompatActivity {
 
         fromMobile = prefs.getString("mobileNumber", "");
 
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/handlee-regular.ttf");
-
         btn1 = (Button) findViewById(R.id.button);
-        btn1.setTypeface(font);
+        //btn1.setTypeface(font);
 
         Button btn2 = (Button) findViewById(R.id.yes);
-        btn2.setTypeface(font);
+        //btn2.setTypeface(font);
 
         Button btn3 = (Button) findViewById(R.id.no);
-        btn3.setTypeface(font);
+        //btn3.setTypeface(font);
 
         txt1 = (TextView) findViewById(R.id.textView1);
-        txt1.setTypeface(font);
+        //txt1.setTypeface(font);
 
         txt2 = (TextView) findViewById(R.id.textViewResult);
-        txt2.setTypeface(font);
+        //txt2.setTypeface(font);
 
         txt3 = (TextView) findViewById(R.id.textViewResult2);
-        txt3.setTypeface(font);
+        //txt3.setTypeface(font);
 
         editTextMobile = (EditText) findViewById(R.id.editTextMobile);
-        editTextMobile.setTypeface(font);
+        //editTextMobile.setTypeface(font);
         editTextMobile.setHintTextColor(Color.parseColor("#ffffff"));
 
-        editTextMsg = (EditText) findViewById(R.id.editTextMsg);
-        editTextMsg.setTypeface(font);
-        editTextMsg.setHintTextColor(Color.parseColor("#ffffff"));
     }
 
     public void submit(View view) {
         toMobile = editTextMobile.getText().toString();
-        toMsg = editTextMsg.getText().toString();
 
         if (toMobile.isEmpty()) {
             showToast("Please enter a mobile number or email");
@@ -102,8 +95,6 @@ public class InviteFriendActivity extends AppCompatActivity {
             showToast("Mobile number must be 9 or 10 or 11 digits");
         } else if (toMobile.length() > 11) {
             showToast("Mobile number must be 9 or 10 or 11 digits");
-        } else if (toMsg.isEmpty()) {
-            showToast("Please enter a message");
         } else {
             insertToDatabase(fromMobile, toMobile);
         }
@@ -127,6 +118,7 @@ public class InviteFriendActivity extends AppCompatActivity {
                 List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
                 nameValuePairs.add(new BasicNameValuePair("fromMobile", params[0]));
                 nameValuePairs.add(new BasicNameValuePair("toMobile", params[1]));
+                nameValuePairs.add(new BasicNameValuePair("device", "android"));
 
                 String result = null;
                 InputStream inputStream = null;
@@ -189,7 +181,6 @@ public class InviteFriendActivity extends AppCompatActivity {
 
                         editTextMobile.setVisibility(View.GONE);
 
-                        editTextMsg.setVisibility(View.GONE);
 
                         TextView textViewResult = (TextView) findViewById(R.id.textViewResult);
                         textViewResult.setText(message);
