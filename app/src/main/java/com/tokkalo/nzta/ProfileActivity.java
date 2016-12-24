@@ -2,6 +2,7 @@ package com.tokkalo.nzta;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;
 import android.graphics.Canvas;
@@ -39,6 +40,7 @@ public class ProfileActivity extends AppCompatActivity {
     String profileName = "";
     String profileEmail = "";
     Context applicationContext;
+    String savedLogin, savedName, savedEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,44 +55,34 @@ public class ProfileActivity extends AppCompatActivity {
 
         Bundle extras = intent.getExtras();
 
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/handlee-regular.ttf");
 
         btn = (Button) findViewById(R.id.button);
-        btn.setTypeface(font);
 
         btn2 = (Button) findViewById(R.id.buttonSave);
-        btn2.setTypeface(font);
 
         txt1 = (TextView) findViewById(R.id.textView1);
-        txt1.setTypeface(font);
 
         txt2 = (TextView) findViewById(R.id.textView2);
-        txt2.setTypeface(font);
 
         txt3 = (TextView) findViewById(R.id.textView3);
-        txt3.setTypeface(font);
 
-        if (extras != null) {
-            if (extras.containsKey("name")) {
-                profileName = intent.getStringExtra("name");
-                txt1.setText(profileName);
-            } else {
-                txt1.setText("Ramesh Kolamala");
-            }
+        SharedPreferences prefs = getSharedPreferences("com.tokkalo.nzta", Context.MODE_PRIVATE);
 
-            if (extras.containsKey("email")) {
-                profileEmail = intent.getStringExtra("email");
-                txt3.setText(profileEmail);
-            } else {
-                txt3.setText("rameshkolamala@gmail.com");
-            }
+        savedLogin = prefs.getString("login", "");
+        savedName = prefs.getString("name", "");
+        savedEmail = prefs.getString("email", "");
+
+        if (savedName != null) {
+
+            txt1.setText(savedName);
+            txt2.setText("Mob: " + savedLogin);
+            txt3.setText(savedEmail);
+
         }
 
         name = (EditText) findViewById(R.id.editTextName);
-        name.setTypeface(font);
 
         email = (EditText) findViewById(R.id.editTextEmail);
-        email.setTypeface(font);
     }
 
     public void myGallery(View view) {

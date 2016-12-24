@@ -24,9 +24,7 @@ import java.util.WeakHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-/**
- * Created by andrei on 29.06.2015.
- */
+
 public class ImageLoader {
 
     MemoryCache memoryCache = new MemoryCache();

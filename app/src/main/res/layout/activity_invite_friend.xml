@@ -36,7 +36,15 @@
         android:inputType="number"
         android:textColor="@color/white" />
 
-
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4sp"
+        android:text="ex: 64 22 000 0000"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
 
 
     <Button

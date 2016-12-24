@@ -65,7 +65,6 @@ import org.apache.http.message.BasicNameValuePair;
 
 
 public class MainActivity extends AppCompatActivity {
-    //private TwitterLoginButton loginButton;
 
     private EditText editTextName;
     private EditText editTextMobile;
@@ -112,8 +111,6 @@ public class MainActivity extends AppCompatActivity {
 
         //Log.v("LoginActivity", token);
         //Log.d("Token1", TOKEN);
-
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/handlee-regular.ttf");
 
 
         info = (TextView) findViewById(R.id.fbLoginInfo);
@@ -200,28 +197,6 @@ public class MainActivity extends AppCompatActivity {
         //til3.getEditText().setTypeface(font);
         //til3.setTypeface(font);
 
-
-
-        /*loginButton = (TwitterLoginButton) findViewById(R.id.twitter_login_button);
-        loginButton.setCallback(new Callback<TwitterSession>() {
-            @Override
-            public void success(Result<TwitterSession> result) {
-                // The TwitterSession is also available through:
-                // Twitter.getInstance().core.getSessionManager().getActiveSession()
-                TwitterSession session = result.data;
-                // TODO: Remove toast and use the TwitterSession's userID
-                // with your app's user model
-                String msg = "@" + session.getUserName() + " logged in! (#" + session.getUserId() + ")";
-                Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
-
-                insertToDatabase(session.getUserName(), session.getUserName(), session.getUserName());
-            }
-
-            @Override
-            public void failure(TwitterException exception) {
-                Log.d("TwitterKit", "Login with Twitter failure", exception);
-            }
-        });*/
 
 
         getSupportActionBar().hide();
@@ -380,7 +355,7 @@ public class MainActivity extends AppCompatActivity {
                             String phone = jsonObj.getString("phone");
                             //String otp = jsonObj.getString("otp");
 
-                            RegisterUser(phone, name);
+                            RegisterUser(phone, name, organization);
 
                             Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
 
@@ -409,65 +384,29 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // When Register Me button is clicked
-    public void RegisterUser(String phone, String name) {
+    public void RegisterUser(String phone, String name, String email) {
         //String mobile = editTextMobile.getText().toString();
         //String name = editTextName.getText().toString();
 
         if (checkPlayServices()) {
             // Register Device in GCM Server
             //registerInBackground(phone, name);
-            storeRegIdinSharedPref(applicationContext, regId, phone);
+            storeRegIdinSharedPref(applicationContext, regId, phone, name, email);
         }
     }
 
 
-    // AsyncTask to register Device in GCM Server
-    private void registerInBackground(final String mobile, final String name) {
-        new AsyncTask<Void, Void, String>() {
-            @Override
-            protected String doInBackground(Void... params) {
-                String msg = "";
-                /*try {
-                    if (gcmObj == null) {
-                        gcmObj = GoogleCloudMessaging
-                                .getInstance(applicationContext);
-                    }
-                    regId = gcmObj
-                            .register(ApplicationConstants.GOOGLE_PROJ_ID);
-                    msg = "Registration ID :" + regId;
 
-                } catch (IOException ex) {
-                    msg = "Error :" + ex.getMessage();
-                }*/
-                return msg;
-            }
-
-            @Override
-            protected void onPostExecute(String msg) {
-                if (!TextUtils.isEmpty(regId)) {
-                    // Store RegId created by GCM Server in SharedPref
-                    storeRegIdinSharedPref(applicationContext, regId, mobile);
-                    /*Toast.makeText(
-                            applicationContext,
-                            "Registered with GCM Server successfully.nn"
-                                    + msg, Toast.LENGTH_SHORT).show();*/
-                } else {
-                    Toast.makeText(
-                            applicationContext,
-                            "Reg ID Creation Failed.nnEither you haven't enabled Internet or GCM server is busy right now. Make sure you enabled Internet and try registering again after some time."
-                                    + msg, Toast.LENGTH_LONG).show();
-                }
-            }
-        }.execute(null, null, null);
-    }
 
     // Store  RegId and Email entered by User in SharedPref
     private void storeRegIdinSharedPref(Context context, String regId,
-                                        String mobile) {
+                                        String mobile, String name, String email) {
         SharedPreferences prefs = getSharedPreferences("com.tokkalo.nzta",
                 Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString("login", mobile);
+        editor.putString("name", name);
+        editor.putString("email", email);
         editor.commit();
         storeRegIdinServer(mobile);
 

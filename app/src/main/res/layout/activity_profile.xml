@@ -75,7 +75,7 @@
         android:singleLine="false"
         android:textColor="#085a8e"
         android:textSize="20sp"
-        android:text="Mob: 0221406655" />
+        android:text="Mob: " />
 
     <TextView
         android:id="@+id/textView3"
