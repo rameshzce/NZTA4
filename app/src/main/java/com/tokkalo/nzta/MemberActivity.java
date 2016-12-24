@@ -172,7 +172,8 @@ public class MemberActivity extends AppCompatActivity {
                 MemberActivity.this.startActivity(teamIntent);
                 return true;
             case R.id.item5:
-                Intent sponsors = new Intent(MemberActivity.this, TeamActivity.class);
+                Intent sponsors = new Intent(MemberActivity.this, GalleryActivity.class);
+                sponsors.putExtra("galleryType", "Sponsors");
                 MemberActivity.this.startActivity(sponsors);
                 return true;
             case R.id.item6:

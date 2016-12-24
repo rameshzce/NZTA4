@@ -141,7 +141,8 @@
         <activity android:name=".MessagesActivity" />
         <activity android:name=".DisplayImage" />
         <activity android:name=".DisplayImageActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SponsorsActivity"></activity>
     </application>
 
 </manifest>

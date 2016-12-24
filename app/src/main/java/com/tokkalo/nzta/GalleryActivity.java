@@ -82,7 +82,6 @@ public class GalleryActivity extends AppCompatActivity {
 
         ActionBar ab = getSupportActionBar();
 
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/handlee-regular.ttf");
 
         ab.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#b59206")));
 
@@ -96,11 +95,10 @@ public class GalleryActivity extends AppCompatActivity {
 
         tv.setLayoutParams(lp);
 
-        tv.setText(galleryType + " " + year);
+        tv.setText(galleryType);
 
         tv.setGravity(Gravity.CENTER);
 
-        tv.setTypeface(font);
 
         tv.setTextColor(Color.parseColor("#FFFFFF"));
         tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 20);
@@ -125,10 +123,10 @@ public class GalleryActivity extends AppCompatActivity {
         imageView = (ImageView) findViewById(R.id.imageView2);
         //imgLoader = new ImageLoader(this);
         Picasso.with(this)
-                .load("https://www.simplifiedcoding.net/wp-content/uploads/2015/10/advertise.png")
+                .load("http://nzta.org/images/sponsors/aaphotos.jpeg")
                         //.placeholder(R.drawable.placeholder)   // optional
                         //.error(R.drawable.error)      // optional
-                .resize(400, 400)                        // optional
+                .resize(600, 400)                        // optional
                 .into(imageView);
 
     }
