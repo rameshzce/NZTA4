@@ -99,6 +99,8 @@ public class DisplayEvent extends AppCompatActivity {
             imageName = "img_vanabojanalu";
         } else if (eventName.equalsIgnoreCase("Xmas")) {
             imageName = "img_xmas";
+        } else if (eventName.equalsIgnoreCase("Helping Hands")) {
+            imageName = "img_helping_hands";
         }
 
         int id = getResources().getIdentifier("com.tokkalo.nzta:drawable/" + imageName, null, null);

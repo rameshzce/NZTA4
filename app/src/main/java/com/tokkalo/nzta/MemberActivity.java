@@ -121,7 +121,8 @@ public class MemberActivity extends AppCompatActivity {
     }
 
     public void rowClick3(View view) {
-        Intent i = new Intent(applicationContext, HelpingHandsActivity.class);
+        Intent i = new Intent(applicationContext, DisplayEvent.class);
+        i.putExtra("eventName", "Helping Hands");
         startActivity(i);
         finish();
     }
