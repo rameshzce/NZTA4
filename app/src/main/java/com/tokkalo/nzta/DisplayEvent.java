@@ -34,8 +34,16 @@ public class DisplayEvent extends AppCompatActivity {
 
         ActionBar ab = getSupportActionBar();
 
+        Intent intent = getIntent();
+        final String eventName = intent.getStringExtra("eventName");
 
-        ab.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#9d1457")));
+        String bgColor = "#9d1457";
+
+        if (eventName.equalsIgnoreCase("Helping Hands")) {
+            bgColor = "#10d295";
+        }
+
+        ab.setBackgroundDrawable(new ColorDrawable(Color.parseColor(bgColor)));
 
         TextView tv = new TextView(getApplicationContext());
 
@@ -45,8 +53,7 @@ public class DisplayEvent extends AppCompatActivity {
 
         tv.setLayoutParams(lp);
 
-        Intent intent = getIntent();
-        final String eventName = intent.getStringExtra("eventName");
+
         //final String eventPosition = intent.getStringExtra("eventPosition");
 
         tv.setText(eventName);
@@ -107,7 +114,7 @@ public class DisplayEvent extends AppCompatActivity {
         img.setImageResource(id);
 
         TextView start_message = (TextView) findViewById(R.id.start_message);
-        start_message.setText(Html.fromHtml("Thank you for downloading \"Demotivational Posters\" Click start below to start. To advance to the next picture click the \"Next\" button. If you see an image you would like to download click the \"Download\" button. If you enjoy this app please leave a rating."));
+        start_message.setText(Html.fromHtml("Namasthe ...<br> New Zealand Telugu Association specially invites you with family and friends to be part of auspicious<br><br> \"VINAYAKA CHATURTHI POOJA\"<br><br> for all the best days of our lives, For every miracle of waking up each morning, we want to express how grateful we are to the Lord.<br><br> Day:  Monday, 5th of September 2016.<br><br> Time: 6.30pm<br><br> Venue:  Three kings Fickling Convention enter <br><br> 546, Mt Albert Road,<br> Three Kings.<br> Followed by Bhajans and Maha Prasadam.<br><br> Main Sponsor :<br><br> Smt&Sri Sunitha-Vijay Kosna and family<br><br> Maha Prasadam by :<br> Satya South Indian Restaurant<br><br> Please join us and get the blessings of \"Lord Ganesh\". We are sure the day will inspire you for creativity and motivate you for auspicious beginnings.<br><br> See you all on Monday.<br><br> ... Executive Committee New Zealand <br> Telugu Association"));
 
     }
 
