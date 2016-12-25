@@ -11,10 +11,14 @@ import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.widget.AbsListView;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class SponsorsActivity extends AppCompatActivity {
+    public String images[];
+
+    ListView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,5 +57,27 @@ public class SponsorsActivity extends AppCompatActivity {
         ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
 
         ab.setCustomView(tv);
+
+        int imageSize = 30;
+
+
+        images = new String[32];
+
+        for (int i = 0; i < imageSize; i++) {
+            if (i < 10) {
+                images[i] = "0" + (i + 1) + ".png";
+            } else {
+                images[i] = (i) + ".png";
+            }
+
+        }
+
+        images[30] = "ADS-32.jpg";
+        images[31] = "aaphotos.jpeg";
+
+        CustomAdapter3 adapter = new
+                CustomAdapter3(SponsorsActivity.this, images);
+        list = (ListView) findViewById(R.id.listView);
+        list.setAdapter(adapter);
     }
 }
