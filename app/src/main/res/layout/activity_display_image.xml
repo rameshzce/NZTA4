@@ -18,5 +18,11 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
+    <com.theappguruz.imagezoom.ImageViewTouch
+        android:id="@+id/ivLargeImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center" />
+
 
 </RelativeLayout>

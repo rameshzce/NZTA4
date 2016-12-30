@@ -45,7 +45,8 @@ public class VideoGalleryActivity extends AppCompatActivity {
 
     ListView list;
 
-    List<String> imgs = new ArrayList<>(Arrays.asList("images/thumb1.jpg",
+    List<String> imgs = new ArrayList<>(Arrays.asList(
+            "images/thumb1.jpg",
             "images/thumb2.jpg",
             "images/thumb3.jpg",
             "images/thumb4.jpg",
@@ -133,6 +134,22 @@ public class VideoGalleryActivity extends AppCompatActivity {
         } else if (eventName.equalsIgnoreCase("Batukamma")) {
             imagePath = "batukamma";
             imageSize = 10;
+            imageType = "png";
+        } else if (eventName.equalsIgnoreCase("Dasara & Diwali")) {
+            imagePath = "dasara";
+            imageSize = 1;
+            imageType = "png";
+        } else if (eventName.equalsIgnoreCase("Vanabojanalu")) {
+            imagePath = "vanabhojanalu";
+            imageSize = 1;
+            imageType = "png";
+        } else if ((eventName.equalsIgnoreCase("Independence Day")) || (eventName.equalsIgnoreCase("Republic Day"))) {
+            imagePath = "republicday";
+            imageSize = 1;
+            imageType = "png";
+        } else if (eventName.equalsIgnoreCase("Xmas")) {
+            imagePath = "xmas";
+            imageSize = 1;
             imageType = "png";
         }
 

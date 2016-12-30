@@ -94,7 +94,7 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     public void editProfile(View view) {
-        View btnSave = findViewById(R.id.buttonSave);
+        /*View btnSave = findViewById(R.id.buttonSave);
         btnSave.setVisibility(View.VISIBLE);
 
         View btnGallery = findViewById(R.id.button);
@@ -117,7 +117,11 @@ public class ProfileActivity extends AppCompatActivity {
 
         EditText editEmail = (EditText) findViewById(R.id.editTextEmail);
         editEmail.setVisibility(View.VISIBLE);
-        editEmail.setText(txtEmail.getText());
+        editEmail.setText(txtEmail.getText());*/
+
+        Intent i = new Intent(applicationContext, EditProfileActivity.class);
+        startActivity(i);
+        finish();
     }
 
     public void saveProfile(View view) {

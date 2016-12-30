@@ -3,6 +3,8 @@ package com.tokkalo.nzta;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
@@ -18,9 +20,12 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
+import com.theappguruz.imagezoom.ImageViewTouch;
 
 public class DisplayImageActivity extends AppCompatActivity {
     private ImageView imageView;
+    private ImageViewTouch ivLargeImage;
+    private Bitmap myBitmap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +81,14 @@ public class DisplayImageActivity extends AppCompatActivity {
             newImage = newImage.replace("png", "jpg");
         } else if (eventName.equalsIgnoreCase("Batukamma")) {
             newImage = newImage.replace("png", "jpg");
+        } else if (eventName.equalsIgnoreCase("Dasara & Diwali")) {
+            newImage = newImage.replace("png", "jpg");
+        } else if (eventName.equalsIgnoreCase("Vanabojanalu")) {
+            newImage = newImage.replace("png", "jpg");
+        } else if ((eventName.equalsIgnoreCase("Independence Day")) || (eventName.equalsIgnoreCase("Republic Day"))) {
+            newImage = newImage.replace("png", "jpg");
+        } else if (eventName.equalsIgnoreCase("Xmas")) {
+            newImage = newImage.replace("png", "jpg");
         }
 
 
@@ -89,5 +102,29 @@ public class DisplayImageActivity extends AppCompatActivity {
                         //.error(R.drawable.error)      // optional
                 .resize(700, 450)                        // optional
                 .into(imageView);
+
+        ivLargeImage = (ImageViewTouch) findViewById(R.id.ivLargeImageView);
+        ImageName imageId = new ImageName();
+
+        //if image size is too large. scale image.
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        myBitmap = BitmapFactory.decodeResource(getResources(),
+                imageId.getImageId(), options);
+        if (options.outWidth > 3000 || options.outHeight > 2000) {
+            options.inSampleSize = 4;
+        } else if (options.outWidth > 2000 || options.outHeight > 1500) {
+            options.inSampleSize = 3;
+        } else if (options.outWidth > 1000 || options.outHeight > 1000) {
+            options.inSampleSize = 2;
+        }
+        options.inJustDecodeBounds = false;
+        myBitmap = BitmapFactory.decodeResource(getResources(),
+                R.drawable.img_batukamma, options);
+        /*myBitmap = BitmapFactory.decodeResource(getResources(),
+                imageId.getImageId(),options);*/
+        ivLargeImage.setImageBitmapReset(myBitmap, 0, true);
+
+
     }
 }
