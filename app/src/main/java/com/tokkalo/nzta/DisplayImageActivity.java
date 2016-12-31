@@ -103,7 +103,7 @@ public class DisplayImageActivity extends AppCompatActivity {
                 .resize(700, 450)                        // optional
                 .into(imageView);
 
-        ivLargeImage = (ImageViewTouch) findViewById(R.id.ivLargeImageView);
+        /*ivLargeImage = (ImageViewTouch) findViewById(R.id.ivLargeImageView);
         ImageName imageId = new ImageName();
 
         //if image size is too large. scale image.
@@ -123,7 +123,7 @@ public class DisplayImageActivity extends AppCompatActivity {
                 R.drawable.img_batukamma, options);
         /*myBitmap = BitmapFactory.decodeResource(getResources(),
                 imageId.getImageId(),options);*/
-        ivLargeImage.setImageBitmapReset(myBitmap, 0, true);
+        //ivLargeImage.setImageBitmapReset(myBitmap, 0, true);
 
 
     }

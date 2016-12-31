@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AbsListView;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -86,7 +87,18 @@ public class MemberActivity extends AppCompatActivity {
         int width = size.x;
         int height = size.y;
 
-        int h = (height / 4) - 50;
+        int h;
+        int imgSize;
+
+        h = (height / 4) - 50;
+        imgSize = 70;
+
+        if (height < 1000) {
+            h = (height / 4) - 30;
+            imgSize = 30;
+        }
+
+
 
         TableRow tr1 = (TableRow) findViewById(R.id.tableRow1);
         tr1.setMinimumHeight(h);
@@ -103,7 +115,9 @@ public class MemberActivity extends AppCompatActivity {
         TableRow tr5 = (TableRow) findViewById(R.id.tableRow5);
         tr5.setMinimumHeight(h);
 
-
+        ImageView img1 = (ImageView) findViewById(R.id.imageView1);
+        img1.setMinimumHeight(imgSize);
+        img1.setMinimumWidth(imgSize);
 
     }
 
