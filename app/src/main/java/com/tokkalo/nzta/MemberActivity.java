@@ -91,11 +91,11 @@ public class MemberActivity extends AppCompatActivity {
         int imgSize;
 
         h = (height / 4) - 50;
-        imgSize = 70;
+        imgSize = 200;
 
         if (height < 1000) {
             h = (height / 4) - 30;
-            imgSize = 30;
+            imgSize = 100;
         }
 
 
@@ -115,9 +115,25 @@ public class MemberActivity extends AppCompatActivity {
         TableRow tr5 = (TableRow) findViewById(R.id.tableRow5);
         tr5.setMinimumHeight(h);
 
-        ImageView img1 = (ImageView) findViewById(R.id.imageView1);
+       /* ImageView img1 = (ImageView) findViewById(R.id.imageView1);
         img1.setMinimumHeight(imgSize);
         img1.setMinimumWidth(imgSize);
+
+        ImageView img2 = (ImageView) findViewById(R.id.imageView2);
+        img2.setMinimumHeight(imgSize);
+        img2.setMinimumWidth(imgSize);
+
+        ImageView img3 = (ImageView) findViewById(R.id.imageView3);
+        img3.setMinimumHeight(imgSize);
+        img3.setMinimumWidth(imgSize);
+
+        ImageView img4 = (ImageView) findViewById(R.id.imageView4);
+        img4.setMinimumHeight(imgSize);
+        img4.setMinimumWidth(imgSize);
+
+        ImageView img5 = (ImageView) findViewById(R.id.imageView5);
+        img5.setMinimumHeight(imgSize);
+        img5.setMinimumWidth(imgSize);*/
 
     }
 

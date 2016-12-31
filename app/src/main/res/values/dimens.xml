@@ -9,4 +9,5 @@
     <dimen name="pagemargin">16dp</dimen>
     <dimen name="activity_margin">0dp</dimen>
     <dimen name="margin_5">5dp</dimen>
+    <dimen name="member_icon_padding_left">60dp</dimen>
 </resources>
