@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.webkit.WebView;
 import android.widget.AbsListView;
 import android.widget.ImageView;
@@ -112,6 +114,12 @@ public class DisplayEvent extends AppCompatActivity {
 
         int id = getResources().getIdentifier("com.tokkalo.nzta:drawable/" + imageName, null, null);
         img.setImageResource(id);
+
+        Animation animation = null;
+
+        animation = AnimationUtils.loadAnimation(applicationContext, R.anim.bounce);
+        img.startAnimation(animation);
+        animation = null;
 
         TextView start_message = (TextView) findViewById(R.id.start_message);
         start_message.setText(Html.fromHtml("Namasthe ...<br> New Zealand Telugu Association specially invites you with family and friends to be part of auspicious<br><br> \"VINAYAKA CHATURTHI POOJA\"<br><br> for all the best days of our lives, For every miracle of waking up each morning, we want to express how grateful we are to the Lord.<br><br> Day:  Monday, 5th of September 2016.<br><br> Time: 6.30pm<br><br> Venue:  Three kings Fickling Convention enter <br><br> 546, Mt Albert Road,<br> Three Kings.<br> Followed by Bhajans and Maha Prasadam.<br><br> Main Sponsor :<br><br> Smt&Sri Sunitha-Vijay Kosna and family<br><br> Maha Prasadam by :<br> Satya South Indian Restaurant<br><br> Please join us and get the blessings of \"Lord Ganesh\". We are sure the day will inspire you for creativity and motivate you for auspicious beginnings.<br><br> See you all on Monday.<br><br> ... Executive Committee New Zealand <br> Telugu Association"));
