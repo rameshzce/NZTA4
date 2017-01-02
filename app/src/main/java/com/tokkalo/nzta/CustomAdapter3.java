@@ -42,7 +42,7 @@ public class CustomAdapter3 extends ArrayAdapter<String> {
                 .load(url + web[position])
                 .placeholder(R.drawable.progress_animation)   // optional
                         //.error(R.drawable.error)      // optional
-                .resize(600, 400)                        // optional
+                        //.resize(900, 450)                        // optional
                 .into(imageView);
 
 
