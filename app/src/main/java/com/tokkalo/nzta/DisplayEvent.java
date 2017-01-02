@@ -117,7 +117,7 @@ public class DisplayEvent extends AppCompatActivity {
 
         Animation animation = null;
 
-        animation = AnimationUtils.loadAnimation(applicationContext, R.anim.bounce);
+        animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_top);
         img.startAnimation(animation);
         animation = null;
 

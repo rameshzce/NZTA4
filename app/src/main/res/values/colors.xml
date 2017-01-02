@@ -34,5 +34,5 @@
     <color name="homeBg">#00923f</color>
     <color name="allMessages">#fc5f22</color>
     <color name="fb">#3B5998</color>
-
+    <color name="intro">#007EF6</color>
 </resources>
