@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
@@ -44,7 +45,7 @@ public class SendMessageActivity extends AppCompatActivity {
     Context applicationContext;
     private EditText editTextMsg;
     private String msg;
-
+    private String savedName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +84,11 @@ public class SendMessageActivity extends AppCompatActivity {
 
         editTextMsg = (EditText) findViewById(R.id.editTextMsg);
         editTextMsg.setHintTextColor(Color.parseColor("#ffffff"));
+
+        SharedPreferences prefs = getSharedPreferences("com.tokkalo.nzta", Context.MODE_PRIVATE);
+
+        savedName = prefs.getString("name", "");
+
     }
 
     public void sendMessage1(View view) {
@@ -138,6 +144,7 @@ public class SendMessageActivity extends AppCompatActivity {
 
                     List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
                     nameValuePairs.add(new BasicNameValuePair("msg", params[0]));
+                    nameValuePairs.add(new BasicNameValuePair("name", params[1]));
 
 
                     try {
@@ -221,7 +228,7 @@ public class SendMessageActivity extends AppCompatActivity {
 
             }
             SendPostReqAsyncTask sendPostReqAsyncTask = new SendPostReqAsyncTask();
-            sendPostReqAsyncTask.execute(msg);
+            sendPostReqAsyncTask.execute(msg, savedName);
         }
 
     }
