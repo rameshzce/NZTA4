@@ -20,6 +20,10 @@ import android.widget.RelativeLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
+import android.text.style.ImageSpan;
+
 
 public class MemberActivity extends AppCompatActivity {
     Context applicationContext;
@@ -175,10 +179,24 @@ public class MemberActivity extends AppCompatActivity {
         MemberActivity.this.startActivity(intent);
     }
 
+    private void setIconInMenu(Menu menu, int menuItemId, String labelName, int iconId) {
+        MenuItem item = menu.findItem(menuItemId);
+        SpannableStringBuilder builder = new SpannableStringBuilder("   " + labelName);
+        builder.setSpan(new ImageSpan(this, iconId), 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        item.setTitle(builder);
+    }
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);//Menu Resource, Menu
+        setIconInMenu(menu, R.id.item1, "Home", R.drawable.menu_icon_home1);
+        setIconInMenu(menu, R.id.item2, "Profile", R.drawable.menu_icon_profile1);
+        setIconInMenu(menu, R.id.item3, "Subscribe", R.drawable.menu_icon_subscribe1);
+        setIconInMenu(menu, R.id.item4, "Team NZTA", R.drawable.menu_icon_team1);
+        setIconInMenu(menu, R.id.item5, "Sponsors", R.drawable.menu_icon_sponsors1);
+        setIconInMenu(menu, R.id.item6, "Send a message", R.drawable.menu_icon_send_message1);
         return true;
     }
 
