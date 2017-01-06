@@ -99,7 +99,7 @@ public class MemberActivity extends AppCompatActivity {
 
         if (height < 1000) {
             h = (height / 4) - 30;
-            imgSize = 100;
+            imgSize = 200;
         }
 
 
@@ -119,7 +119,7 @@ public class MemberActivity extends AppCompatActivity {
         TableRow tr5 = (TableRow) findViewById(R.id.tableRow5);
         tr5.setMinimumHeight(h);
 
-       /* ImageView img1 = (ImageView) findViewById(R.id.imageView1);
+        /*ImageView img1 = (ImageView) findViewById(R.id.imageView1);
         img1.setMinimumHeight(imgSize);
         img1.setMinimumWidth(imgSize);
 

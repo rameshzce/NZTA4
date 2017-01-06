@@ -62,14 +62,14 @@
             android:id="@+id/imageView1"
             android:paddingLeft="@dimen/member_icon_padding_left"
             android:paddingRight="10dp"
-            android:src="@drawable/upcoming_events"
+            android:src="@drawable/upcoming_events1"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/arraow"
             android:paddingLeft="0dp"
-            android:paddingRight="30dp"
-            android:src="@drawable/arrow"
+            android:paddingRight="@dimen/arrow_padding_right"
+            android:src="@drawable/arrow_white"
             android:layout_weight="1" />
 
     </TableRow>
@@ -123,13 +123,13 @@
                 android:id="@+id/imageView2"
                 android:paddingLeft="@dimen/member_icon_padding_left"
                 android:paddingRight="10dp"
-                android:src="@drawable/existing_events"
+                android:src="@drawable/existing_events1"
                 android:layout_weight="1" />
 
             <ImageView
                 android:paddingLeft="0dp"
-                android:paddingRight="30dp"
-                android:src="@drawable/arrow"
+                android:paddingRight="@dimen/arrow_padding_right"
+                android:src="@drawable/arrow_white"
                 android:layout_weight="1" />
 
         </TableRow>
@@ -184,13 +184,13 @@
                 android:id="@+id/imageView3"
                 android:paddingLeft="@dimen/member_icon_padding_left"
                 android:paddingRight="10dp"
-                android:src="@drawable/hands"
+                android:src="@drawable/hands1"
                 android:layout_weight="1" />
 
             <ImageView
                 android:paddingLeft="0dp"
-                android:paddingRight="30dp"
-                android:src="@drawable/arrow"
+                android:paddingRight="@dimen/arrow_padding_right"
+                android:src="@drawable/arrow_white"
                 android:layout_weight="1" />
 
         </TableRow>
@@ -244,13 +244,13 @@
                 android:id="@+id/imageView4"
                 android:paddingLeft="@dimen/member_icon_padding_left"
                 android:paddingRight="10dp"
-                android:src="@drawable/invite_friend"
+                android:src="@drawable/invite_friend1"
                 android:layout_weight="1" />
 
             <ImageView
                 android:paddingLeft="0dp"
-                android:paddingRight="30dp"
-                android:src="@drawable/arrow"
+                android:paddingRight="@dimen/arrow_padding_right"
+                android:src="@drawable/arrow_white"
                 android:layout_weight="1" />
 
         </TableRow>
@@ -304,13 +304,13 @@
                 android:id="@+id/imageView5"
                 android:paddingLeft="@dimen/member_icon_padding_left"
                 android:paddingRight="10dp"
-                android:src="@drawable/all_messages"
+                android:src="@drawable/all_messages1"
                 android:layout_weight="1" />
 
             <ImageView
                 android:paddingLeft="0dp"
-                android:paddingRight="30dp"
-                android:src="@drawable/arrow"
+                android:paddingRight="@dimen/arrow_padding_right"
+                android:src="@drawable/arrow_white"
                 android:layout_weight="1" />
 
         </TableRow>
