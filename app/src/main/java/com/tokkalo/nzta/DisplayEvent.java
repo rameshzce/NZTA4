@@ -112,7 +112,7 @@ public class DisplayEvent extends AppCompatActivity {
             imageName = "img_helping_hands";
         }
 
-        int id = getResources().getIdentifier("com.tokkalo.nzta:drawable/" + imageName, null, null);
+        int id = getResources().getIdentifier("com.tokkalo.nzta:mipmap/" + imageName, null, null);
         img.setImageResource(id);
 
         Animation animation = null;

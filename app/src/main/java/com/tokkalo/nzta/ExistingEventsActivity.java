@@ -64,9 +64,9 @@ public class ExistingEventsActivity extends AppCompatActivity {
         ab.setCustomView(tv);
 
         NumberPicker np = (NumberPicker) findViewById(R.id.years);
-        np.setMaxValue(2015);
+        np.setMaxValue(2016);
         np.setMinValue(2010);
-        np.setValue(2015);
+        np.setValue(2016);
 
         np.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
         //np.setDividerDrawable();

@@ -48,7 +48,7 @@
 
                 <TextView
                     android:id="@+id/textView1"
-                    android:text="2016"
+                    android:text="2017"
                     android:textSize="30dp"
                     android:textColor="@color/white"
                     android:layout_gravity="right"
@@ -109,7 +109,7 @@
 
                     <TextView
                         android:id="@+id/textView2"
-                        android:text="2015"
+                        android:text="2016"
                         android:textSize="30dp"
                         android:textColor="@color/white"
                         android:layout_gravity="right"
