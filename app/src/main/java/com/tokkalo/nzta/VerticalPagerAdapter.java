@@ -2,12 +2,15 @@ package com.tokkalo.nzta;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.Point;
 import android.graphics.Typeface;
 import android.support.v4.view.PagerAdapter;
 import android.util.Log;
+import android.view.Display;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -79,6 +82,19 @@ public class VerticalPagerAdapter extends PagerAdapter {
 
         linear.setLayoutParams(lp);
 
+        WindowManager wm = (WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE);
+        Display display = wm.getDefaultDisplay();
+
+        Point size = new Point();
+        display.getSize(size);
+        int width = size.x;
+        int height = size.y;
+
+
+        if (height < 1000) {
+
+        }
+
 
         /*TextView tvParent = new TextView(mContext);
         tvParent.setGravity(Gravity.CENTER_HORIZONTAL);
@@ -102,11 +118,16 @@ public class VerticalPagerAdapter extends PagerAdapter {
         desig.setTextSize(22);
         //desig.setTypeface(font);
         desig.setSingleLine(false);
+
+        if (height < 1400) {
+            desig.setPadding(0, 40, 0, 0);
+        }
+
         linear.addView(desig);
 
         ImageView imgView = new ImageView(mContext);
         imgView.setImageResource(teamImages[position]);
-        imgView.setPadding(0, 50, 0, 100);
+        imgView.setPadding(0, 50, 0, 80);
         linear.addView(imgView);
 
         TextView name = new TextView(mContext);
@@ -135,8 +156,17 @@ public class VerticalPagerAdapter extends PagerAdapter {
 
         ImageView arrow = new ImageView(mContext);
         arrow.setImageResource(R.drawable.down_arrow);
-        arrow.setPadding(0, 300, 0, 0);
+        arrow.setPadding(0, 250, 0, 0);
+        if (height < 1400) {
+            arrow.setPadding(0, 100, 0, 0);
+        }
+        if (position == 13) {
+            arrow.setVisibility(View.INVISIBLE);
+        }
         linear.addView(arrow);
+
+
+
 
         /*View bg = new View(mContext);
         bg.setMinimumHeight(100);
