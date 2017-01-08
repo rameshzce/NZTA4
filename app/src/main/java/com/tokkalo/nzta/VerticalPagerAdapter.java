@@ -127,7 +127,7 @@ public class VerticalPagerAdapter extends PagerAdapter {
 
         ImageView imgView = new ImageView(mContext);
         imgView.setImageResource(teamImages[position]);
-        imgView.setPadding(0, 50, 0, 80);
+        imgView.setPadding(0, 50, 0, 50);
         linear.addView(imgView);
 
         TextView name = new TextView(mContext);
